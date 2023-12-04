@@ -1,0 +1,70 @@
+INFO  12:55:05,546 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\PP4\workspace\MJCompiler\test\program.mj
+INFO  12:55:05,559 - #2 program
+INFO  12:55:05,559 - #15 MJProgram
+INFO  12:55:05,559 - #15 int
+INFO  12:55:05,560 - #15 x
+INFO  12:55:05,561 - #5 ;
+INFO  12:55:05,561 - #15 int
+INFO  12:55:05,562 - #15 y
+INFO  12:55:05,562 - #5 ;
+INFO  12:55:05,562 - #3 {
+INFO  12:55:05,562 - #15 int
+INFO  12:55:05,562 - #15 k
+INFO  12:55:05,563 - #6 (
+INFO  12:55:05,563 - #7 )
+INFO  12:55:05,563 - #15 int
+INFO  12:55:05,563 - #15 c
+INFO  12:55:05,564 - #5 ;
+INFO  12:55:05,564 - #3 {
+INFO  12:55:05,564 - #15 c
+INFO  12:55:05,564 - #8 =
+INFO  12:55:05,564 - #14 2
+INFO  12:55:05,565 - #5 ;
+INFO  12:55:05,565 - #9 return
+INFO  12:55:05,565 - #15 c
+INFO  12:55:05,566 - #10 +
+INFO  12:55:05,566 - #14 2
+INFO  12:55:05,566 - #5 ;
+INFO  12:55:05,567 - #4 }
+INFO  12:55:05,567 - #15 int
+INFO  12:55:05,568 - #15 main
+INFO  12:55:05,568 - #6 (
+INFO  12:55:05,568 - #7 )
+INFO  12:55:05,568 - #3 {
+INFO  12:55:05,569 - #12 print
+INFO  12:55:05,569 - #6 (
+INFO  12:55:05,569 - #14 1
+INFO  12:55:05,569 - #7 )
+INFO  12:55:05,569 - #5 ;
+INFO  12:55:05,569 - #15 x
+INFO  12:55:05,569 - #8 =
+INFO  12:55:05,569 - #15 y
+INFO  12:55:05,569 - #10 +
+INFO  12:55:05,569 - #14 5
+INFO  12:55:05,569 - #10 +
+INFO  12:55:05,569 - #14 3
+INFO  12:55:05,569 - #5 ;
+INFO  12:55:05,569 - #12 print
+INFO  12:55:05,569 - #6 (
+INFO  12:55:05,570 - #14 2
+INFO  12:55:05,570 - #7 )
+INFO  12:55:05,570 - #5 ;
+INFO  12:55:05,570 - #15 k
+INFO  12:55:05,570 - #6 (
+INFO  12:55:05,570 - #7 )
+INFO  12:55:05,570 - #5 ;
+INFO  12:55:05,570 - #9 return
+INFO  12:55:05,570 - #14 1
+INFO  12:55:05,570 - #5 ;
+INFO  12:55:05,571 - #4 }
+INFO  12:55:05,571 - #4 }
+INFO  12:55:05,574 - ===================================
+INFO  12:55:05,578 - Deklarisana promenljiva x na liniji 2
+INFO  12:55:05,578 - Deklarisana promenljiva y na liniji 2
+INFO  12:55:05,578 - Obradjuje se funkcija k na liniji 5
+INFO  12:55:05,578 - Deklarisana promenljiva c na liniji 5
+INFO  12:55:05,578 - Obradjuje se funkcija main na liniji 10
+INFO  12:55:05,578 - Print calls = 2
+INFO  12:55:05,578 - ===================================
+INFO  12:55:05,579 - Generating bytecode file: C:\Users\aleks\OneDrive\Desktop\PP4\workspace\MJCompiler\test\program.obj
+INFO  12:55:05,579 - Parsiranje uspesno zavrseno!

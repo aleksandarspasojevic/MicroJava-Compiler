@@ -1,0 +1,83 @@
+INFO  14:09:02,291 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\Projekat3\workspace\MJCompiler\test\program.mj
+INFO  14:09:02,307 - #2 program
+INFO  14:09:02,307 - #20 test301
+INFO  14:09:02,307 - #20 int
+INFO  14:09:02,308 - #20 pet
+INFO  14:09:02,309 - #5 ;
+INFO  14:09:02,309 - #20 int
+INFO  14:09:02,310 - #20 sest
+INFO  14:09:02,310 - #5 ;
+INFO  14:09:02,310 - #3 {
+INFO  14:09:02,310 - #20 g
+INFO  14:09:02,310 - #20 main
+INFO  14:09:02,311 - #6 (
+INFO  14:09:02,312 - #7 )
+INFO  14:09:02,312 - #3 {
+INFO  14:09:02,312 - #9 return
+INFO  14:09:02,313 - #17 0
+INFO  14:09:02,313 - #5 ;
+INFO  14:09:02,313 - #4 }
+INFO  14:09:02,313 - #4 }
+INFO  14:09:02,315 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       pet
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     sest
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeName(
+        MethType(
+          Type(
+           g
+          ) [Type]
+        ) [MethType]
+       main
+      ) [MethodTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        ReturnExpr(
+          TermExpr(
+            FactorTerm(
+              ConstNum(
+               0
+              ) [ConstNum]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  14:09:02,315 - ===================================
+INFO  14:09:02,319 - Deklarisana promenljiva pet na liniji 5
+INFO  14:09:02,319 - Deklarisana promenljiva sest na liniji 6
+ERROR 14:09:02,319 - Nije pronadjen tip g u tabeli simbola!
+INFO  14:09:02,319 - PROSO
+ERROR 14:09:02,320 - Nije pronadjen tip g u tabeli simbola!
+INFO  14:09:02,320 - Obradjuje se funkcija main na liniji 9
+ERROR 14:09:02,320 - Greska na liniji 13 : tip izraza u return naredbi se ne slaze sa tipom povratne vrednosti funkcije main
+ERROR 14:09:02,320 - Parsiranje NIJE uspesno zavrseno

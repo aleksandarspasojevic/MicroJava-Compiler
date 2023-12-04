@@ -1,0 +1,144 @@
+INFO  21:26:31,551 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test9.mj
+INFO  21:26:31,574 - #2 program
+INFO  21:26:31,574 - #17 test1
+INFO  21:26:31,574 - #17 int
+INFO  21:26:31,575 - #17 matrica
+INFO  21:26:31,575 - #19 [
+INFO  21:26:31,575 - #26 ]
+INFO  21:26:31,575 - #19 [
+INFO  21:26:31,575 - #26 ]
+INFO  21:26:31,575 - #5 ;
+INFO  21:26:31,576 - #18 const
+INFO  21:26:31,576 - #17 int
+INFO  21:26:31,576 - #17 c
+INFO  21:26:31,576 - #8 =
+INFO  21:26:31,576 - #14 2
+INFO  21:26:31,576 - #5 ;
+INFO  21:26:31,576 - #3 {
+INFO  21:26:31,577 - #13 void
+INFO  21:26:31,577 - #17 main
+INFO  21:26:31,577 - #6 (
+INFO  21:26:31,577 - #7 )
+INFO  21:26:31,578 - #17 int
+INFO  21:26:31,587 - #17 a
+INFO  21:26:31,587 - #11 ,
+INFO  21:26:31,588 - #17 b
+INFO  21:26:31,588 - #11 ,
+INFO  21:26:31,589 - #17 d
+INFO  21:26:31,589 - #5 ;
+INFO  21:26:31,589 - #3 {
+INFO  21:26:31,589 - #17 d
+INFO  21:26:31,589 - #8 =
+INFO  21:26:31,590 - #17 a
+INFO  21:26:31,590 - #10 +
+INFO  21:26:31,590 - #17 b
+INFO  21:26:31,590 - #23 /
+INFO  21:26:31,590 - #17 c
+INFO  21:26:31,591 - #10 +
+INFO  21:26:31,591 - #6 (
+INFO  21:26:31,591 - #6 (
+INFO  21:26:31,591 - #17 a
+INFO  21:26:31,591 - #10 +
+INFO  21:26:31,591 - #14 3
+INFO  21:26:31,591 - #25 %
+INFO  21:26:31,591 - #14 2
+INFO  21:26:31,591 - #24 -
+INFO  21:26:31,591 - #14 7
+INFO  21:26:31,591 - #7 )
+INFO  21:26:31,591 - #10 +
+INFO  21:26:31,592 - #14 5
+INFO  21:26:31,592 - #22 *
+INFO  21:26:31,592 - #17 d
+INFO  21:26:31,592 - #7 )
+INFO  21:26:31,592 - #7 )
+ERROR 21:26:31,592 - 
+Sintaksna greska na liniji 17
+INFO  21:26:31,592 - #5 ;
+INFO  21:26:31,593 - #4 }
+INFO  21:26:31,593 - #4 }
+ERROR 21:26:31,594 - Izvrsen oporavak do ; u liniji 17
+INFO  21:26:31,595 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  ConstVarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl1(
+        VarMatrixDeclaration1(
+          VarMatrixDeclaration(
+            Type(
+             int
+            ) [Type]
+           matrica
+          ) [VarMatrixDeclaration]
+        ) [VarMatrixDeclaration1]
+      ) [VarDecl1]
+    ) [VarDeclarations]
+    ConstVarDecl(
+      CostVarInitialization(
+        Type(
+         int
+        ) [Type]
+       c
+        ConstNum(
+         2
+        ) [ConstNum]
+      ) [CostVarInitialization]
+    ) [ConstVarDecl]
+  ) [ConstVarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDecl1(
+          MultipleVarDeclaration(
+            MultipleVarDeclaration(
+              VarDeclaration1(
+                VarDeclaration(
+                  Type(
+                   int
+                  ) [Type]
+                 a
+                ) [VarDeclaration]
+              ) [VarDeclaration1]
+              MultVarDecl(
+               b
+              ) [MultVarDecl]
+            ) [MultipleVarDeclaration]
+            MultVarDecl(
+             d
+            ) [MultVarDecl]
+          ) [MultipleVarDeclaration]
+        ) [VarDecl1]
+      ) [VarDeclarations]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        ErrorStmt(
+        ) [ErrorStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:26:31,595 - ===================================
+INFO  21:26:31,599 - ===================================
+INFO  21:26:31,601 - Deklarisana matrica matrica na liniji 5
+INFO  21:26:31,601 - Koriscenje simbolicke konstante 2 na liniji 7
+INFO  21:26:31,601 - Deklarisana konstantna promenljiva c na liniji 7
+INFO  21:26:31,601 - Obradjuje se funkcija main na liniji 12
+INFO  21:26:31,601 - Deklarisana promenljiva a na liniji 13
+INFO  21:26:31,601 - Deklarisana promenljiva b na liniji 13
+INFO  21:26:31,601 - Deklarisana promenljiva d na liniji 13
+INFO  21:26:31,601 - Print calls = 0
+INFO  21:26:31,602 - ===================================
+ERROR 21:26:31,602 - Parsiranje NIJE uspesno zavrseno!

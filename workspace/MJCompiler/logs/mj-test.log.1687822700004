@@ -1,0 +1,177 @@
+INFO  01:37:48,390 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\PP1 projekat\PP1_14\workspace\MJCompiler\test\program.mj
+INFO  01:37:48,412 - #2 program
+INFO  01:37:48,412 - #17 MJProgram
+INFO  01:37:48,412 - #3 {
+INFO  01:37:48,413 - #13 void
+INFO  01:37:48,413 - #17 main
+INFO  01:37:48,413 - #6 (
+INFO  01:37:48,413 - #7 )
+INFO  01:37:48,414 - #17 int
+INFO  01:37:48,414 - #17 readVal
+INFO  01:37:48,414 - #5 ;
+INFO  01:37:48,415 - #17 int
+INFO  01:37:48,415 - #17 x
+INFO  01:37:48,415 - #5 ;
+INFO  01:37:48,415 - #3 {
+INFO  01:37:48,415 - #17 readVal
+INFO  01:37:48,415 - #8 =
+INFO  01:37:48,416 - #14 2
+INFO  01:37:48,416 - #5 ;
+INFO  01:37:48,416 - #17 x
+INFO  01:37:48,416 - #8 =
+INFO  01:37:48,416 - #14 3
+INFO  01:37:48,417 - #5 ;
+INFO  01:37:48,417 - #17 x
+INFO  01:37:48,417 - #8 =
+INFO  01:37:48,417 - #17 x
+INFO  01:37:48,417 - #10 +
+INFO  01:37:48,417 - #17 readVal
+INFO  01:37:48,418 - #5 ;
+INFO  01:37:48,418 - #12 print
+INFO  01:37:48,418 - #6 (
+INFO  01:37:48,418 - #17 x
+INFO  01:37:48,418 - #7 )
+INFO  01:37:48,418 - #5 ;
+INFO  01:37:48,418 - #9 return
+INFO  01:37:48,418 - #5 ;
+INFO  01:37:48,418 - #4 }
+INFO  01:37:48,419 - #4 }
+INFO  01:37:48,420 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl1(
+            VarDeclaration1(
+              VarDeclaration(
+                Type(
+                 int
+                ) [Type]
+               readVal
+              ) [VarDeclaration]
+            ) [VarDeclaration1]
+          ) [VarDecl1]
+        ) [VarDeclarations]
+        VarDecl1(
+          VarDeclaration1(
+            VarDeclaration(
+              Type(
+               int
+              ) [Type]
+             x
+            ) [VarDeclaration]
+          ) [VarDeclaration1]
+        ) [VarDecl1]
+      ) [VarDeclarations]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                NoStmt(
+                ) [NoStmt]
+                DesignatorStmt(
+                  DesAsignment1(
+                    DesAsignment(
+                      DesignatorName(
+                       readVal
+                      ) [DesignatorName]
+                      TermExpr(
+                        FactorTerm(
+                          Const(
+                           2
+                          ) [Const]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                    ) [DesAsignment]
+                  ) [DesAsignment1]
+                ) [DesignatorStmt]
+              ) [Statements]
+              DesignatorStmt(
+                DesAsignment1(
+                  DesAsignment(
+                    DesignatorName(
+                     x
+                    ) [DesignatorName]
+                    TermExpr(
+                      FactorTerm(
+                        Const(
+                         3
+                        ) [Const]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                  ) [DesAsignment]
+                ) [DesAsignment1]
+              ) [DesignatorStmt]
+            ) [Statements]
+            DesignatorStmt(
+              DesAsignment1(
+                DesAsignment(
+                  DesignatorName(
+                   x
+                  ) [DesignatorName]
+                  AddExpr(
+                    TermExpr(
+                      FactorTerm(
+                        Var(
+                          DesignatorName(
+                           x
+                          ) [DesignatorName]
+                        ) [Var]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                    Addop(
+                    ) [Addop]
+                    FactorTerm(
+                      Var(
+                        DesignatorName(
+                         readVal
+                        ) [DesignatorName]
+                      ) [Var]
+                    ) [FactorTerm]
+                  ) [AddExpr]
+                ) [DesAsignment]
+              ) [DesAsignment1]
+            ) [DesignatorStmt]
+          ) [Statements]
+          PrintStmt(
+            TermExpr(
+              FactorTerm(
+                Var(
+                  DesignatorName(
+                   x
+                  ) [DesignatorName]
+                ) [Var]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [PrintStmt]
+        ) [Statements]
+        ReturnNoExpr(
+        ) [ReturnNoExpr]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:37:48,420 - ===================================
+INFO  01:37:48,424 - ===================================
+INFO  01:37:48,430 - Obradjuje se funkcija main na liniji 3
+INFO  01:37:48,430 - Deklarisana promenljiva readVal na liniji 3
+INFO  01:37:48,430 - Deklarisana promenljiva x na liniji 3
+INFO  01:37:48,430 - Print calls = 1
+INFO  01:37:48,430 - ===================================
+INFO  01:37:48,430 - Generating bytecode file: C:\Users\aleks\OneDrive\Desktop\PP1 projekat\PP1_14\workspace\MJCompiler\test\program.obj
+INFO  01:37:48,433 - Parsiranje uspesno zavrseno!

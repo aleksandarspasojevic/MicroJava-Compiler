@@ -1,0 +1,22 @@
+INFO  19:27:33,412 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\PP4\workspace\MJCompiler\test\program.mj
+INFO  19:27:33,429 - #2 program
+INFO  19:27:33,429 - #19 MJProgram
+INFO  19:27:33,429 - #19 int
+INFO  19:27:33,430 - #19 x
+INFO  19:27:33,431 - #5 ;
+INFO  19:27:33,431 - #19 int
+INFO  19:27:33,432 - #19 y
+INFO  19:27:33,432 - #5 ;
+INFO  19:27:33,432 - #3 {
+INFO  19:27:33,432 - #19 int
+INFO  19:27:33,432 - #19 main
+INFO  19:27:33,432 - #6 (
+INFO  19:27:33,433 - #7 )
+INFO  19:27:33,434 - #3 {
+INFO  19:27:33,434 - #4 }
+INFO  19:27:33,435 - #4 }
+INFO  19:27:33,440 - Deklarisana promenljiva x na liniji 2
+INFO  19:27:33,440 - Deklarisana promenljiva y na liniji 2
+INFO  19:27:33,440 - Obradjuje se funkcija main na liniji 7
+ERROR 19:27:33,441 - Semanticka greska na liniji 7: funcija main nema return iskaz!
+INFO  19:27:33,441 - Print calls = 0

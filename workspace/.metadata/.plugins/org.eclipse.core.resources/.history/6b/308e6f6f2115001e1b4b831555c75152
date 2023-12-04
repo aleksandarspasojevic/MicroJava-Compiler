@@ -1,0 +1,18 @@
+// test12 -- deklarisanje promenljive istog naziva u razlicitim scopeovima
+
+program test1	
+
+	int a, b;	
+	
+
+{
+
+	int main()	
+	int a;
+	{
+		a = 23;
+			
+	}
+}
+
+

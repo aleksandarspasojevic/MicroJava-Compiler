@@ -1,0 +1,60 @@
+INFO  21:12:41,169 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test3.mj
+INFO  21:12:41,193 - #2 program
+INFO  21:12:41,193 - #17 test1
+INFO  21:12:41,193 - #17 int
+INFO  21:12:41,194 - #17 matrix
+INFO  21:12:41,194 - #19 [
+INFO  21:12:41,194 - #26 ]
+INFO  21:12:41,194 - #19 [
+INFO  21:12:41,194 - #26 ]
+INFO  21:12:41,195 - #5 ;
+INFO  21:12:41,195 - #3 {
+INFO  21:12:41,195 - #13 void
+INFO  21:12:41,196 - #17 main
+INFO  21:12:41,196 - #6 (
+INFO  21:12:41,196 - #7 )
+INFO  21:12:41,197 - #3 {
+INFO  21:12:41,197 - #4 }
+INFO  21:12:41,197 - #4 }
+INFO  21:12:41,198 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl1(
+      VarMatrixDeclaration1(
+        VarMatrixDeclaration(
+          Type(
+           int
+          ) [Type]
+         matrix
+        ) [VarMatrixDeclaration]
+      ) [VarMatrixDeclaration1]
+    ) [VarDecl1]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:12:41,206 - ===================================
+INFO  21:12:41,209 - ===================================
+INFO  21:12:41,212 - Deklarisana matrica matrix na liniji 5
+INFO  21:12:41,212 - Obradjuje se funkcija main na liniji 7
+INFO  21:12:41,212 - Print calls = 0
+INFO  21:12:41,212 - ===================================
+INFO  21:12:41,213 - Generating bytecode file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\program.obj
+INFO  21:12:41,216 - Parsiranje uspesno zavrseno!

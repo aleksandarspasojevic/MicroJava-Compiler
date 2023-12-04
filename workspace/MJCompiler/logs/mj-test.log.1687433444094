@@ -1,0 +1,20 @@
+INFO  13:24:26,301 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\PP1 projekat\PP1_1\workspace\MJCompiler\test\program.mj
+INFO  13:24:26,313 - #2 program
+INFO  13:24:26,313 - #15 MJProgram
+INFO  13:24:26,313 - #15 int
+INFO  13:24:26,314 - #15 x
+INFO  13:24:26,315 - #5 ;
+INFO  13:24:26,315 - #15 int
+INFO  13:24:26,315 - #15 y
+INFO  13:24:26,316 - #5 ;
+INFO  13:24:26,316 - #15 const
+INFO  13:24:26,316 - #15 int
+INFO  13:24:26,316 - #15 g
+ERROR 13:24:26,316 - 
+Sintaksna greska na liniji 3
+ERROR 13:24:26,316 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 3
+INFO  13:24:26,319 - ===================================
+ERROR 13:24:26,321 - Nije pronadjen tip const u tabeli simbola! 
+INFO  13:24:26,321 - Print calls = 0
+INFO  13:24:26,322 - ===================================
+ERROR 13:24:26,323 - Parsiranje NIJE uspesno zavrseno!

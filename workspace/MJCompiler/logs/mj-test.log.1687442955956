@@ -1,0 +1,91 @@
+INFO  16:08:59,516 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\PP1 projekat\PP1_2\workspace\MJCompiler\test\program.mj
+INFO  16:08:59,534 - #2 program
+INFO  16:08:59,534 - #15 MJProgram
+INFO  16:08:59,534 - #15 int
+INFO  16:08:59,535 - #15 x
+INFO  16:08:59,535 - #5 ;
+INFO  16:08:59,536 - #15 int
+INFO  16:08:59,536 - #15 y
+INFO  16:08:59,536 - #5 ;
+INFO  16:08:59,536 - #16 const
+INFO  16:08:59,537 - #15 int
+INFO  16:08:59,537 - #15 f
+INFO  16:08:59,537 - #8 =
+INFO  16:08:59,537 - #28 true
+INFO  16:08:59,537 - #11 ,
+INFO  16:08:59,538 - #15 g
+INFO  16:08:59,538 - #8 =
+INFO  16:08:59,538 - #14 5
+INFO  16:08:59,538 - #5 ;
+INFO  16:08:59,538 - #15 int
+INFO  16:08:59,540 - #15 matrica
+INFO  16:08:59,540 - #17 [
+INFO  16:08:59,549 - #24 ]
+INFO  16:08:59,549 - #17 [
+INFO  16:08:59,549 - #24 ]
+INFO  16:08:59,549 - #11 ,
+INFO  16:08:59,549 - #15 niz
+INFO  16:08:59,549 - #17 [
+INFO  16:08:59,549 - #24 ]
+INFO  16:08:59,549 - #11 ,
+INFO  16:08:59,550 - #15 promenljiva
+INFO  16:08:59,550 - #5 ;
+INFO  16:08:59,550 - #3 {
+INFO  16:08:59,550 - #15 int
+INFO  16:08:59,550 - #15 k
+INFO  16:08:59,550 - #6 (
+INFO  16:08:59,551 - #7 )
+INFO  16:08:59,551 - #15 int
+INFO  16:08:59,551 - #15 c
+INFO  16:08:59,551 - #5 ;
+INFO  16:08:59,551 - #3 {
+INFO  16:08:59,551 - #15 c
+INFO  16:08:59,552 - #8 =
+INFO  16:08:59,552 - #14 2
+INFO  16:08:59,552 - #5 ;
+INFO  16:08:59,553 - #9 return
+INFO  16:08:59,553 - #15 c
+INFO  16:08:59,553 - #10 +
+INFO  16:08:59,553 - #14 2
+INFO  16:08:59,554 - #5 ;
+INFO  16:08:59,554 - #4 }
+INFO  16:08:59,554 - #15 int
+INFO  16:08:59,554 - #15 main
+INFO  16:08:59,554 - #6 (
+INFO  16:08:59,554 - #7 )
+INFO  16:08:59,554 - #3 {
+INFO  16:08:59,555 - #12 print
+INFO  16:08:59,555 - #6 (
+INFO  16:08:59,555 - #14 1
+INFO  16:08:59,555 - #7 )
+INFO  16:08:59,555 - #5 ;
+INFO  16:08:59,555 - #15 x
+INFO  16:08:59,555 - #8 =
+INFO  16:08:59,555 - #22 -
+INFO  16:08:59,555 - #15 y
+INFO  16:08:59,555 - #10 +
+INFO  16:08:59,556 - #14 5
+INFO  16:08:59,556 - #10 +
+INFO  16:08:59,556 - #14 3
+INFO  16:08:59,556 - #5 ;
+INFO  16:08:59,556 - #12 print
+INFO  16:08:59,556 - #6 (
+INFO  16:08:59,556 - #14 2
+INFO  16:08:59,556 - #7 )
+INFO  16:08:59,556 - #5 ;
+INFO  16:08:59,556 - #15 k
+INFO  16:08:59,556 - #6 (
+INFO  16:08:59,556 - #7 )
+INFO  16:08:59,557 - #5 ;
+INFO  16:08:59,557 - #9 return
+INFO  16:08:59,557 - #14 1
+INFO  16:08:59,557 - #5 ;
+INFO  16:08:59,557 - #4 }
+INFO  16:08:59,557 - #4 }
+INFO  16:08:59,561 - ===================================
+INFO  16:08:59,563 - Deklarisana promenljiva x na liniji 2
+INFO  16:08:59,563 - Deklarisana promenljiva y na liniji 2
+INFO  16:08:59,563 - Deklarisana promenljiva matrica na liniji 5
+INFO  16:08:59,563 - Obradjuje se funkcija k na liniji 10
+INFO  16:08:59,563 - Deklarisana promenljiva c na liniji 10
+INFO  16:08:59,563 - Obradjuje se funkcija main na liniji 15

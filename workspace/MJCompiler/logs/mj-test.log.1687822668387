@@ -1,0 +1,40 @@
+INFO  01:37:33,533 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\PP1 projekat\PP1_14\workspace\MJCompiler\test\program.mj
+INFO  01:37:33,557 - #2 program
+INFO  01:37:33,557 - #17 MJProgram
+INFO  01:37:33,557 - #3 {
+INFO  01:37:33,558 - #13 void
+INFO  01:37:33,558 - #17 main
+INFO  01:37:33,558 - #6 (
+INFO  01:37:33,558 - #7 )
+INFO  01:37:33,559 - #17 int
+INFO  01:37:33,559 - #17 readVal
+INFO  01:37:33,559 - #5 ;
+INFO  01:37:33,560 - #17 int
+INFO  01:37:33,560 - #17 x
+INFO  01:37:33,560 - #3 {
+ERROR 01:37:33,560 - 
+Sintaksna greska na liniji 3
+INFO  01:37:33,560 - #17 readVal
+INFO  01:37:33,560 - #8 =
+INFO  01:37:33,560 - #14 2
+INFO  01:37:33,560 - #5 ;
+INFO  01:37:33,560 - #17 x
+INFO  01:37:33,560 - #8 =
+INFO  01:37:33,569 - #14 3
+INFO  01:37:33,569 - #5 ;
+INFO  01:37:33,569 - #17 x
+INFO  01:37:33,570 - #8 =
+INFO  01:37:33,570 - #17 x
+INFO  01:37:33,570 - #10 +
+INFO  01:37:33,571 - #17 readVal
+INFO  01:37:33,571 - #5 ;
+INFO  01:37:33,571 - #12 print
+INFO  01:37:33,571 - #6 (
+INFO  01:37:33,572 - #17 x
+INFO  01:37:33,572 - #7 )
+INFO  01:37:33,572 - #5 ;
+INFO  01:37:33,572 - #9 return
+INFO  01:37:33,573 - #5 ;
+INFO  01:37:33,573 - #4 }
+INFO  01:37:33,573 - #4 }
+ERROR 01:37:33,573 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 16

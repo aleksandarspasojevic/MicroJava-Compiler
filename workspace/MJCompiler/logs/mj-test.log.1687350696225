@@ -1,0 +1,78 @@
+INFO  14:29:10,931 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\Projekat3\workspace\MJCompiler\test\program.mj
+INFO  14:29:10,953 - #2 program
+INFO  14:29:10,954 - #19 test301
+INFO  14:29:10,954 - #19 int
+INFO  14:29:10,955 - #19 pet
+INFO  14:29:10,956 - #5 ;
+INFO  14:29:10,956 - #19 int
+INFO  14:29:10,957 - #19 sest
+INFO  14:29:10,957 - #5 ;
+INFO  14:29:10,957 - #3 {
+INFO  14:29:10,957 - #28 void
+INFO  14:29:10,958 - #19 main
+INFO  14:29:10,958 - #6 (
+INFO  14:29:10,959 - #7 )
+INFO  14:29:10,961 - #3 {
+INFO  14:29:10,961 - #9 return
+INFO  14:29:10,962 - #16 0
+INFO  14:29:10,962 - #5 ;
+INFO  14:29:10,962 - #4 }
+INFO  14:29:10,962 - #4 }
+INFO  14:29:10,964 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       pet
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     sest
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeName(
+        MethodTypeDerived1(
+        ) [MethodTypeDerived1]
+       main
+      ) [MethodTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        ReturnExpr(
+          TermExpr(
+            FactorTerm(
+              ConstNum(
+               0
+              ) [ConstNum]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  14:29:10,965 - ===================================
+INFO  14:29:10,970 - PROSO
+INFO  14:29:10,970 - Deklarisana promenljiva pet na liniji 5
+INFO  14:29:10,970 - PROSO
+INFO  14:29:10,970 - Deklarisana promenljiva sest na liniji 6
+INFO  14:29:10,970 - Obradjuje se funkcija main na liniji 9
+INFO  14:29:10,970 - Parsiranje uspesno zavrseno

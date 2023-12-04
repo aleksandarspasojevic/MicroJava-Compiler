@@ -1,0 +1,81 @@
+INFO  18:29:36,773 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\Projekat3\workspace\MJCompiler\test\program.mj
+INFO  18:29:36,789 - #2 program
+INFO  18:29:36,790 - #19 test301
+INFO  18:29:36,790 - #27 const
+INFO  18:29:36,790 - #19 int
+INFO  18:29:36,790 - #19 pet
+INFO  18:29:36,791 - #5 ;
+INFO  18:29:36,791 - #27 const
+INFO  18:29:36,792 - #19 int
+INFO  18:29:36,792 - #19 sest
+INFO  18:29:36,792 - #5 ;
+INFO  18:29:36,792 - #3 {
+INFO  18:29:36,792 - #19 int
+INFO  18:29:36,793 - #19 main
+INFO  18:29:36,793 - #6 (
+INFO  18:29:36,794 - #7 )
+INFO  18:29:36,794 - #3 {
+INFO  18:29:36,794 - #9 return
+INFO  18:29:36,795 - #16 0
+INFO  18:29:36,795 - #5 ;
+INFO  18:29:36,795 - #4 }
+INFO  18:29:36,795 - #4 }
+INFO  18:29:36,797 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       pet
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     sest
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeName(
+        MethType(
+          Type(
+           int
+          ) [Type]
+        ) [MethType]
+       main
+      ) [MethodTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        ReturnExpr(
+          TermExpr(
+            FactorTerm(
+              ConstNum(
+               0
+              ) [ConstNum]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  18:29:36,798 - ===================================
+INFO  18:29:36,802 - Deklarisana promenljiva pet na liniji 5
+INFO  18:29:36,802 - Deklarisana promenljiva sest na liniji 6
+INFO  18:29:36,802 - Obradjuje se funkcija main na liniji 11
+INFO  18:29:36,802 - Parsiranje uspesno zavrseno

@@ -1,0 +1,72 @@
+INFO  21:32:14,816 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\Projekat2\workspace\MJCompiler\test\program.mj
+INFO  21:32:14,833 - #2 program
+INFO  21:32:14,833 - #20 test301
+INFO  21:32:14,833 - #20 int
+INFO  21:32:14,834 - #20 pet
+INFO  21:32:14,834 - #5 ;
+INFO  21:32:14,835 - #3 {
+INFO  21:32:14,835 - #20 int
+INFO  21:32:14,836 - #20 main
+INFO  21:32:14,836 - #6 (
+INFO  21:32:14,837 - #7 )
+INFO  21:32:14,838 - #3 {
+INFO  21:32:14,838 - #13 print
+INFO  21:32:14,839 - #6 (
+INFO  21:32:14,839 - #20 pet
+INFO  21:32:14,839 - #7 )
+INFO  21:32:14,839 - #5 ;
+INFO  21:32:14,840 - #4 }
+INFO  21:32:14,840 - #4 }
+INFO  21:32:14,841 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     pet
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeName(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [MethodTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        PrintStmtNoNumConst(
+          TermExpr(
+            FactorTerm(
+              Var(
+                DesignatorName(
+                 pet
+                ) [DesignatorName]
+              ) [Var]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [PrintStmtNoNumConst]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:32:14,842 - ===================================
+INFO  21:32:14,846 - Deklarisana promenljiva pet
+INFO  21:32:14,846 - Obradjuje se funkcija main
+ERROR 21:32:14,846 - Greska na liniji 10 : ime pet nije deklarisano! na liniji 0
+INFO  21:32:14,846 -  Print count calls = 1
+INFO  21:32:14,846 -  Deklarisanih promenljivih ima = 1
+INFO  21:32:14,846 - ===================================

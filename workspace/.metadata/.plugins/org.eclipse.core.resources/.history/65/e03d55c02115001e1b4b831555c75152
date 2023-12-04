@@ -1,0 +1,22 @@
+// test14 -- program bez funkcije main
+
+program test1	
+
+	const int a = 5, b = 6;
+	
+	const char c = 'f';
+
+{
+
+	int fun(int a){
+	
+		return 0;
+	}
+	
+	void main(){}
+	
+	
+	
+}
+
+

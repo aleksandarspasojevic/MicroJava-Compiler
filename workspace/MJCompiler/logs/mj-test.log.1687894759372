@@ -1,0 +1,134 @@
+INFO  21:39:12,014 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test17.mj
+INFO  21:39:12,036 - #2 program
+INFO  21:39:12,036 - #17 test1
+INFO  21:39:12,036 - #17 int
+INFO  21:39:12,037 - #17 a
+INFO  21:39:12,037 - #11 ,
+INFO  21:39:12,038 - #17 b
+INFO  21:39:12,038 - #11 ,
+INFO  21:39:12,039 - #17 c
+INFO  21:39:12,039 - #5 ;
+INFO  21:39:12,039 - #3 {
+INFO  21:39:12,039 - #17 int
+INFO  21:39:12,039 - #17 fun
+INFO  21:39:12,039 - #6 (
+INFO  21:39:12,040 - #7 )
+INFO  21:39:12,040 - #3 {
+INFO  21:39:12,040 - #9 return
+INFO  21:39:12,040 - #14 2
+INFO  21:39:12,041 - #5 ;
+INFO  21:39:12,041 - #4 }
+INFO  21:39:12,041 - #13 void
+INFO  21:39:12,042 - #17 main
+INFO  21:39:12,042 - #6 (
+INFO  21:39:12,051 - #7 )
+INFO  21:39:12,051 - #3 {
+INFO  21:39:12,051 - #17 a
+INFO  21:39:12,051 - #8 =
+INFO  21:39:12,051 - #15 t
+INFO  21:39:12,051 - #5 ;
+INFO  21:39:12,052 - #4 }
+INFO  21:39:12,052 - #4 }
+INFO  21:39:12,053 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl1(
+      MultipleVarDeclaration(
+        MultipleVarDeclaration(
+          VarDeclaration1(
+            VarDeclaration(
+              Type(
+               int
+              ) [Type]
+             a
+            ) [VarDeclaration]
+          ) [VarDeclaration1]
+          MultVarDecl(
+           b
+          ) [MultVarDecl]
+        ) [MultipleVarDeclaration]
+        MultVarDecl(
+         c
+        ) [MultVarDecl]
+      ) [MultipleVarDeclaration]
+    ) [VarDecl1]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDecl(
+      ) [NoMethodDecl]
+      MethodDecl(
+        RetType(
+          Type(
+           int
+          ) [Type]
+         fun
+        ) [RetType]
+        NoFormParam(
+        ) [NoFormParam]
+        NoVarDecl(
+        ) [NoVarDecl]
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          ReturnExpr(
+            TermExpr(
+              FactorTerm(
+                Const(
+                 2
+                ) [Const]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [ReturnExpr]
+        ) [Statements]
+      ) [MethodDecl]
+    ) [MethodDeclarations]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        DesignatorStmt(
+          DesAsignment1(
+            DesAsignment(
+              DesignatorName(
+               a
+              ) [DesignatorName]
+              TermExpr(
+                FactorTerm(
+                  CharConstF(
+                   t
+                  ) [CharConstF]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [DesAsignment]
+          ) [DesAsignment1]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:39:12,053 - ===================================
+INFO  21:39:12,058 - ===================================
+INFO  21:39:12,062 - Deklarisana promenljiva a na liniji 6
+INFO  21:39:12,063 - Deklarisana promenljiva b na liniji 6
+INFO  21:39:12,063 - Deklarisana promenljiva c na liniji 6
+INFO  21:39:12,063 - Obradjuje se funkcija fun na liniji 10
+INFO  21:39:12,063 - Koriscenje simbolicke konstante 2 na liniji 12
+INFO  21:39:12,063 - Obradjuje se funkcija main na liniji 15
+INFO  21:39:12,063 - Globalna promenljiva a na liniji 17
+INFO  21:39:12,063 - Koriscenje simbolicke konstante t na liniji 17
+ERROR 21:39:12,063 - Greska na liniji 17 : nekompatibilni tipovi u dodeli vrednosti! 
+INFO  21:39:12,063 - Print calls = 0
+INFO  21:39:12,063 - ===================================
+ERROR 21:39:12,063 - Parsiranje NIJE uspesno zavrseno!

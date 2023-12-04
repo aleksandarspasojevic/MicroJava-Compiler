@@ -1,0 +1,76 @@
+INFO  11:35:14,553 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\Projekat3\workspace\MJCompiler\test\program.mj
+INFO  11:35:14,584 - #2 program
+INFO  11:35:14,584 - #20 test301
+INFO  11:35:14,584 - #20 int
+INFO  11:35:14,586 - #20 pet
+INFO  11:35:14,586 - #5 ;
+INFO  11:35:14,587 - #3 {
+INFO  11:35:14,587 - #20 int
+INFO  11:35:14,588 - #20 main
+INFO  11:35:14,588 - #6 (
+INFO  11:35:14,589 - #7 )
+INFO  11:35:14,590 - #3 {
+INFO  11:35:14,590 - #20 pet
+INFO  11:35:14,593 - #5 ;
+ERROR 11:35:14,593 - 
+Sintaksna greska na liniji 10
+INFO  11:35:14,593 - #9 return
+INFO  11:35:14,593 - #17 0
+INFO  11:35:14,593 - #5 ;
+ERROR 11:35:14,595 - Izvrsen oporavak do ; u liniji 10
+INFO  11:35:14,597 - #4 }
+INFO  11:35:14,597 - #4 }
+INFO  11:35:14,608 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     pet
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeName(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [MethodTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          ErrorStmt(
+          ) [ErrorStmt]
+        ) [Statements]
+        ReturnExpr(
+          TermExpr(
+            FactorTerm(
+              ConstNum(
+               0
+              ) [ConstNum]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  11:35:14,608 - ===================================
+INFO  11:35:14,615 - Deklarisana promenljiva pet na liniji 5
+INFO  11:35:14,616 - Obradjuje se funkcija main na liniji 8
+INFO  11:35:14,616 -  Print count calls = 0
+INFO  11:35:14,616 -  Deklarisanih promenljivih ima = 1
+ERROR 11:35:14,616 - Parsiranje NIJE uspesno zavrseno

@@ -1,0 +1,377 @@
+package rs.ac.bg.etf.pp1;
+
+import rs.ac.bg.etf.pp1.CounterVisitor.FormParamCounter;
+import rs.ac.bg.etf.pp1.CounterVisitor.VarCounter;
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.mj.runtime.Code;
+import rs.etf.pp1.symboltable.Tab;
+import rs.etf.pp1.symboltable.concepts.Obj;
+import rs.etf.pp1.symboltable.concepts.Struct;
+
+import org.apache.log4j.Logger;
+
+public class CodeGenerator extends VisitorAdaptor {
+
+	private int varCount;
+
+	private int paramCnt;
+
+	private int mainPc;
+
+	Logger log = Logger.getLogger(getClass());
+
+	Boolean k = false;
+
+	public int getMainPc() {
+		return mainPc;
+	}
+
+	@Override
+	public void visit(RetType MethodTypeName) {
+		if ("main".equalsIgnoreCase(MethodTypeName.getMethName())) {
+			mainPc = Code.pc;
+		}
+		MethodTypeName.obj.setAdr(Code.pc);
+
+		// Collect arguments and local variables.
+		SyntaxNode methodNode = MethodTypeName.getParent();
+		VarCounter varCnt = new VarCounter();
+		methodNode.traverseTopDown(varCnt);
+		FormParamCounter fpCnt = new FormParamCounter();
+		methodNode.traverseTopDown(fpCnt);
+
+		// Generate the entry.
+		Code.put(Code.enter);
+		Code.put(fpCnt.getCount());
+		Code.put(varCnt.getCount() + fpCnt.getCount());
+	}
+
+	@Override
+	public void visit(NoRetType MethodTypeName) {
+		if ("main".equalsIgnoreCase(MethodTypeName.getMethName())) {
+			mainPc = Code.pc;
+		}
+		MethodTypeName.obj.setAdr(Code.pc);
+
+		// Collect arguments and local variables.
+		SyntaxNode methodNode = MethodTypeName.getParent();
+		VarCounter varCnt = new VarCounter();
+		methodNode.traverseTopDown(varCnt);
+		FormParamCounter fpCnt = new FormParamCounter();
+		methodNode.traverseTopDown(fpCnt);
+
+		// Generate the entry.
+		Code.put(Code.enter);
+		Code.put(fpCnt.getCount());
+		Code.put(varCnt.getCount() + fpCnt.getCount());
+	}
+
+	@Override
+	public void visit(VarDecl VarDecl) {
+		varCount++;
+	}
+
+	@Override
+	public void visit(FormalParamDecl FormalParam) {
+		paramCnt++;
+	}
+
+	@Override
+	public void visit(MethodDecl MethodDecl) {
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+	}
+
+	@Override
+	public void visit(ReturnExpr ReturnExpr) {
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+	}
+
+	@Override
+	public void visit(ReturnNoExpr ReturnNoExpr) {
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+	}
+
+	@Override
+	public void visit(NewExprSingle newExprSingle) {
+		Code.put(Code.newarray);
+
+		if (newExprSingle.struct.getElemType() == Tab.charType) {
+			Code.put(0);
+		} else {
+			Code.put(1);
+		}
+	}
+
+	@Override
+	public void visit(NewExprMult newExpr) {
+		k = true;
+	}
+
+	@Override
+	public void visit(Designator1 des1) {
+		Code.load(des1.getDesignator().obj);
+	}
+
+	@Override
+	public void visit(DesAsignment Assignment) {
+		
+		// adding code here
+		if(!k) {
+			Code.store(Assignment.getDesignator().obj);
+			return;
+		}
+			
+		
+		
+//		log.info(Assignment.getDesignator().obj.getName());
+		
+		Obj desObj = Assignment.getDesignator().obj;
+		Struct typeStruct = Assignment.getDesignator().obj.getType().getElemType().getElemType();
+		Obj arrayAddress = Tab.insert(Obj.Var, "array", Tab.intType);
+		Obj column = Tab.insert(Obj.Var, "column", Tab.intType);
+		Obj row = Tab.insert(Obj.Var, "row", Tab.intType);
+		Obj index = Tab.insert(Obj.Var, "index", Tab.intType);
+		
+		Code.store(column);  //column is on the top of the stack
+		Code.put(Code.dup);
+		Code.store(row);
+		
+		Code.put(Code.newarray);
+		Code.loadConst(1);
+		Code.store(desObj);
+
+		Code.loadConst(0);
+		Code.store(index);
+		int start = Code.pc;
+
+		Code.load(row);
+		Code.load(index);
+		Code.putFalseJump(Code.gt, 0);
+		int falseJump = Code.pc - 2;
+
+		Code.load(column);
+		Code.put(Code.newarray);
+		if (typeStruct.getKind() == Struct.Int) 
+		    Code.loadConst(1);
+		 else 
+		    Code.put(0);
+		
+
+		
+		Code.store(arrayAddress);
+
+		Code.load(Assignment.getDesignator().obj);
+		Code.load(index);
+		Code.load(arrayAddress);
+		Code.put(Code.astore);
+
+		Code.load(index);
+		Code.loadConst(1);
+		Code.put(Code.add);
+		Code.store(index);
+
+		Code.putJump(start);
+		Code.fixup(falseJump);
+
+		k = false;
+		
+
+//		Obj index = Tab.insert(Obj.Var, "#index1$", Tab.intType);
+//		Code.store(index);
+//		Obj index2 = Tab.insert(Obj.Var, "#index2$", Tab.intType);
+//		Obj curr = Tab.insert(Obj.Var, "#curr$", Tab.intType);
+//		Code.store(index2);
+//		
+//		Code.load(index2);
+//		Code.put(Code.newarray);
+//		Code.loadConst(1);
+//		Code.store(Assignment.getDesignator().obj);
+//		
+//		Code.loadConst(0);
+//		Code.store(curr);
+//		int pocetak = Code.pc;
+//		Code.load(index2);
+//		Code.load(curr);
+//		Code.putFalseJump(Code.gt, 0);
+//		int falseJump = Code.pc -  2;
+//		Code.load(index);
+//		Code.put(Code.newarray);
+//		if(Assignment.getDesignator().obj.getType().getElemType().getElemType().getKind() == Struct.Int) {
+//			Code.loadConst(1);
+//		}else {
+//			Code.put(0);
+//		}
+//		
+//		Obj arrayAddress = Tab.insert(Obj.Var, "#array$", Tab.intType);
+//		Code.store(arrayAddress);
+//		Code.load(Assignment.getDesignator().obj);
+//		Code.load(curr);
+//		Code.load(arrayAddress);
+//		Code.put(Code.astore);
+//		
+//		Code.load(curr);
+//		Code.loadConst(1);
+//		Code.put(Code.add);
+//		Code.store(curr);
+//		
+//		Code.putJump(pocetak);
+//		Code.fixup(falseJump);
+//		
+//		
+//		k = false;
+	}
+
+	@Override
+	public void visit(DesignatorIncrement desIncrement) {
+		if (desIncrement.getDesignator().obj.getKind() == Obj.Var) {
+			Code.load(desIncrement.getDesignator().obj);
+		} else if (desIncrement.getDesignator().obj.getKind() == Obj.Elem) {
+			Code.put(Code.dup2);
+			Code.load(desIncrement.getDesignator().obj);
+		}
+
+		Code.loadConst(1);
+		Code.put(Code.add);
+		Code.store(desIncrement.getDesignator().obj);
+	}
+
+	@Override
+	public void visit(DesignatorDecrement desDecrement) {
+		if (desDecrement.getDesignator().obj.getKind() == Obj.Var) {
+			Code.load(desDecrement.getDesignator().obj);
+		} else if (desDecrement.getDesignator().obj.getKind() == Obj.Elem) {
+			Code.put(Code.dup2);
+			Code.load(desDecrement.getDesignator().obj);
+		}
+
+		Code.loadConst(1);
+		Code.put(Code.sub);
+		Code.store(desDecrement.getDesignator().obj);
+	}
+
+	@Override
+	public void visit(TermExpr termExpr) {
+
+	}
+
+	@Override
+	public void visit(Const Const) {
+		Code.load(new Obj(Obj.Con, "$", Const.struct, Const.getN1(), 0));
+	}
+
+	@Override
+	public void visit(ConstNum Const) {
+		Code.load(new Obj(Obj.Con, "$", Const.struct, Const.getN1(), 0));
+	}
+
+	@Override
+	public void visit(CharConst Const) {
+		Code.load(new Obj(Obj.Con, "$", Const.struct, Const.getC1(), 0));
+	}
+
+	@Override
+	public void visit(CharConstF Const) {
+		Code.load(new Obj(Obj.Con, "$", Const.struct, Const.getC1(), 0));
+	}
+
+	@Override
+	public void visit(ConstBool Const) {
+		Code.load(new Obj(Obj.Con, "$", Const.struct, Const.getB1(), 0));
+	}
+
+	@Override
+	public void visit(BoolConstF Const) {
+		Code.load(new Obj(Obj.Con, "$", Const.struct, Const.getB1(), 0));
+	}
+
+	@Override
+	public void visit(Designator Designator) {
+		SyntaxNode parent = Designator.getParent();
+		if (DesAsignment.class != parent.getClass() && FuncCall.class != parent.getClass()) {
+			Code.load(Designator.obj);
+		}
+	}
+
+	@Override
+	public void visit(FuncCall FuncCall) {
+		Obj functionObj = FuncCall.getDesignator().obj;
+		int offset = functionObj.getAdr() - Code.pc;
+		Code.put(Code.call);
+		Code.put2(offset);
+	}
+
+	@Override
+	public void visit(PrintStmt PrintStmt) {
+
+		if (PrintStmt.getExpr().struct == Tab.intType || PrintStmt.getExpr().struct == MyTab.boolType) {
+			Code.loadConst(5);
+			Code.put(Code.print);
+		} else {
+			Code.loadConst(1);
+			Code.put(Code.bprint);
+		}
+
+	}
+
+	@Override
+	public void visit(PrintStmtParam PrintStmt) {
+
+		Code.loadConst(PrintStmt.getNumConst());
+
+		if (PrintStmt.getExpr().struct == Tab.intType || PrintStmt.getExpr().struct == MyTab.boolType) {
+			Code.put(Code.print);
+		} else {
+			Code.put(Code.bprint);
+		}
+
+	}
+
+	@Override
+	public void visit(ReadStmt readStmt) {
+		if (readStmt.getDesignator().obj.getType() == Tab.charType) {
+			Code.put(Code.bread);
+		} else {
+			Code.put(Code.read);
+		}
+
+		Code.store(readStmt.getDesignator().obj);
+	}
+
+	@Override
+	public void visit(Var var) {
+		Code.load(var.getDesignator().obj);
+	}
+
+	@Override
+	public void visit(MulTerm mulTerm) {
+
+		if (mulTerm.getMulop() instanceof Mulop1) {
+			Code.put(Code.mul);
+		} else if (mulTerm.getMulop() instanceof Divop) {
+			Code.put(Code.div);
+		} else if (mulTerm.getMulop() instanceof Moduloop) {
+			Code.put(Code.rem);
+		}
+
+	}
+
+	@Override
+	public void visit(MinusTermExpr minusTermExpr) {
+		Code.put(Code.neg);
+	}
+
+	@Override
+	public void visit(AddExpr expr) {
+
+		if (expr.getAddop() instanceof Addop1) {
+			Code.put(Code.add);
+		} else if (expr.getAddop() instanceof MinusOp) {
+			Code.put(Code.sub);
+		}
+
+	}
+
+}

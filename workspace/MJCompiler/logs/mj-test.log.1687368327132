@@ -1,0 +1,67 @@
+INFO  19:22:01,344 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\PP4\workspace\MJCompiler\test\program.mj
+INFO  19:22:01,362 - #2 program
+INFO  19:22:01,362 - #19 MJProgram
+INFO  19:22:01,362 - #19 int
+INFO  19:22:01,363 - #19 x
+INFO  19:22:01,364 - #5 ;
+INFO  19:22:01,364 - #19 int
+INFO  19:22:01,365 - #19 y
+INFO  19:22:01,365 - #5 ;
+INFO  19:22:01,365 - #3 {
+INFO  19:22:01,365 - #19 int
+INFO  19:22:01,366 - #19 k
+INFO  19:22:01,367 - #6 (
+INFO  19:22:01,368 - #7 )
+INFO  19:22:01,369 - #19 int
+INFO  19:22:01,369 - #19 c
+INFO  19:22:01,369 - #5 ;
+INFO  19:22:01,369 - #3 {
+INFO  19:22:01,369 - #19 c
+INFO  19:22:01,370 - #8 =
+INFO  19:22:01,370 - #16 1
+INFO  19:22:01,370 - #5 ;
+INFO  19:22:01,371 - #9 return
+INFO  19:22:01,371 - #19 c
+INFO  19:22:01,371 - #10 +
+INFO  19:22:01,372 - #16 2
+INFO  19:22:01,372 - #5 ;
+INFO  19:22:01,372 - #4 }
+INFO  19:22:01,372 - #19 int
+INFO  19:22:01,373 - #19 main
+INFO  19:22:01,373 - #6 (
+INFO  19:22:01,373 - #7 )
+INFO  19:22:01,373 - #3 {
+INFO  19:22:01,374 - #19 y
+INFO  19:22:01,374 - #8 =
+INFO  19:22:01,374 - #16 2
+INFO  19:22:01,374 - #5 ;
+INFO  19:22:01,374 - #19 x
+INFO  19:22:01,374 - #8 =
+INFO  19:22:01,374 - #19 y
+INFO  19:22:01,374 - #10 +
+INFO  19:22:01,374 - #16 2
+INFO  19:22:01,374 - #5 ;
+INFO  19:22:01,374 - #19 y
+INFO  19:22:01,374 - #8 =
+INFO  19:22:01,375 - #19 k
+INFO  19:22:01,375 - #6 (
+INFO  19:22:01,375 - #7 )
+INFO  19:22:01,375 - #10 +
+INFO  19:22:01,375 - #16 3
+INFO  19:22:01,375 - #5 ;
+INFO  19:22:01,375 - #13 print
+INFO  19:22:01,376 - #6 (
+INFO  19:22:01,376 - #19 y
+INFO  19:22:01,376 - #7 )
+INFO  19:22:01,376 - #5 ;
+INFO  19:22:01,376 - #9 return
+INFO  19:22:01,376 - #16 0
+INFO  19:22:01,376 - #5 ;
+INFO  19:22:01,376 - #4 }
+INFO  19:22:01,376 - #4 }
+INFO  19:22:01,383 - Deklarisana promenljiva x na liniji 2
+INFO  19:22:01,383 - Deklarisana promenljiva y na liniji 2
+INFO  19:22:01,383 - Obradjuje se funkcija k na liniji 5
+INFO  19:22:01,383 - Deklarisana promenljiva c na liniji 5
+INFO  19:22:01,383 - Obradjuje se funkcija main na liniji 10
+INFO  19:22:01,383 - Pronadjen poziv funkcije k na liniji 13

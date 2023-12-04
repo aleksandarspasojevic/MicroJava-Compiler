@@ -1,0 +1,88 @@
+INFO  21:08:09,332 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test2.mj
+INFO  21:08:09,354 - #2 program
+INFO  21:08:09,354 - #17 test1
+INFO  21:08:09,354 - #17 int
+INFO  21:08:09,355 - #17 a
+INFO  21:08:09,355 - #11 ,
+INFO  21:08:09,356 - #17 b
+INFO  21:08:09,356 - #5 ;
+INFO  21:08:09,357 - #17 char
+INFO  21:08:09,357 - #17 c
+INFO  21:08:09,357 - #11 ,
+INFO  21:08:09,357 - #17 d
+INFO  21:08:09,357 - #5 ;
+INFO  21:08:09,357 - #3 {
+INFO  21:08:09,357 - #13 void
+INFO  21:08:09,358 - #17 main
+INFO  21:08:09,358 - #6 (
+INFO  21:08:09,358 - #7 )
+INFO  21:08:09,358 - #3 {
+INFO  21:08:09,359 - #4 }
+INFO  21:08:09,359 - #4 }
+INFO  21:08:09,360 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl1(
+        MultipleVarDeclaration(
+          VarDeclaration1(
+            VarDeclaration(
+              Type(
+               int
+              ) [Type]
+             a
+            ) [VarDeclaration]
+          ) [VarDeclaration1]
+          MultVarDecl(
+           b
+          ) [MultVarDecl]
+        ) [MultipleVarDeclaration]
+      ) [VarDecl1]
+    ) [VarDeclarations]
+    VarDecl1(
+      MultipleVarDeclaration(
+        VarDeclaration1(
+          VarDeclaration(
+            Type(
+             char
+            ) [Type]
+           c
+          ) [VarDeclaration]
+        ) [VarDeclaration1]
+        MultVarDecl(
+         d
+        ) [MultVarDecl]
+      ) [MultipleVarDeclaration]
+    ) [VarDecl1]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:08:09,369 - ===================================
+INFO  21:08:09,372 - ===================================
+INFO  21:08:09,377 - Deklarisana promenljiva a na liniji 4
+INFO  21:08:09,377 - Deklarisana promenljiva b na liniji 4
+INFO  21:08:09,377 - Deklarisana promenljiva c na liniji 5
+INFO  21:08:09,377 - Deklarisana promenljiva d na liniji 5
+INFO  21:08:09,377 - Obradjuje se funkcija main na liniji 8
+INFO  21:08:09,377 - Print calls = 0
+INFO  21:08:09,377 - ===================================
+INFO  21:08:09,378 - Generating bytecode file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\program.obj
+INFO  21:08:09,380 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,76 @@
+INFO  21:20:38,531 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test7.mj
+INFO  21:20:38,554 - #2 program
+INFO  21:20:38,554 - #17 test1
+INFO  21:20:38,554 - #17 int
+INFO  21:20:38,555 - #17 a
+INFO  21:20:38,555 - #5 ;
+INFO  21:20:38,556 - #3 {
+INFO  21:20:38,556 - #13 void
+INFO  21:20:38,557 - #17 fun
+INFO  21:20:38,557 - #6 (
+INFO  21:20:38,557 - #7 )
+INFO  21:20:38,557 - #3 {
+INFO  21:20:38,557 - #4 }
+INFO  21:20:38,558 - #13 void
+INFO  21:20:38,558 - #17 main
+INFO  21:20:38,558 - #6 (
+INFO  21:20:38,558 - #7 )
+INFO  21:20:38,558 - #3 {
+INFO  21:20:38,558 - #4 }
+INFO  21:20:38,558 - #4 }
+INFO  21:20:38,559 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl1(
+      VarDeclaration1(
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+         a
+        ) [VarDeclaration]
+      ) [VarDeclaration1]
+    ) [VarDecl1]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDecl(
+      ) [NoMethodDecl]
+      MethodDecl(
+        NoRetType(
+         fun
+        ) [NoRetType]
+        NoFormParam(
+        ) [NoFormParam]
+        NoVarDecl(
+        ) [NoVarDecl]
+        NoStmt(
+        ) [NoStmt]
+      ) [MethodDecl]
+    ) [MethodDeclarations]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:20:38,567 - ===================================
+INFO  21:20:38,570 - ===================================
+INFO  21:20:38,574 - Deklarisana promenljiva a na liniji 5
+INFO  21:20:38,574 - Obradjuje se funkcija fun na liniji 11
+INFO  21:20:38,575 - Obradjuje se funkcija main na liniji 13
+INFO  21:20:38,575 - Print calls = 0
+INFO  21:20:38,575 - ===================================
+INFO  21:20:38,575 - Generating bytecode file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\program.obj
+INFO  21:20:38,578 - Parsiranje uspesno zavrseno!

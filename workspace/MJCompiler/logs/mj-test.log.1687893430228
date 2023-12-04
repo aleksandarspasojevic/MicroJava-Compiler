@@ -1,0 +1,74 @@
+INFO  21:16:59,005 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test4.mj
+INFO  21:16:59,027 - #2 program
+INFO  21:16:59,027 - #17 test1
+INFO  21:16:59,027 - #17 int
+INFO  21:16:59,028 - #17 niz
+INFO  21:16:59,029 - #19 [
+INFO  21:16:59,029 - #26 ]
+INFO  21:16:59,029 - #19 [
+INFO  21:16:59,029 - #26 ]
+INFO  21:16:59,029 - #5 ;
+INFO  21:16:59,029 - #18 const
+INFO  21:16:59,030 - #17 int
+INFO  21:16:59,030 - #17 constNiz
+INFO  21:16:59,030 - #19 [
+ERROR 21:16:59,030 - 
+Sintaksna greska na liniji 7
+INFO  21:16:59,030 - #26 ]
+INFO  21:16:59,030 - #19 [
+INFO  21:16:59,030 - #26 ]
+INFO  21:16:59,030 - #5 ;
+INFO  21:16:59,030 - #3 {
+INFO  21:16:59,030 - #13 void
+INFO  21:16:59,040 - #17 main
+ERROR 21:16:59,040 - Izvrsen oporavak do ; u liniji 7
+INFO  21:16:59,043 - #6 (
+INFO  21:16:59,044 - #7 )
+INFO  21:16:59,045 - #3 {
+INFO  21:16:59,045 - #4 }
+INFO  21:16:59,045 - #4 }
+INFO  21:16:59,049 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl1(
+        VarMatrixDeclaration1(
+          VarMatrixDeclaration(
+            Type(
+             int
+            ) [Type]
+           niz
+          ) [VarMatrixDeclaration]
+        ) [VarMatrixDeclaration1]
+      ) [VarDecl1]
+    ) [VarDeclarations]
+    ErrorVarDecl1(
+    ) [ErrorVarDecl1]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:16:59,049 - ===================================
+INFO  21:16:59,056 - ===================================
+INFO  21:16:59,061 - Deklarisana matrica niz na liniji 5
+INFO  21:16:59,061 - Obradjuje se funkcija main na liniji 10
+INFO  21:16:59,061 - Print calls = 0
+INFO  21:16:59,061 - ===================================
+ERROR 21:16:59,062 - Parsiranje NIJE uspesno zavrseno!

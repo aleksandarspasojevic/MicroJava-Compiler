@@ -1,0 +1,100 @@
+INFO  17:03:12,279 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\test\workspace\MJCompiler\test\program.mj
+INFO  17:03:12,294 - #2 program
+INFO  17:03:12,294 - #20 test301
+INFO  17:03:12,294 - #20 int
+INFO  17:03:12,295 - #20 pet
+INFO  17:03:12,295 - #5 ;
+INFO  17:03:12,295 - #3 {
+INFO  17:03:12,296 - #20 int
+INFO  17:03:12,296 - #20 main
+INFO  17:03:12,296 - #6 (
+INFO  17:03:12,296 - #7 )
+INFO  17:03:12,297 - #3 {
+INFO  17:03:12,297 - #20 int
+INFO  17:03:12,297 - #20 a
+ERROR 17:03:12,297 - 
+Sintaksna greska na liniji 10
+INFO  17:03:12,297 - #5 ;
+INFO  17:03:12,297 - #20 a
+INFO  17:03:12,298 - #8 =
+INFO  17:03:12,298 - #17 5
+ERROR 17:03:12,298 - Izvrsen oporavak do ; u liniji 10
+INFO  17:03:12,299 - #5 ;
+INFO  17:03:12,300 - #20 char
+INFO  17:03:12,300 - #20 c
+ERROR 17:03:12,300 - 
+Sintaksna greska na liniji 13
+INFO  17:03:12,300 - #5 ;
+INFO  17:03:12,300 - #20 c
+INFO  17:03:12,300 - #8 =
+INFO  17:03:12,300 - #17 2525
+ERROR 17:03:12,301 - Izvrsen oporavak do ; u liniji 13
+INFO  17:03:12,301 - #20 fx
+ERROR 17:03:12,301 - 
+Sintaksna greska na liniji 14
+INFO  17:03:12,301 - #5 ;
+INFO  17:03:12,301 - #4 }
+INFO  17:03:12,301 - #4 }
+ERROR 17:03:12,301 - Izvrsen oporavak do ; u liniji 14
+INFO  17:03:12,303 - Program(
+ test301
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     pet
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              NoStmt(
+              ) [NoStmt]
+              ErrorStmt(
+              ) [ErrorStmt]
+            ) [Statements]
+            DesignatorStmt(
+              DesignatorAssignment1(
+                DesignatorAssignment(
+                  DesignatorName(
+                   a
+                  ) [DesignatorName]
+                  TermExpr(
+                    FactorTerm(
+                      ConstNum(
+                       5
+                      ) [ConstNum]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [DesignatorAssignment]
+              ) [DesignatorAssignment1]
+            ) [DesignatorStmt]
+          ) [Statements]
+          ErrorStmt(
+          ) [ErrorStmt]
+        ) [Statements]
+        ErrorStmt(
+        ) [ErrorStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  17:03:12,303 - ===================================
+INFO  17:03:12,304 -  Print count calls = 0
+INFO  17:03:12,304 -  Deklarisanih promenljivih ima = 1

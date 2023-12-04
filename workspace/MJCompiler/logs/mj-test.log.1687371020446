@@ -1,0 +1,52 @@
+INFO  20:09:59,342 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\PP4\workspace\MJCompiler\test\program.mj
+INFO  20:09:59,360 - #2 program
+INFO  20:09:59,360 - #19 MJProgram
+INFO  20:09:59,360 - #19 int
+INFO  20:09:59,361 - #19 x
+INFO  20:09:59,362 - #5 ;
+INFO  20:09:59,362 - #19 int
+INFO  20:09:59,363 - #19 y
+INFO  20:09:59,363 - #5 ;
+INFO  20:09:59,363 - #3 {
+INFO  20:09:59,363 - #19 int
+INFO  20:09:59,363 - #19 main
+INFO  20:09:59,363 - #6 (
+INFO  20:09:59,364 - #7 )
+INFO  20:09:59,364 - #3 {
+INFO  20:09:59,364 - #19 y
+INFO  20:09:59,365 - #8 =
+INFO  20:09:59,365 - #16 2
+INFO  20:09:59,365 - #5 ;
+INFO  20:09:59,365 - #19 x
+INFO  20:09:59,366 - #8 =
+INFO  20:09:59,366 - #19 y
+INFO  20:09:59,366 - #10 +
+INFO  20:09:59,366 - #16 2
+INFO  20:09:59,367 - #5 ;
+INFO  20:09:59,367 - #19 y
+INFO  20:09:59,367 - #8 =
+INFO  20:09:59,367 - #19 k
+INFO  20:09:59,367 - #6 (
+INFO  20:09:59,367 - #7 )
+INFO  20:09:59,367 - #10 +
+INFO  20:09:59,367 - #16 3
+INFO  20:09:59,368 - #5 ;
+INFO  20:09:59,368 - #13 print
+INFO  20:09:59,368 - #6 (
+INFO  20:09:59,368 - #19 y
+INFO  20:09:59,368 - #7 )
+INFO  20:09:59,368 - #5 ;
+INFO  20:09:59,368 - #9 return
+INFO  20:09:59,368 - #16 0
+INFO  20:09:59,368 - #5 ;
+INFO  20:09:59,368 - #4 }
+INFO  20:09:59,368 - #4 }
+INFO  20:09:59,373 - Deklarisana promenljiva x na liniji 2
+INFO  20:09:59,373 - Deklarisana promenljiva y na liniji 2
+INFO  20:09:59,373 - Obradjuje se funkcija main na liniji 6
+ERROR 20:09:59,374 - Greska na liniji 9 : ime k nije deklarisano! 
+ERROR 20:09:59,374 - Greska na liniji 9 : ime noObj nije funkcija!
+ERROR 20:09:59,374 - Greska na liniji 9 : nekompatibilni tipovi u izrazu za sabiranje.
+ERROR 20:09:59,374 - Greska na liniji 9 :  nekompatibilni tipovi u dodeli vrednosti 
+INFO  20:09:59,374 - Print calls = 0
+ERROR 20:09:59,374 - Parsiranje NIJE uspesno zavrseno!

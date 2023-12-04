@@ -1,0 +1,263 @@
+
+
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+	boolean errorDetected;
+	
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	errorDetected = true;
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+
+
+:}
+
+init with {:
+	errorDetected = false;
+:}
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+terminal PROG, LBRACE, RBRACE, SEMI, LPAREN, RPAREN, EQUAL, RETURN, PLUS, COMMA, PRINT, VOID;
+terminal Integer NUMBER;
+terminal Character CHARCONST;
+terminal Boolean BOOLCONST;
+terminal String IDENT;
+terminal CONST;
+terminal LSQUAREBRACKET, READ, NEW, MUL, DIV, MINUS, MODULO, RSQUAREBRACKET, INCREMENT, DECREMENT;
+
+nonterminal VarDeclList, MethodDeclList, VarDecl;
+nonterminal FormPars, StatementList, FormalParamList, FormalParamDecl, Statement;
+nonterminal Addop, Mulop, ActualPars, ActualParamList;
+nonterminal ConstVarDeclList, ConstVarDecl, DeclList, CostVarInitList;
+nonterminal DesignatorStatement, DesignatorIncrement, DesignatorDecrement, DesignatorAssignment;
+nonterminal VarDeclaration, VarArrayDeclaration, VarMatrixDeclaration;
+nonterminal MultVarDecl, MultArrDecl, MultMatrixDecl;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, MethodDecl, MethodTypeName, Designator;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Factor, Expr, VarDeclInner, ConstType;
+
+Program ::= (Program) PROG ProgName:p VarDeclList LBRACE MethodDeclList RBRACE;
+
+ProgName ::= (ProgName) IDENT:progName;
+
+//definicija globalne promenljive – ignorisati karaktere do prvog znaka ";" ili sledećeg ","
+
+VarDeclList ::= (VarDeclarations) VarDeclList VarDecl
+			|
+			(ConstVarDeclarations) VarDeclList ConstVarDecl
+			|
+			(NoVarDecl) /* epsilon */
+			;
+
+VarDecl ::= (VarDecl1) VarDeclInner SEMI
+		|
+		(ErrorVarDecl1) error SEMI:s
+		{: parser.report_error("Izvrsen oporavak do ; u liniji " + sleft, null);  :}
+		;
+
+VarDeclInner ::= (MultipleVarDeclaration) VarDeclInner COMMA MultVarDecl
+        |
+        (MultipleArrDeclaration) VarDeclInner COMMA MultArrDecl
+        |
+        (MultipleMatrixDeclaration) VarDeclInner COMMA MultMatrixDecl
+        |
+		(VarDeclaration1) VarDeclaration
+		|
+		(VarArrayDeclaration1) VarArrayDeclaration
+		|
+		(VarMatrixDeclaration1) VarMatrixDeclaration
+		;	
+
+VarDeclaration ::= 	(VarDeclaration) Type:varType IDENT:varName;
+
+VarArrayDeclaration ::= (VarArrayDeclaration) Type:varType IDENT:varName LSQUAREBRACKET RSQUAREBRACKET;
+
+VarMatrixDeclaration ::= (VarMatrixDeclaration) Type:varType IDENT:varName LSQUAREBRACKET RSQUAREBRACKET LSQUAREBRACKET RSQUAREBRACKET;
+
+MultVarDecl ::= (MultVarDecl) IDENT:varName;
+
+MultArrDecl ::= (MultArrDecl) IDENT:varName LSQUAREBRACKET RSQUAREBRACKET;
+
+MultMatrixDecl ::= (MultMatrixDecl) IDENT:varName LSQUAREBRACKET RSQUAREBRACKET LSQUAREBRACKET RSQUAREBRACKET;
+
+
+
+ConstVarDecl ::= (ConstVarDecl) CONST CostVarInitList SEMI;
+
+CostVarInitList ::= (CostVarInitializations) CostVarInitList COMMA IDENT:constVarName EQUAL ConstType
+				|
+				(CostVarInitialization) Type:constVarType IDENT:constVarName EQUAL ConstType
+				;
+
+ConstType ::= (ConstNum) NUMBER 
+		|
+		(CharConst) CHARCONST
+		|
+		(ConstBool) BOOLCONST:b
+		;
+
+Type ::= (Type) IDENT:typeName;
+
+MethodDeclList ::= (MethodDeclarations) MethodDeclList MethodDecl
+				|
+				(NoMethodDecl) /* epsilon */
+				;
+				
+MethodDecl ::= (MethodDecl) MethodTypeName LPAREN FormPars RPAREN VarDeclList LBRACE StatementList RBRACE;
+
+MethodTypeName ::= (RetType) Type:retType IDENT:methName
+				|
+				(NoRetType) VOID IDENT:methName
+				;
+
+
+FormPars ::= (FormParams) FormalParamList
+		  |
+		  (NoFormParam) /* epsilon */
+		  ;
+		  
+FormalParamList ::= (FormalParamDecls) FormalParamList COMMA FormalParamDecl
+				|
+				(SingleFormalParamDecl) FormalParamDecl
+				;
+
+FormalParamDecl ::= (FormalVarDecl) Type:type IDENT
+				|
+				(FormalArrDecl) Type:type IDENT LSQUAREBRACKET RSQUAREBRACKET
+				|
+				(FormalMatrixDecl) Type:type IDENT LSQUAREBRACKET RSQUAREBRACKET LSQUAREBRACKET RSQUAREBRACKET
+				;
+
+
+StatementList ::= (Statements) StatementList Statement
+				|
+				(NoStmt) /* epsilon */
+				;
+
+
+Statement ::= (DesignatorStmt) DesignatorStatement SEMI
+		   |
+		   (ErrorStmt) error SEMI:l
+		   {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null);  :}
+		   |
+		   (PrintStmt) PRINT LPAREN Expr RPAREN SEMI
+		   |
+		   (PrintStmtParam) PRINT LPAREN Expr SEMI NUMBER:numConst RPAREN SEMI
+		   |
+		   (ReadStmt) READ LPAREN Designator:d RPAREN SEMI
+		   |
+		   (ReturnExpr) RETURN Expr:t SEMI
+		   |
+		   (ReturnNoExpr) RETURN SEMI
+		   |
+		   (ProcCall) Designator:func LPAREN ActualPars RPAREN SEMI
+			;
+		
+			
+Expr ::= (AddExpr) Expr:te Addop Term:t
+	 |
+	 (TermExpr) Term:t
+	 |
+	 (MinusTermExpr) MINUS Term:t
+	 ;
+
+
+Term ::= (MulTerm) Term:t Mulop Factor:f
+	|
+	(FactorTerm) Factor:f
+	;
+
+
+Factor ::= (Const) NUMBER:constNum
+		|
+		(CharConstF) CHARCONST:constChar
+		|
+		(BoolConstF) BOOLCONST:constBool
+		|
+		(ExprParen) LPAREN Expr:e RPAREN
+		|
+		(NewExprSingle) NEW Type:type LSQUAREBRACKET Expr:e RSQUAREBRACKET 
+		|
+		(NewExprMult) NEW Type:type LSQUAREBRACKET Expr:e1 RSQUAREBRACKET LSQUAREBRACKET Expr:e2 RSQUAREBRACKET
+		|
+		(Var) Designator:d
+		| 
+		(FuncCall) Designator:func LPAREN ActualPars RPAREN
+		;
+		
+ActualPars ::= (Actuals) ActualParamList
+			|
+			(NoActuals) /* epsilon */
+			;
+		
+ActualParamList ::= (ActualParams) ActualParamList COMMA Expr
+				|
+				(ActualParam) Expr
+				;
+				
+
+Designator ::= (DesignatorExpr) IDENT:name LSQUAREBRACKET Expr:e RSQUAREBRACKET
+			|
+			(DesignatorName) IDENT:name
+			;
+
+	
+DesignatorAssignment ::= (DesAsignment) Designator:d EQUAL Expr:e;
+
+DesignatorIncrement ::= (DesignatorIncrement) Designator:d INCREMENT;
+
+DesignatorDecrement ::= (DesignatorDecrement) Designator:d DECREMENT;
+	
+DesignatorStatement ::= (DesAsignment1) DesignatorAssignment
+					|
+					(DesIncrement1) DesignatorIncrement
+					|
+					(DesDecrement1) DesignatorDecrement
+					;
+					
+
+Addop ::= (Addop) PLUS
+		|
+		(MinusOp) MINUS
+		;
+		
+Mulop ::= (Mulop) MUL
+		|
+		(Divop) DIV
+		|
+		(Moduloop) MODULO;
+
+

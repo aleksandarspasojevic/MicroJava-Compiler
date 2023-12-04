@@ -1,0 +1,103 @@
+INFO  21:31:21,391 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test12.mj
+INFO  21:31:21,414 - #2 program
+INFO  21:31:21,414 - #17 test1
+INFO  21:31:21,414 - #17 int
+INFO  21:31:21,415 - #17 a
+INFO  21:31:21,416 - #11 ,
+INFO  21:31:21,416 - #17 b
+INFO  21:31:21,417 - #5 ;
+INFO  21:31:21,417 - #17 char
+INFO  21:31:21,418 - #17 a
+INFO  21:31:21,418 - #5 ;
+INFO  21:31:21,418 - #3 {
+INFO  21:31:21,418 - #13 void
+INFO  21:31:21,418 - #17 main
+INFO  21:31:21,418 - #6 (
+INFO  21:31:21,419 - #7 )
+INFO  21:31:21,419 - #3 {
+INFO  21:31:21,419 - #17 a
+INFO  21:31:21,420 - #8 =
+INFO  21:31:21,420 - #14 23
+INFO  21:31:21,420 - #5 ;
+INFO  21:31:21,421 - #4 }
+INFO  21:31:21,421 - #4 }
+INFO  21:31:21,422 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl1(
+        MultipleVarDeclaration(
+          VarDeclaration1(
+            VarDeclaration(
+              Type(
+               int
+              ) [Type]
+             a
+            ) [VarDeclaration]
+          ) [VarDeclaration1]
+          MultVarDecl(
+           b
+          ) [MultVarDecl]
+        ) [MultipleVarDeclaration]
+      ) [VarDecl1]
+    ) [VarDeclarations]
+    VarDecl1(
+      VarDeclaration1(
+        VarDeclaration(
+          Type(
+           char
+          ) [Type]
+         a
+        ) [VarDeclaration]
+      ) [VarDeclaration1]
+    ) [VarDecl1]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        DesignatorStmt(
+          DesAsignment1(
+            DesAsignment(
+              DesignatorName(
+               a
+              ) [DesignatorName]
+              TermExpr(
+                FactorTerm(
+                  Const(
+                   23
+                  ) [Const]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [DesAsignment]
+          ) [DesAsignment1]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:31:21,423 - ===================================
+INFO  21:31:21,427 - ===================================
+INFO  21:31:21,430 - Deklarisana promenljiva a na liniji 5
+INFO  21:31:21,430 - Deklarisana promenljiva b na liniji 5
+ERROR 21:31:21,430 - Greska na liniji 7 : ime a je vec deklarisano! 
+INFO  21:31:21,430 - Obradjuje se funkcija main na liniji 11
+INFO  21:31:21,430 - Globalna promenljiva a na liniji 14
+INFO  21:31:21,430 - Koriscenje simbolicke konstante 23 na liniji 14
+INFO  21:31:21,430 - Print calls = 0
+INFO  21:31:21,430 - ===================================
+ERROR 21:31:21,430 - Parsiranje NIJE uspesno zavrseno!

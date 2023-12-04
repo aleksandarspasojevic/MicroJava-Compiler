@@ -1,0 +1,83 @@
+INFO  14:40:19,604 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\Projekat3\workspace\MJCompiler\test\program.mj
+INFO  14:40:19,621 - #2 program
+INFO  14:40:19,621 - #19 test301
+INFO  14:40:19,621 - #19 int
+INFO  14:40:19,622 - #19 pet
+INFO  14:40:19,623 - #5 ;
+INFO  14:40:19,623 - #19 int
+INFO  14:40:19,623 - #19 sest
+INFO  14:40:19,624 - #5 ;
+INFO  14:40:19,624 - #3 {
+INFO  14:40:19,624 - #19 int
+INFO  14:40:19,624 - #19 main
+INFO  14:40:19,625 - #6 (
+INFO  14:40:19,626 - #7 )
+INFO  14:40:19,627 - #3 {
+INFO  14:40:19,627 - #9 return
+INFO  14:40:19,627 - #16 0
+INFO  14:40:19,627 - #5 ;
+INFO  14:40:19,628 - #4 }
+INFO  14:40:19,628 - #4 }
+INFO  14:40:19,629 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       pet
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     sest
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeName(
+        MethType(
+          Type(
+           int
+          ) [Type]
+        ) [MethType]
+       main
+      ) [MethodTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        ReturnExpr(
+          TermExpr(
+            FactorTerm(
+              ConstNum(
+               0
+              ) [ConstNum]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  14:40:19,630 - ===================================
+INFO  14:40:19,634 - PROSO Typ
+INFO  14:40:19,634 - Deklarisana promenljiva pet na liniji 5
+INFO  14:40:19,634 - PROSO Typ
+INFO  14:40:19,634 - Deklarisana promenljiva sest na liniji 6
+INFO  14:40:19,634 - PROSO Typ
+INFO  14:40:19,634 - PROSO meth
+INFO  14:40:19,634 - Obradjuje se funkcija main na liniji 9
+INFO  14:40:19,634 - Parsiranje uspesno zavrseno

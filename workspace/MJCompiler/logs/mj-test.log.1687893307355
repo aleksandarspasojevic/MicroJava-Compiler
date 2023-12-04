@@ -1,0 +1,74 @@
+INFO  21:14:28,096 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test3.mj
+INFO  21:14:28,118 - #2 program
+INFO  21:14:28,118 - #17 test1
+INFO  21:14:28,118 - #17 int
+INFO  21:14:28,119 - #17 matrix
+INFO  21:14:28,119 - #19 [
+INFO  21:14:28,119 - #26 ]
+INFO  21:14:28,119 - #19 [
+INFO  21:14:28,119 - #26 ]
+INFO  21:14:28,120 - #5 ;
+INFO  21:14:28,120 - #18 const
+INFO  21:14:28,120 - #17 int
+INFO  21:14:28,120 - #17 constMatrix
+INFO  21:14:28,120 - #19 [
+ERROR 21:14:28,120 - 
+Sintaksna greska na liniji 7
+INFO  21:14:28,121 - #26 ]
+INFO  21:14:28,121 - #19 [
+INFO  21:14:28,121 - #26 ]
+INFO  21:14:28,121 - #5 ;
+INFO  21:14:28,121 - #3 {
+INFO  21:14:28,121 - #13 void
+INFO  21:14:28,122 - #17 main
+ERROR 21:14:28,122 - Izvrsen oporavak do ; u liniji 7
+INFO  21:14:28,122 - #6 (
+INFO  21:14:28,123 - #7 )
+INFO  21:14:28,123 - #3 {
+INFO  21:14:28,123 - #4 }
+INFO  21:14:28,123 - #4 }
+INFO  21:14:28,124 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl1(
+        VarMatrixDeclaration1(
+          VarMatrixDeclaration(
+            Type(
+             int
+            ) [Type]
+           matrix
+          ) [VarMatrixDeclaration]
+        ) [VarMatrixDeclaration1]
+      ) [VarDecl1]
+    ) [VarDeclarations]
+    ErrorVarDecl1(
+    ) [ErrorVarDecl1]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:14:28,124 - ===================================
+INFO  21:14:28,128 - ===================================
+INFO  21:14:28,131 - Deklarisana matrica matrix na liniji 5
+INFO  21:14:28,131 - Obradjuje se funkcija main na liniji 10
+INFO  21:14:28,132 - Print calls = 0
+INFO  21:14:28,132 - ===================================
+ERROR 21:14:28,132 - Parsiranje NIJE uspesno zavrseno!

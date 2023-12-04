@@ -1,0 +1,104 @@
+INFO  21:34:58,195 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test15.mj
+INFO  21:34:58,219 - #2 program
+INFO  21:34:58,219 - #17 test1
+INFO  21:34:58,219 - #18 const
+INFO  21:34:58,219 - #17 int
+INFO  21:34:58,219 - #17 a
+INFO  21:34:58,221 - #8 =
+INFO  21:34:58,221 - #14 5
+INFO  21:34:58,221 - #11 ,
+INFO  21:34:58,221 - #17 b
+INFO  21:34:58,221 - #8 =
+INFO  21:34:58,221 - #14 6
+INFO  21:34:58,221 - #5 ;
+INFO  21:34:58,221 - #18 const
+INFO  21:34:58,222 - #17 char
+INFO  21:34:58,222 - #17 c
+INFO  21:34:58,222 - #8 =
+INFO  21:34:58,222 - #15 f
+INFO  21:34:58,222 - #5 ;
+INFO  21:34:58,222 - #3 {
+INFO  21:34:58,222 - #13 void
+INFO  21:34:58,223 - #17 fun
+INFO  21:34:58,223 - #6 (
+INFO  21:34:58,223 - #17 int
+INFO  21:34:58,223 - #17 a
+INFO  21:34:58,223 - #7 )
+INFO  21:34:58,224 - #3 {
+INFO  21:34:58,224 - #4 }
+INFO  21:34:58,224 - #4 }
+INFO  21:34:58,225 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  ConstVarDeclarations(
+    ConstVarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      ConstVarDecl(
+        CostVarInitializations(
+          CostVarInitialization(
+            Type(
+             int
+            ) [Type]
+           a
+            ConstNum(
+             5
+            ) [ConstNum]
+          ) [CostVarInitialization]
+         b
+          ConstNum(
+           6
+          ) [ConstNum]
+        ) [CostVarInitializations]
+      ) [ConstVarDecl]
+    ) [ConstVarDeclarations]
+    ConstVarDecl(
+      CostVarInitialization(
+        Type(
+         char
+        ) [Type]
+       c
+        CharConst(
+         f
+        ) [CharConst]
+      ) [CostVarInitialization]
+    ) [ConstVarDecl]
+  ) [ConstVarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       fun
+      ) [NoRetType]
+      FormParams(
+        SingleFormalParamDecl(
+          FormalVarDecl(
+            Type(
+             int
+            ) [Type]
+           a
+          ) [FormalVarDecl]
+        ) [SingleFormalParamDecl]
+      ) [FormParams]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:34:58,225 - ===================================
+INFO  21:34:58,228 - ===================================
+INFO  21:34:58,232 - Koriscenje simbolicke konstante 5 na liniji 5
+INFO  21:34:58,232 - Deklarisana konstantna promenljiva a na liniji 5
+INFO  21:34:58,232 - Koriscenje simbolicke konstante 6 na liniji 5
+INFO  21:34:58,232 - Deklarisana konstantna promenljiva b na liniji 5
+INFO  21:34:58,232 - Koriscenje simbolicke konstante f na liniji 7
+INFO  21:34:58,232 - Deklarisana konstantna promenljiva c na liniji 7
+INFO  21:34:58,232 - Obradjuje se funkcija fun na liniji 11
+ERROR 21:34:58,232 - Program MORA imati funkciju main! 
+INFO  21:34:58,232 - Print calls = 0
+INFO  21:34:58,232 - ===================================
+ERROR 21:34:58,233 - Parsiranje NIJE uspesno zavrseno!

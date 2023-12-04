@@ -1,0 +1,80 @@
+INFO  21:14:21,375 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test3.mj
+INFO  21:14:21,396 - #2 program
+INFO  21:14:21,397 - #17 test1
+INFO  21:14:21,397 - #17 int
+INFO  21:14:21,397 - #17 matrix
+INFO  21:14:21,398 - #19 [
+INFO  21:14:21,398 - #26 ]
+INFO  21:14:21,398 - #19 [
+INFO  21:14:21,398 - #26 ]
+INFO  21:14:21,398 - #5 ;
+INFO  21:14:21,399 - #17 int
+INFO  21:14:21,399 - #17 constMatrix
+INFO  21:14:21,399 - #19 [
+INFO  21:14:21,399 - #26 ]
+INFO  21:14:21,399 - #19 [
+INFO  21:14:21,399 - #26 ]
+INFO  21:14:21,399 - #5 ;
+INFO  21:14:21,399 - #3 {
+INFO  21:14:21,399 - #13 void
+INFO  21:14:21,400 - #17 main
+INFO  21:14:21,400 - #6 (
+INFO  21:14:21,400 - #7 )
+INFO  21:14:21,400 - #3 {
+INFO  21:14:21,400 - #4 }
+INFO  21:14:21,401 - #4 }
+INFO  21:14:21,402 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl1(
+        VarMatrixDeclaration1(
+          VarMatrixDeclaration(
+            Type(
+             int
+            ) [Type]
+           matrix
+          ) [VarMatrixDeclaration]
+        ) [VarMatrixDeclaration1]
+      ) [VarDecl1]
+    ) [VarDeclarations]
+    VarDecl1(
+      VarMatrixDeclaration1(
+        VarMatrixDeclaration(
+          Type(
+           int
+          ) [Type]
+         constMatrix
+        ) [VarMatrixDeclaration]
+      ) [VarMatrixDeclaration1]
+    ) [VarDecl1]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:14:21,402 - ===================================
+INFO  21:14:21,405 - ===================================
+INFO  21:14:21,409 - Deklarisana matrica matrix na liniji 5
+INFO  21:14:21,409 - Deklarisana matrica constMatrix na liniji 7
+INFO  21:14:21,409 - Obradjuje se funkcija main na liniji 10
+INFO  21:14:21,409 - Print calls = 0
+INFO  21:14:21,409 - ===================================
+INFO  21:14:21,410 - Generating bytecode file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\program.obj
+INFO  21:14:21,414 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,62 @@
+INFO  17:06:34,007 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\Projekat2\workspace\MJCompiler\test\program.mj
+INFO  17:06:34,024 - #2 program
+INFO  17:06:34,024 - #20 test301
+INFO  17:06:34,024 - #20 int
+INFO  17:06:34,025 - #20 pet
+INFO  17:06:34,025 - #5 ;
+INFO  17:06:34,025 - #3 {
+INFO  17:06:34,026 - #20 int
+INFO  17:06:34,026 - #20 main
+INFO  17:06:34,026 - #6 (
+INFO  17:06:34,026 - #7 )
+INFO  17:06:34,027 - #3 {
+INFO  17:06:34,027 - #13 print
+INFO  17:06:34,027 - #6 (
+INFO  17:06:34,027 - #17 2
+INFO  17:06:34,027 - #7 )
+INFO  17:06:34,028 - #5 ;
+INFO  17:06:34,028 - #4 }
+INFO  17:06:34,028 - #4 }
+INFO  17:06:34,030 - Program(
+ test301
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     pet
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        PrintStmtNoNumConst(
+          TermExpr(
+            FactorTerm(
+              ConstNum(
+               2
+              ) [ConstNum]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [PrintStmtNoNumConst]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  17:06:34,030 - ===================================
+INFO  17:06:34,032 -  Print count calls = 0
+INFO  17:06:34,032 -  Deklarisanih promenljivih ima = 1

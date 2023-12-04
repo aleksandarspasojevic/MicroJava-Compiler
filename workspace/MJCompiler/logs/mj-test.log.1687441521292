@@ -1,0 +1,94 @@
+INFO  15:45:08,507 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\PP1 projekat\PP1_2\workspace\MJCompiler\test\program.mj
+INFO  15:45:08,521 - #2 program
+INFO  15:45:08,521 - #15 MJProgram
+INFO  15:45:08,521 - #15 int
+INFO  15:45:08,522 - #15 x
+INFO  15:45:08,523 - #5 ;
+INFO  15:45:08,523 - #15 int
+INFO  15:45:08,524 - #15 y
+INFO  15:45:08,524 - #5 ;
+INFO  15:45:08,524 - #16 const
+INFO  15:45:08,524 - #15 int
+INFO  15:45:08,524 - #15 f
+INFO  15:45:08,524 - #8 =
+INFO  15:45:08,524 - #28 true
+INFO  15:45:08,524 - #11 ,
+INFO  15:45:08,525 - #15 g
+INFO  15:45:08,525 - #8 =
+INFO  15:45:08,525 - #14 5
+INFO  15:45:08,525 - #5 ;
+INFO  15:45:08,525 - #15 int
+INFO  15:45:08,526 - #15 matrica
+INFO  15:45:08,526 - #17 [
+INFO  15:45:08,534 - #24 ]
+INFO  15:45:08,534 - #17 [
+INFO  15:45:08,534 - #24 ]
+INFO  15:45:08,534 - #11 ,
+INFO  15:45:08,534 - #15 niz
+INFO  15:45:08,534 - #17 [
+INFO  15:45:08,534 - #24 ]
+INFO  15:45:08,535 - #11 ,
+INFO  15:45:08,535 - #15 promenljiva
+INFO  15:45:08,535 - #5 ;
+INFO  15:45:08,535 - #3 {
+INFO  15:45:08,535 - #15 int
+INFO  15:45:08,535 - #15 k
+INFO  15:45:08,536 - #6 (
+INFO  15:45:08,536 - #7 )
+INFO  15:45:08,536 - #15 int
+INFO  15:45:08,536 - #15 c
+INFO  15:45:08,537 - #5 ;
+INFO  15:45:08,537 - #3 {
+INFO  15:45:08,537 - #15 c
+INFO  15:45:08,537 - #8 =
+INFO  15:45:08,538 - #14 2
+INFO  15:45:08,538 - #5 ;
+INFO  15:45:08,538 - #9 return
+INFO  15:45:08,539 - #15 c
+INFO  15:45:08,539 - #10 +
+INFO  15:45:08,539 - #14 2
+INFO  15:45:08,539 - #5 ;
+INFO  15:45:08,539 - #4 }
+INFO  15:45:08,540 - #15 int
+INFO  15:45:08,540 - #15 main
+INFO  15:45:08,540 - #6 (
+INFO  15:45:08,540 - #7 )
+INFO  15:45:08,540 - #3 {
+INFO  15:45:08,540 - #12 print
+INFO  15:45:08,540 - #6 (
+INFO  15:45:08,540 - #14 1
+INFO  15:45:08,541 - #7 )
+INFO  15:45:08,541 - #5 ;
+INFO  15:45:08,541 - #15 x
+INFO  15:45:08,541 - #8 =
+INFO  15:45:08,541 - #15 y
+INFO  15:45:08,541 - #10 +
+INFO  15:45:08,541 - #14 5
+INFO  15:45:08,541 - #10 +
+INFO  15:45:08,541 - #14 3
+INFO  15:45:08,541 - #5 ;
+INFO  15:45:08,541 - #12 print
+INFO  15:45:08,541 - #6 (
+INFO  15:45:08,541 - #14 2
+INFO  15:45:08,541 - #7 )
+INFO  15:45:08,541 - #5 ;
+INFO  15:45:08,541 - #15 k
+INFO  15:45:08,542 - #6 (
+INFO  15:45:08,542 - #7 )
+INFO  15:45:08,542 - #5 ;
+INFO  15:45:08,542 - #9 return
+INFO  15:45:08,542 - #14 1
+INFO  15:45:08,542 - #5 ;
+INFO  15:45:08,542 - #4 }
+INFO  15:45:08,542 - #4 }
+INFO  15:45:08,546 - ===================================
+INFO  15:45:08,548 - Deklarisana promenljiva x na liniji 2
+INFO  15:45:08,548 - Deklarisana promenljiva y na liniji 2
+INFO  15:45:08,548 - Deklarisana promenljiva matrica na liniji 5
+INFO  15:45:08,548 - Obradjuje se funkcija k na liniji 10
+INFO  15:45:08,549 - Deklarisana promenljiva c na liniji 10
+INFO  15:45:08,549 - Obradjuje se funkcija main na liniji 15
+INFO  15:45:08,549 - Print calls = 2
+INFO  15:45:08,549 - ===================================
+INFO  15:45:08,549 - Generating bytecode file: C:\Users\aleks\OneDrive\Desktop\PP1 projekat\PP1_2\workspace\MJCompiler\test\program.obj
+INFO  15:45:08,549 - Parsiranje uspesno zavrseno!

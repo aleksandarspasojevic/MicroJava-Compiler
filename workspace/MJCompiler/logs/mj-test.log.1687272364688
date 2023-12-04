@@ -1,0 +1,35 @@
+INFO  16:45:50,132 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\test\workspace\MJCompiler\test\program.mj
+INFO  16:45:50,148 - #2 program
+INFO  16:45:50,148 - #20 test301
+INFO  16:45:50,148 - #3 {
+INFO  16:45:50,148 - #20 int
+INFO  16:45:50,149 - #20 main
+INFO  16:45:50,149 - #6 (
+INFO  16:45:50,150 - #7 )
+INFO  16:45:50,150 - #3 {
+INFO  16:45:50,150 - #4 }
+INFO  16:45:50,151 - #4 }
+INFO  16:45:50,152 - Program(
+ test301
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:45:50,153 - ===================================
+INFO  16:45:50,154 -  Print count calls = 0
+INFO  16:45:50,154 -  Deklarisanih promenljivih ima = 0

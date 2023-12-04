@@ -1,0 +1,89 @@
+INFO  11:43:20,381 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\Projekat3\workspace\MJCompiler\test\program.mj
+INFO  11:43:20,414 - #2 program
+INFO  11:43:20,414 - #20 test301
+INFO  11:43:20,414 - #20 int
+INFO  11:43:20,416 - #20 pet
+INFO  11:43:20,417 - #5 ;
+INFO  11:43:20,417 - #3 {
+INFO  11:43:20,419 - #20 int
+INFO  11:43:20,420 - #20 main
+INFO  11:43:20,422 - #6 (
+INFO  11:43:20,423 - #7 )
+INFO  11:43:20,423 - #3 {
+INFO  11:43:20,424 - #20 pet
+INFO  11:43:20,424 - #8 =
+INFO  11:43:20,424 - #17 5
+INFO  11:43:20,425 - #5 ;
+INFO  11:43:20,425 - #9 return
+INFO  11:43:20,425 - #17 0
+INFO  11:43:20,425 - #5 ;
+INFO  11:43:20,426 - #4 }
+INFO  11:43:20,426 - #4 }
+INFO  11:43:20,428 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     pet
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeName(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [MethodTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          DesignatorStmt(
+            DesignatorAssignment1(
+              DesignatorAssignment(
+                DesignatorName(
+                 pet
+                ) [DesignatorName]
+                TermExpr(
+                  FactorTerm(
+                    ConstNum(
+                     5
+                    ) [ConstNum]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [DesignatorAssignment]
+            ) [DesignatorAssignment1]
+          ) [DesignatorStmt]
+        ) [Statements]
+        ReturnExpr(
+          TermExpr(
+            FactorTerm(
+              ConstNum(
+               0
+              ) [ConstNum]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  11:43:20,428 - ===================================
+INFO  11:43:20,437 - Deklarisana promenljiva pet na liniji 5
+INFO  11:43:20,437 - Obradjuje se funkcija main na liniji 8
+INFO  11:43:20,437 -  Print count calls = 0
+INFO  11:43:20,437 -  Deklarisanih promenljivih ima = 1
+INFO  11:43:20,437 - Parsiranje uspesno zavrseno

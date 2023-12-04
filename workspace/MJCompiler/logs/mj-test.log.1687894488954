@@ -1,0 +1,50 @@
+INFO  21:34:00,588 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test14.mj
+INFO  21:34:00,609 - #2 program
+INFO  21:34:00,609 - #17 test1
+INFO  21:34:00,609 - #3 {
+INFO  21:34:00,610 - #13 void
+INFO  21:34:00,611 - #17 fun
+INFO  21:34:00,611 - #6 (
+INFO  21:34:00,611 - #17 int
+INFO  21:34:00,611 - #17 a
+INFO  21:34:00,612 - #7 )
+INFO  21:34:00,612 - #3 {
+INFO  21:34:00,612 - #4 }
+INFO  21:34:00,613 - #4 }
+INFO  21:34:00,614 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       fun
+      ) [NoRetType]
+      FormParams(
+        SingleFormalParamDecl(
+          FormalVarDecl(
+            Type(
+             int
+            ) [Type]
+           a
+          ) [FormalVarDecl]
+        ) [SingleFormalParamDecl]
+      ) [FormParams]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:34:00,622 - ===================================
+INFO  21:34:00,629 - ===================================
+INFO  21:34:00,633 - Obradjuje se funkcija fun na liniji 8
+ERROR 21:34:00,633 - Program MORA imati funkciju main! 
+INFO  21:34:00,633 - Print calls = 0
+INFO  21:34:00,633 - ===================================
+ERROR 21:34:00,634 - Parsiranje NIJE uspesno zavrseno!

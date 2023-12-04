@@ -1,0 +1,75 @@
+INFO  17:07:11,023 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\Projekat2\workspace\MJCompiler\test\program.mj
+INFO  17:07:11,038 - #2 program
+INFO  17:07:11,038 - #20 test301
+INFO  17:07:11,039 - #20 int
+INFO  17:07:11,039 - #20 pet
+INFO  17:07:11,039 - #5 ;
+INFO  17:07:11,040 - #20 int
+INFO  17:07:11,040 - #20 sest
+INFO  17:07:11,040 - #5 ;
+INFO  17:07:11,040 - #3 {
+INFO  17:07:11,040 - #20 int
+INFO  17:07:11,041 - #20 main
+INFO  17:07:11,041 - #6 (
+INFO  17:07:11,041 - #7 )
+INFO  17:07:11,041 - #3 {
+INFO  17:07:11,041 - #13 print
+INFO  17:07:11,042 - #6 (
+INFO  17:07:11,042 - #20 pet
+INFO  17:07:11,042 - #7 )
+INFO  17:07:11,043 - #5 ;
+INFO  17:07:11,043 - #4 }
+INFO  17:07:11,043 - #4 }
+INFO  17:07:11,045 - Program(
+ test301
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       pet
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     sest
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        PrintStmtNoNumConst(
+          TermExpr(
+            FactorTerm(
+              Var(
+                DesignatorName(
+                 pet
+                ) [DesignatorName]
+              ) [Var]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [PrintStmtNoNumConst]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  17:07:11,045 - ===================================
+INFO  17:07:11,045 -  Print count calls = 0
+INFO  17:07:11,045 -  Deklarisanih promenljivih ima = 2

@@ -1,0 +1,104 @@
+INFO  21:32:27,667 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test13.mj
+INFO  21:32:27,690 - #2 program
+INFO  21:32:27,690 - #17 test1
+INFO  21:32:27,690 - #17 int
+INFO  21:32:27,691 - #17 a
+INFO  21:32:27,691 - #11 ,
+INFO  21:32:27,692 - #17 b
+INFO  21:32:27,692 - #5 ;
+INFO  21:32:27,692 - #3 {
+INFO  21:32:27,693 - #13 void
+INFO  21:32:27,693 - #17 main
+INFO  21:32:27,693 - #6 (
+INFO  21:32:27,693 - #7 )
+INFO  21:32:27,693 - #17 int
+INFO  21:32:27,694 - #17 a
+INFO  21:32:27,694 - #5 ;
+INFO  21:32:27,694 - #3 {
+INFO  21:32:27,694 - #17 a
+INFO  21:32:27,694 - #8 =
+INFO  21:32:27,694 - #14 23
+INFO  21:32:27,694 - #5 ;
+INFO  21:32:27,695 - #4 }
+INFO  21:32:27,695 - #4 }
+INFO  21:32:27,704 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl1(
+      MultipleVarDeclaration(
+        VarDeclaration1(
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+           a
+          ) [VarDeclaration]
+        ) [VarDeclaration1]
+        MultVarDecl(
+         b
+        ) [MultVarDecl]
+      ) [MultipleVarDeclaration]
+    ) [VarDecl1]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDecl1(
+          VarDeclaration1(
+            VarDeclaration(
+              Type(
+               int
+              ) [Type]
+             a
+            ) [VarDeclaration]
+          ) [VarDeclaration1]
+        ) [VarDecl1]
+      ) [VarDeclarations]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        DesignatorStmt(
+          DesAsignment1(
+            DesAsignment(
+              DesignatorName(
+               a
+              ) [DesignatorName]
+              TermExpr(
+                FactorTerm(
+                  Const(
+                   23
+                  ) [Const]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [DesAsignment]
+          ) [DesAsignment1]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:32:27,704 - ===================================
+INFO  21:32:27,708 - ===================================
+INFO  21:32:27,713 - Deklarisana promenljiva a na liniji 5
+INFO  21:32:27,713 - Deklarisana promenljiva b na liniji 5
+INFO  21:32:27,713 - Obradjuje se funkcija main na liniji 10
+INFO  21:32:27,713 - Deklarisana promenljiva a na liniji 11
+INFO  21:32:27,713 - Lokalna promenljiva a na liniji 13
+INFO  21:32:27,713 - Koriscenje simbolicke konstante 23 na liniji 13
+INFO  21:32:27,713 - Print calls = 0
+INFO  21:32:27,713 - ===================================
+INFO  21:32:27,714 - Generating bytecode file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\program.obj
+INFO  21:32:27,717 - Parsiranje uspesno zavrseno!

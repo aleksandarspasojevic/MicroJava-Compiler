@@ -1,0 +1,248 @@
+INFO  21:25:55,866 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test9.mj
+INFO  21:25:55,890 - #2 program
+INFO  21:25:55,890 - #17 test1
+INFO  21:25:55,890 - #17 int
+INFO  21:25:55,892 - #17 matrica
+INFO  21:25:55,892 - #19 [
+INFO  21:25:55,892 - #26 ]
+INFO  21:25:55,892 - #19 [
+INFO  21:25:55,892 - #26 ]
+INFO  21:25:55,892 - #5 ;
+INFO  21:25:55,893 - #17 int
+INFO  21:25:55,893 - #17 c
+INFO  21:25:55,893 - #8 =
+ERROR 21:25:55,893 - 
+Sintaksna greska na liniji 7
+INFO  21:25:55,893 - #14 2
+INFO  21:25:55,893 - #5 ;
+INFO  21:25:55,893 - #3 {
+INFO  21:25:55,894 - #13 void
+INFO  21:25:55,894 - #17 main
+ERROR 21:25:55,894 - Izvrsen oporavak do ; u liniji 7
+INFO  21:25:55,895 - #6 (
+INFO  21:25:55,903 - #7 )
+INFO  21:25:55,903 - #17 int
+INFO  21:25:55,904 - #17 a
+INFO  21:25:55,904 - #11 ,
+INFO  21:25:55,904 - #17 b
+INFO  21:25:55,904 - #11 ,
+INFO  21:25:55,905 - #17 d
+INFO  21:25:55,905 - #5 ;
+INFO  21:25:55,905 - #3 {
+INFO  21:25:55,905 - #17 d
+INFO  21:25:55,905 - #8 =
+INFO  21:25:55,906 - #17 a
+INFO  21:25:55,906 - #10 +
+INFO  21:25:55,906 - #17 b
+INFO  21:25:55,907 - #23 /
+INFO  21:25:55,907 - #17 c
+INFO  21:25:55,908 - #10 +
+INFO  21:25:55,908 - #6 (
+INFO  21:25:55,908 - #6 (
+INFO  21:25:55,908 - #17 a
+INFO  21:25:55,908 - #10 +
+INFO  21:25:55,908 - #14 3
+INFO  21:25:55,908 - #25 %
+INFO  21:25:55,908 - #14 2
+INFO  21:25:55,908 - #24 -
+INFO  21:25:55,909 - #14 7
+INFO  21:25:55,909 - #7 )
+INFO  21:25:55,910 - #10 +
+INFO  21:25:55,910 - #14 5
+INFO  21:25:55,910 - #22 *
+INFO  21:25:55,910 - #17 d
+INFO  21:25:55,910 - #7 )
+INFO  21:25:55,910 - #5 ;
+INFO  21:25:55,911 - #4 }
+INFO  21:25:55,911 - #4 }
+INFO  21:25:55,913 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl1(
+        VarMatrixDeclaration1(
+          VarMatrixDeclaration(
+            Type(
+             int
+            ) [Type]
+           matrica
+          ) [VarMatrixDeclaration]
+        ) [VarMatrixDeclaration1]
+      ) [VarDecl1]
+    ) [VarDeclarations]
+    ErrorVarDecl1(
+    ) [ErrorVarDecl1]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDecl1(
+          MultipleVarDeclaration(
+            MultipleVarDeclaration(
+              VarDeclaration1(
+                VarDeclaration(
+                  Type(
+                   int
+                  ) [Type]
+                 a
+                ) [VarDeclaration]
+              ) [VarDeclaration1]
+              MultVarDecl(
+               b
+              ) [MultVarDecl]
+            ) [MultipleVarDeclaration]
+            MultVarDecl(
+             d
+            ) [MultVarDecl]
+          ) [MultipleVarDeclaration]
+        ) [VarDecl1]
+      ) [VarDeclarations]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        DesignatorStmt(
+          DesAsignment1(
+            DesAsignment(
+              DesignatorName(
+               d
+              ) [DesignatorName]
+              AddExpr(
+                AddExpr(
+                  TermExpr(
+                    FactorTerm(
+                      Var(
+                        DesignatorName(
+                         a
+                        ) [DesignatorName]
+                      ) [Var]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                  Addop1(
+                  ) [Addop1]
+                  MulTerm(
+                    FactorTerm(
+                      Var(
+                        DesignatorName(
+                         b
+                        ) [DesignatorName]
+                      ) [Var]
+                    ) [FactorTerm]
+                    Divop(
+                    ) [Divop]
+                    Var(
+                      DesignatorName(
+                       c
+                      ) [DesignatorName]
+                    ) [Var]
+                  ) [MulTerm]
+                ) [AddExpr]
+                Addop1(
+                ) [Addop1]
+                FactorTerm(
+                  ExprParen(
+                    AddExpr(
+                      TermExpr(
+                        FactorTerm(
+                          ExprParen(
+                            AddExpr(
+                              AddExpr(
+                                TermExpr(
+                                  FactorTerm(
+                                    Var(
+                                      DesignatorName(
+                                       a
+                                      ) [DesignatorName]
+                                    ) [Var]
+                                  ) [FactorTerm]
+                                ) [TermExpr]
+                                Addop1(
+                                ) [Addop1]
+                                MulTerm(
+                                  FactorTerm(
+                                    Const(
+                                     3
+                                    ) [Const]
+                                  ) [FactorTerm]
+                                  Moduloop(
+                                  ) [Moduloop]
+                                  Const(
+                                   2
+                                  ) [Const]
+                                ) [MulTerm]
+                              ) [AddExpr]
+                              MinusOp(
+                              ) [MinusOp]
+                              FactorTerm(
+                                Const(
+                                 7
+                                ) [Const]
+                              ) [FactorTerm]
+                            ) [AddExpr]
+                          ) [ExprParen]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                      Addop1(
+                      ) [Addop1]
+                      MulTerm(
+                        FactorTerm(
+                          Const(
+                           5
+                          ) [Const]
+                        ) [FactorTerm]
+                        Mulop1(
+                        ) [Mulop1]
+                        Var(
+                          DesignatorName(
+                           d
+                          ) [DesignatorName]
+                        ) [Var]
+                      ) [MulTerm]
+                    ) [AddExpr]
+                  ) [ExprParen]
+                ) [FactorTerm]
+              ) [AddExpr]
+            ) [DesAsignment]
+          ) [DesAsignment1]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:25:55,913 - ===================================
+INFO  21:25:55,917 - ===================================
+INFO  21:25:55,919 - Deklarisana matrica matrica na liniji 5
+INFO  21:25:55,919 - Obradjuje se funkcija main na liniji 12
+INFO  21:25:55,919 - Deklarisana promenljiva a na liniji 13
+INFO  21:25:55,919 - Deklarisana promenljiva b na liniji 13
+INFO  21:25:55,919 - Deklarisana promenljiva d na liniji 13
+INFO  21:25:55,920 - Lokalna promenljiva d na liniji 17
+INFO  21:25:55,920 - Lokalna promenljiva a na liniji 17
+INFO  21:25:55,920 - Lokalna promenljiva b na liniji 17
+ERROR 21:25:55,920 - Greska na liniji 17 : ime c nije deklarisano! 
+INFO  21:25:55,920 - Lokalna promenljiva c na liniji 17
+ERROR 21:25:55,920 - Greska na liniji 17 : nekompatibilni tipovi u izrazu aritmeticke operacije!
+ERROR 21:25:55,920 - Greska na liniji 17 : nekompatibilni tipovi u izrazu aritmeticke operacije!
+INFO  21:25:55,920 - Lokalna promenljiva a na liniji 17
+INFO  21:25:55,920 - Koriscenje simbolicke konstante 3 na liniji 17
+INFO  21:25:55,920 - Koriscenje simbolicke konstante 2 na liniji 17
+INFO  21:25:55,920 - Koriscenje simbolicke konstante 7 na liniji 17
+INFO  21:25:55,920 - Koriscenje simbolicke konstante 5 na liniji 17
+INFO  21:25:55,920 - Lokalna promenljiva d na liniji 17
+ERROR 21:25:55,920 - Greska na liniji 17 : nekompatibilni tipovi u izrazu aritmeticke operacije!
+ERROR 21:25:55,921 - Greska na liniji 17 : nekompatibilni tipovi u dodeli vrednosti! 
+INFO  21:25:55,921 - Print calls = 0
+INFO  21:25:55,921 - ===================================
+ERROR 21:25:55,921 - Parsiranje NIJE uspesno zavrseno!

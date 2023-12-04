@@ -1,0 +1,46 @@
+INFO  17:05:09,669 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\test\workspace\MJCompiler\test\program.mj
+INFO  17:05:09,686 - #2 program
+INFO  17:05:09,686 - #20 test301
+INFO  17:05:09,686 - #20 int
+INFO  17:05:09,686 - #20 pet
+INFO  17:05:09,687 - #5 ;
+INFO  17:05:09,687 - #3 {
+INFO  17:05:09,688 - #20 int
+INFO  17:05:09,688 - #20 main
+INFO  17:05:09,688 - #6 (
+INFO  17:05:09,689 - #7 )
+INFO  17:05:09,689 - #3 {
+INFO  17:05:09,689 - #4 }
+INFO  17:05:09,690 - #4 }
+INFO  17:05:09,691 - Program(
+ test301
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     pet
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  17:05:09,691 - ===================================
+INFO  17:05:09,693 -  Print count calls = 0
+INFO  17:05:09,693 -  Deklarisanih promenljivih ima = 1

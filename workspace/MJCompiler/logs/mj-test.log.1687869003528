@@ -1,0 +1,230 @@
+INFO  14:29:44,028 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\PP1 projekat\PP1_17\workspace\MJCompiler\test\program.mj
+INFO  14:29:44,050 - #2 program
+INFO  14:29:44,050 - #17 test301
+INFO  14:29:44,050 - #18 const
+INFO  14:29:44,051 - #17 int
+INFO  14:29:44,051 - #17 nula
+INFO  14:29:44,052 - #8 =
+INFO  14:29:44,052 - #14 0
+INFO  14:29:44,052 - #5 ;
+INFO  14:29:44,052 - #18 const
+INFO  14:29:44,053 - #17 int
+INFO  14:29:44,053 - #17 jedan
+INFO  14:29:44,053 - #8 =
+INFO  14:29:44,053 - #14 1
+INFO  14:29:44,053 - #5 ;
+INFO  14:29:44,053 - #18 const
+INFO  14:29:44,053 - #17 int
+INFO  14:29:44,053 - #17 pet
+INFO  14:29:44,053 - #8 =
+INFO  14:29:44,053 - #14 5
+INFO  14:29:44,054 - #5 ;
+INFO  14:29:44,054 - #17 int
+INFO  14:29:44,061 - #17 niz
+INFO  14:29:44,061 - #19 [
+INFO  14:29:44,061 - #26 ]
+INFO  14:29:44,061 - #11 ,
+INFO  14:29:44,062 - #17 niz2
+INFO  14:29:44,062 - #19 [
+INFO  14:29:44,062 - #26 ]
+INFO  14:29:44,062 - #11 ,
+INFO  14:29:44,063 - #17 a
+INFO  14:29:44,063 - #11 ,
+INFO  14:29:44,063 - #17 b
+INFO  14:29:44,063 - #5 ;
+INFO  14:29:44,063 - #17 char
+INFO  14:29:44,064 - #17 nizch
+INFO  14:29:44,064 - #19 [
+INFO  14:29:44,064 - #26 ]
+INFO  14:29:44,064 - #5 ;
+INFO  14:29:44,064 - #17 int
+INFO  14:29:44,064 - #17 mat
+INFO  14:29:44,064 - #19 [
+INFO  14:29:44,064 - #26 ]
+INFO  14:29:44,064 - #19 [
+INFO  14:29:44,064 - #26 ]
+INFO  14:29:44,064 - #5 ;
+INFO  14:29:44,065 - #3 {
+INFO  14:29:44,065 - #13 void
+INFO  14:29:44,066 - #17 main
+INFO  14:29:44,066 - #6 (
+INFO  14:29:44,066 - #7 )
+INFO  14:29:44,067 - #17 int
+INFO  14:29:44,067 - #17 bodovi
+INFO  14:29:44,067 - #5 ;
+INFO  14:29:44,068 - #17 bool
+INFO  14:29:44,068 - #17 bt
+INFO  14:29:44,068 - #5 ;
+INFO  14:29:44,068 - #3 {
+INFO  14:29:44,068 - #12 print
+INFO  14:29:44,069 - #6 (
+INFO  14:29:44,069 - #14 5
+INFO  14:29:44,069 - #7 )
+INFO  14:29:44,069 - #5 ;
+INFO  14:29:44,069 - #4 }
+INFO  14:29:44,069 - #4 }
+INFO  14:29:44,071 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      VarDeclarations(
+        ConstVarDeclarations(
+          ConstVarDeclarations(
+            ConstVarDeclarations(
+              NoVarDecl(
+              ) [NoVarDecl]
+              ConstVarDecl(
+                CostVarInitialization(
+                  Type(
+                   int
+                  ) [Type]
+                 nula
+                  ConstNum(
+                   0
+                  ) [ConstNum]
+                ) [CostVarInitialization]
+              ) [ConstVarDecl]
+            ) [ConstVarDeclarations]
+            ConstVarDecl(
+              CostVarInitialization(
+                Type(
+                 int
+                ) [Type]
+               jedan
+                ConstNum(
+                 1
+                ) [ConstNum]
+              ) [CostVarInitialization]
+            ) [ConstVarDecl]
+          ) [ConstVarDeclarations]
+          ConstVarDecl(
+            CostVarInitialization(
+              Type(
+               int
+              ) [Type]
+             pet
+              ConstNum(
+               5
+              ) [ConstNum]
+            ) [CostVarInitialization]
+          ) [ConstVarDecl]
+        ) [ConstVarDeclarations]
+        VarDecl1(
+          MultipleVarDeclaration(
+            MultipleVarDeclaration(
+              MultipleArrDeclaration(
+                VarArrayDeclaration1(
+                  VarArrayDeclaration(
+                    Type(
+                     int
+                    ) [Type]
+                   niz
+                  ) [VarArrayDeclaration]
+                ) [VarArrayDeclaration1]
+                MultArrDecl(
+                 niz2
+                ) [MultArrDecl]
+              ) [MultipleArrDeclaration]
+              MultVarDecl(
+               a
+              ) [MultVarDecl]
+            ) [MultipleVarDeclaration]
+            MultVarDecl(
+             b
+            ) [MultVarDecl]
+          ) [MultipleVarDeclaration]
+        ) [VarDecl1]
+      ) [VarDeclarations]
+      VarDecl1(
+        VarArrayDeclaration1(
+          VarArrayDeclaration(
+            Type(
+             char
+            ) [Type]
+           nizch
+          ) [VarArrayDeclaration]
+        ) [VarArrayDeclaration1]
+      ) [VarDecl1]
+    ) [VarDeclarations]
+    VarDecl1(
+      VarMatrixDeclaration1(
+        VarMatrixDeclaration(
+          Type(
+           int
+          ) [Type]
+         mat
+        ) [VarMatrixDeclaration]
+      ) [VarMatrixDeclaration1]
+    ) [VarDecl1]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl1(
+            VarDeclaration1(
+              VarDeclaration(
+                Type(
+                 int
+                ) [Type]
+               bodovi
+              ) [VarDeclaration]
+            ) [VarDeclaration1]
+          ) [VarDecl1]
+        ) [VarDeclarations]
+        VarDecl1(
+          VarDeclaration1(
+            VarDeclaration(
+              Type(
+               bool
+              ) [Type]
+             bt
+            ) [VarDeclaration]
+          ) [VarDeclaration1]
+        ) [VarDecl1]
+      ) [VarDeclarations]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        PrintStmt(
+          TermExpr(
+            FactorTerm(
+              Const(
+               5
+              ) [Const]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [PrintStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  14:29:44,071 - ===================================
+INFO  14:29:44,075 - ===================================
+INFO  14:29:44,077 - Deklarisana konstantna promenljiva nula na liniji 5
+INFO  14:29:44,078 - Deklarisana konstantna promenljiva jedan na liniji 6
+INFO  14:29:44,078 - Deklarisana konstantna promenljiva pet na liniji 7
+INFO  14:29:44,078 - Deklarisan niz niz na liniji 9
+INFO  14:29:44,078 - Deklarisan niz niz2 na liniji 9
+INFO  14:29:44,078 - Deklarisana promenljiva a na liniji 9
+INFO  14:29:44,078 - Deklarisana promenljiva b na liniji 9
+INFO  14:29:44,078 - Deklarisan niz nizch na liniji 10
+INFO  14:29:44,078 - Deklarisana matrica mat na liniji 11
+INFO  14:29:44,078 - Obradjuje se funkcija main na liniji 14
+INFO  14:29:44,078 - Deklarisana promenljiva bodovi na liniji 15
+INFO  14:29:44,078 - Deklarisana promenljiva bt na liniji 16
+INFO  14:29:44,078 - Print calls = 1
+INFO  14:29:44,078 - ===================================
+INFO  14:29:44,079 - Generating bytecode file: C:\Users\aleks\OneDrive\Desktop\PP1 projekat\PP1_17\workspace\MJCompiler\test\program.obj
+INFO  14:29:44,082 - Parsiranje uspesno zavrseno!

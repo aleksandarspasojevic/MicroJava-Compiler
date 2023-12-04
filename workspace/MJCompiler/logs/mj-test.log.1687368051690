@@ -1,0 +1,65 @@
+INFO  19:17:59,197 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\PP4\workspace\MJCompiler\test\program.mj
+INFO  19:17:59,215 - #2 program
+INFO  19:17:59,216 - #19 MJProgram
+INFO  19:17:59,216 - #19 int
+INFO  19:17:59,217 - #19 x
+INFO  19:17:59,217 - #5 ;
+INFO  19:17:59,217 - #19 int
+INFO  19:17:59,218 - #19 y
+INFO  19:17:59,218 - #5 ;
+INFO  19:17:59,218 - #3 {
+INFO  19:17:59,218 - #19 int
+INFO  19:17:59,219 - #19 k
+INFO  19:17:59,219 - #6 (
+INFO  19:17:59,220 - #7 )
+INFO  19:17:59,220 - #19 int
+INFO  19:17:59,220 - #19 c
+INFO  19:17:59,220 - #5 ;
+INFO  19:17:59,220 - #3 {
+INFO  19:17:59,220 - #19 c
+INFO  19:17:59,221 - #8 =
+INFO  19:17:59,221 - #16 1
+INFO  19:17:59,221 - #5 ;
+INFO  19:17:59,222 - #9 return
+INFO  19:17:59,222 - #19 c
+INFO  19:17:59,222 - #10 +
+INFO  19:17:59,222 - #16 2
+INFO  19:17:59,223 - #5 ;
+INFO  19:17:59,223 - #4 }
+INFO  19:17:59,223 - #19 int
+INFO  19:17:59,224 - #19 main
+INFO  19:17:59,224 - #6 (
+INFO  19:17:59,224 - #7 )
+INFO  19:17:59,224 - #3 {
+INFO  19:17:59,224 - #19 y
+INFO  19:17:59,224 - #8 =
+INFO  19:17:59,224 - #16 2
+INFO  19:17:59,224 - #5 ;
+INFO  19:17:59,225 - #19 x
+INFO  19:17:59,225 - #8 =
+INFO  19:17:59,225 - #19 y
+INFO  19:17:59,225 - #10 +
+INFO  19:17:59,225 - #16 2
+INFO  19:17:59,225 - #5 ;
+INFO  19:17:59,225 - #19 y
+INFO  19:17:59,225 - #8 =
+INFO  19:17:59,225 - #19 k
+INFO  19:17:59,225 - #6 (
+INFO  19:17:59,225 - #7 )
+INFO  19:17:59,226 - #10 +
+INFO  19:17:59,226 - #16 3
+INFO  19:17:59,226 - #5 ;
+INFO  19:17:59,226 - #13 print
+INFO  19:17:59,226 - #6 (
+INFO  19:17:59,226 - #19 y
+INFO  19:17:59,226 - #7 )
+INFO  19:17:59,226 - #5 ;
+INFO  19:17:59,227 - #9 return
+INFO  19:17:59,227 - #16 0
+INFO  19:17:59,227 - #5 ;
+INFO  19:17:59,227 - #4 }
+INFO  19:17:59,227 - #4 }
+INFO  19:17:59,233 - Deklarisana promenljiva x na liniji 2
+INFO  19:17:59,233 - Deklarisana promenljiva y na liniji 2
+INFO  19:17:59,233 - Obradjuje se funkcija k na liniji 5
+INFO  19:17:59,233 - Deklarisana promenljiva c na liniji 5

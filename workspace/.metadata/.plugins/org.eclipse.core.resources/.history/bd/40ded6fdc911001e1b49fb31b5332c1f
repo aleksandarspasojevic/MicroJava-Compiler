@@ -1,0 +1,12 @@
+package rs.ac.bg.etf.pp1;
+
+import rs.etf.pp1.symboltable.concepts.Struct;
+s
+public class MyStruct extends Struct {
+
+	public MyStruct(int kind) {
+		super(kind);
+		// TODO Auto-generated constructor stub
+	}
+
+}

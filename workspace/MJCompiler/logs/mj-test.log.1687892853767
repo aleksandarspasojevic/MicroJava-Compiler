@@ -1,0 +1,77 @@
+INFO  21:07:10,617 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test1.mj
+INFO  21:07:10,641 - #2 program
+INFO  21:07:10,641 - #17 test1
+INFO  21:07:10,642 - #17 int
+INFO  21:07:10,643 - #17 a
+INFO  21:07:10,643 - #11 ,
+INFO  21:07:10,644 - #17 b
+INFO  21:07:10,644 - #5 ;
+INFO  21:07:10,645 - #17 char
+INFO  21:07:10,645 - #17 c
+INFO  21:07:10,645 - #8 =
+ERROR 21:07:10,645 - 
+Sintaksna greska na liniji 5
+INFO  21:07:10,645 - #15 1
+INFO  21:07:10,645 - #11 ,
+INFO  21:07:10,646 - #17 d
+INFO  21:07:10,646 - #5 ;
+INFO  21:07:10,646 - #3 {
+INFO  21:07:10,646 - #13 void
+INFO  21:07:10,646 - #17 main
+ERROR 21:07:10,646 - Izvrsen oporavak do ; u liniji 5
+INFO  21:07:10,647 - #6 (
+INFO  21:07:10,656 - #7 )
+INFO  21:07:10,657 - #3 {
+INFO  21:07:10,657 - #4 }
+INFO  21:07:10,659 - #4 }
+INFO  21:07:10,662 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl1(
+        MultipleVarDeclaration(
+          VarDeclaration1(
+            VarDeclaration(
+              Type(
+               int
+              ) [Type]
+             a
+            ) [VarDeclaration]
+          ) [VarDeclaration1]
+          MultVarDecl(
+           b
+          ) [MultVarDecl]
+        ) [MultipleVarDeclaration]
+      ) [VarDecl1]
+    ) [VarDeclarations]
+    ErrorVarDecl1(
+    ) [ErrorVarDecl1]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:07:10,662 - ===================================
+INFO  21:07:10,670 - ===================================
+INFO  21:07:10,675 - Deklarisana promenljiva a na liniji 4
+INFO  21:07:10,675 - Deklarisana promenljiva b na liniji 4
+INFO  21:07:10,675 - Obradjuje se funkcija main na liniji 8
+INFO  21:07:10,675 - Print calls = 0
+INFO  21:07:10,675 - ===================================
+ERROR 21:07:10,675 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,23 @@
+// test17 --  Ako metoda nije tipa void, mora imati iskaz return unutar svog tela (uslov treba da se proverava u 
+//vreme izvršavanja programa)
+
+
+program test1	
+
+	int a, b, c;
+
+{
+	
+	int fun(){
+		
+	}
+	
+	void main(){
+	
+	}
+	
+	
+	
+}
+
+

@@ -1,0 +1,64 @@
+INFO  21:06:51,684 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test1.mj
+INFO  21:06:51,710 - #2 program
+INFO  21:06:51,711 - #17 test1
+INFO  21:06:51,711 - #17 int
+INFO  21:06:51,711 - #17 a
+INFO  21:06:51,712 - #11 ,
+INFO  21:06:51,712 - #17 b
+INFO  21:06:51,713 - #5 ;
+INFO  21:06:51,713 - #3 {
+INFO  21:06:51,713 - #13 void
+INFO  21:06:51,714 - #17 main
+INFO  21:06:51,714 - #6 (
+INFO  21:06:51,714 - #7 )
+INFO  21:06:51,714 - #3 {
+INFO  21:06:51,714 - #4 }
+INFO  21:06:51,715 - #4 }
+INFO  21:06:51,716 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl1(
+      MultipleVarDeclaration(
+        VarDeclaration1(
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+           a
+          ) [VarDeclaration]
+        ) [VarDeclaration1]
+        MultVarDecl(
+         b
+        ) [MultVarDecl]
+      ) [MultipleVarDeclaration]
+    ) [VarDecl1]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:06:51,716 - ===================================
+INFO  21:06:51,719 - ===================================
+INFO  21:06:51,723 - Deklarisana promenljiva a na liniji 4
+INFO  21:06:51,723 - Deklarisana promenljiva b na liniji 4
+INFO  21:06:51,723 - Obradjuje se funkcija main na liniji 7
+INFO  21:06:51,723 - Print calls = 0
+INFO  21:06:51,723 - ===================================
+INFO  21:06:51,723 - Generating bytecode file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\program.obj
+INFO  21:06:51,726 - Parsiranje uspesno zavrseno!

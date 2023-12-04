@@ -1,0 +1,19 @@
+// test12 -- deklarisanje vise puta u istom scope-u   greska
+
+program test1	
+
+	int a, b;	
+	
+	char a;
+
+{
+
+	void main()	
+	
+	{
+		a = 23;
+			
+	}
+}
+
+

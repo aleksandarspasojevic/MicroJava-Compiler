@@ -1,0 +1,240 @@
+INFO  21:25:34,164 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test9.mj
+INFO  21:25:34,186 - #2 program
+INFO  21:25:34,186 - #17 test1
+INFO  21:25:34,186 - #17 int
+INFO  21:25:34,188 - #17 matrica
+INFO  21:25:34,188 - #19 [
+INFO  21:25:34,188 - #26 ]
+INFO  21:25:34,188 - #19 [
+INFO  21:25:34,189 - #26 ]
+INFO  21:25:34,189 - #5 ;
+INFO  21:25:34,189 - #3 {
+INFO  21:25:34,190 - #13 void
+INFO  21:25:34,190 - #17 main
+INFO  21:25:34,190 - #6 (
+INFO  21:25:34,191 - #7 )
+INFO  21:25:34,191 - #17 int
+INFO  21:25:34,191 - #17 a
+INFO  21:25:34,191 - #11 ,
+INFO  21:25:34,192 - #17 b
+INFO  21:25:34,192 - #11 ,
+INFO  21:25:34,192 - #17 c
+INFO  21:25:34,192 - #11 ,
+INFO  21:25:34,193 - #17 d
+INFO  21:25:34,193 - #5 ;
+INFO  21:25:34,193 - #3 {
+INFO  21:25:34,193 - #17 d
+INFO  21:25:34,193 - #8 =
+INFO  21:25:34,193 - #17 a
+INFO  21:25:34,193 - #10 +
+INFO  21:25:34,193 - #17 b
+INFO  21:25:34,194 - #23 /
+INFO  21:25:34,194 - #17 c
+INFO  21:25:34,195 - #10 +
+INFO  21:25:34,195 - #6 (
+INFO  21:25:34,195 - #6 (
+INFO  21:25:34,195 - #17 a
+INFO  21:25:34,195 - #10 +
+INFO  21:25:34,195 - #14 3
+INFO  21:25:34,195 - #25 %
+INFO  21:25:34,195 - #14 2
+INFO  21:25:34,195 - #24 -
+INFO  21:25:34,196 - #14 7
+INFO  21:25:34,196 - #7 )
+INFO  21:25:34,196 - #10 +
+INFO  21:25:34,196 - #14 5
+INFO  21:25:34,196 - #22 *
+INFO  21:25:34,196 - #17 d
+INFO  21:25:34,197 - #7 )
+INFO  21:25:34,197 - #5 ;
+INFO  21:25:34,197 - #4 }
+INFO  21:25:34,197 - #4 }
+INFO  21:25:34,199 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl1(
+      VarMatrixDeclaration1(
+        VarMatrixDeclaration(
+          Type(
+           int
+          ) [Type]
+         matrica
+        ) [VarMatrixDeclaration]
+      ) [VarMatrixDeclaration1]
+    ) [VarDecl1]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDecl1(
+          MultipleVarDeclaration(
+            MultipleVarDeclaration(
+              MultipleVarDeclaration(
+                VarDeclaration1(
+                  VarDeclaration(
+                    Type(
+                     int
+                    ) [Type]
+                   a
+                  ) [VarDeclaration]
+                ) [VarDeclaration1]
+                MultVarDecl(
+                 b
+                ) [MultVarDecl]
+              ) [MultipleVarDeclaration]
+              MultVarDecl(
+               c
+              ) [MultVarDecl]
+            ) [MultipleVarDeclaration]
+            MultVarDecl(
+             d
+            ) [MultVarDecl]
+          ) [MultipleVarDeclaration]
+        ) [VarDecl1]
+      ) [VarDeclarations]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        DesignatorStmt(
+          DesAsignment1(
+            DesAsignment(
+              DesignatorName(
+               d
+              ) [DesignatorName]
+              AddExpr(
+                AddExpr(
+                  TermExpr(
+                    FactorTerm(
+                      Var(
+                        DesignatorName(
+                         a
+                        ) [DesignatorName]
+                      ) [Var]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                  Addop1(
+                  ) [Addop1]
+                  MulTerm(
+                    FactorTerm(
+                      Var(
+                        DesignatorName(
+                         b
+                        ) [DesignatorName]
+                      ) [Var]
+                    ) [FactorTerm]
+                    Divop(
+                    ) [Divop]
+                    Var(
+                      DesignatorName(
+                       c
+                      ) [DesignatorName]
+                    ) [Var]
+                  ) [MulTerm]
+                ) [AddExpr]
+                Addop1(
+                ) [Addop1]
+                FactorTerm(
+                  ExprParen(
+                    AddExpr(
+                      TermExpr(
+                        FactorTerm(
+                          ExprParen(
+                            AddExpr(
+                              AddExpr(
+                                TermExpr(
+                                  FactorTerm(
+                                    Var(
+                                      DesignatorName(
+                                       a
+                                      ) [DesignatorName]
+                                    ) [Var]
+                                  ) [FactorTerm]
+                                ) [TermExpr]
+                                Addop1(
+                                ) [Addop1]
+                                MulTerm(
+                                  FactorTerm(
+                                    Const(
+                                     3
+                                    ) [Const]
+                                  ) [FactorTerm]
+                                  Moduloop(
+                                  ) [Moduloop]
+                                  Const(
+                                   2
+                                  ) [Const]
+                                ) [MulTerm]
+                              ) [AddExpr]
+                              MinusOp(
+                              ) [MinusOp]
+                              FactorTerm(
+                                Const(
+                                 7
+                                ) [Const]
+                              ) [FactorTerm]
+                            ) [AddExpr]
+                          ) [ExprParen]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                      Addop1(
+                      ) [Addop1]
+                      MulTerm(
+                        FactorTerm(
+                          Const(
+                           5
+                          ) [Const]
+                        ) [FactorTerm]
+                        Mulop1(
+                        ) [Mulop1]
+                        Var(
+                          DesignatorName(
+                           d
+                          ) [DesignatorName]
+                        ) [Var]
+                      ) [MulTerm]
+                    ) [AddExpr]
+                  ) [ExprParen]
+                ) [FactorTerm]
+              ) [AddExpr]
+            ) [DesAsignment]
+          ) [DesAsignment1]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:25:34,200 - ===================================
+INFO  21:25:34,204 - ===================================
+INFO  21:25:34,206 - Deklarisana matrica matrica na liniji 5
+INFO  21:25:34,206 - Obradjuje se funkcija main na liniji 10
+INFO  21:25:34,206 - Deklarisana promenljiva a na liniji 11
+INFO  21:25:34,206 - Deklarisana promenljiva b na liniji 11
+INFO  21:25:34,206 - Deklarisana promenljiva c na liniji 11
+INFO  21:25:34,206 - Deklarisana promenljiva d na liniji 11
+INFO  21:25:34,206 - Lokalna promenljiva d na liniji 15
+INFO  21:25:34,206 - Lokalna promenljiva a na liniji 15
+INFO  21:25:34,206 - Lokalna promenljiva b na liniji 15
+INFO  21:25:34,207 - Lokalna promenljiva c na liniji 15
+INFO  21:25:34,207 - Lokalna promenljiva a na liniji 15
+INFO  21:25:34,207 - Koriscenje simbolicke konstante 3 na liniji 15
+INFO  21:25:34,207 - Koriscenje simbolicke konstante 2 na liniji 15
+INFO  21:25:34,207 - Koriscenje simbolicke konstante 7 na liniji 15
+INFO  21:25:34,207 - Koriscenje simbolicke konstante 5 na liniji 15
+INFO  21:25:34,207 - Lokalna promenljiva d na liniji 15
+INFO  21:25:34,207 - Print calls = 0
+INFO  21:25:34,207 - ===================================
+INFO  21:25:34,207 - Generating bytecode file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\program.obj
+INFO  21:25:34,211 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,118 @@
+INFO  21:35:41,211 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test15.mj
+INFO  21:35:41,234 - #2 program
+INFO  21:35:41,234 - #17 test1
+INFO  21:35:41,234 - #18 const
+INFO  21:35:41,235 - #17 int
+INFO  21:35:41,235 - #17 a
+INFO  21:35:41,235 - #8 =
+INFO  21:35:41,235 - #14 5
+INFO  21:35:41,235 - #11 ,
+INFO  21:35:41,236 - #17 b
+INFO  21:35:41,236 - #8 =
+INFO  21:35:41,236 - #14 6
+INFO  21:35:41,236 - #5 ;
+INFO  21:35:41,236 - #18 const
+INFO  21:35:41,236 - #17 char
+INFO  21:35:41,237 - #17 c
+INFO  21:35:41,237 - #8 =
+INFO  21:35:41,237 - #15 f
+INFO  21:35:41,237 - #11 ,
+INFO  21:35:41,237 - #17 d
+INFO  21:35:41,237 - #8 =
+INFO  21:35:41,237 - #14 4
+INFO  21:35:41,237 - #11 ,
+INFO  21:35:41,245 - #17 g
+INFO  21:35:41,245 - #8 =
+INFO  21:35:41,245 - #15 4
+INFO  21:35:41,245 - #5 ;
+INFO  21:35:41,245 - #3 {
+INFO  21:35:41,245 - #13 void
+INFO  21:35:41,246 - #17 main
+INFO  21:35:41,246 - #6 (
+INFO  21:35:41,246 - #7 )
+INFO  21:35:41,246 - #3 {
+INFO  21:35:41,246 - #4 }
+INFO  21:35:41,247 - #4 }
+INFO  21:35:41,248 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  ConstVarDeclarations(
+    ConstVarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      ConstVarDecl(
+        CostVarInitializations(
+          CostVarInitialization(
+            Type(
+             int
+            ) [Type]
+           a
+            ConstNum(
+             5
+            ) [ConstNum]
+          ) [CostVarInitialization]
+         b
+          ConstNum(
+           6
+          ) [ConstNum]
+        ) [CostVarInitializations]
+      ) [ConstVarDecl]
+    ) [ConstVarDeclarations]
+    ConstVarDecl(
+      CostVarInitializations(
+        CostVarInitializations(
+          CostVarInitialization(
+            Type(
+             char
+            ) [Type]
+           c
+            CharConst(
+             f
+            ) [CharConst]
+          ) [CostVarInitialization]
+         d
+          ConstNum(
+           4
+          ) [ConstNum]
+        ) [CostVarInitializations]
+       g
+        CharConst(
+         4
+        ) [CharConst]
+      ) [CostVarInitializations]
+    ) [ConstVarDecl]
+  ) [ConstVarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:35:41,248 - ===================================
+INFO  21:35:41,251 - ===================================
+INFO  21:35:41,254 - Koriscenje simbolicke konstante 5 na liniji 5
+INFO  21:35:41,254 - Deklarisana konstantna promenljiva a na liniji 5
+INFO  21:35:41,255 - Koriscenje simbolicke konstante 6 na liniji 5
+INFO  21:35:41,255 - Deklarisana konstantna promenljiva b na liniji 5
+INFO  21:35:41,255 - Koriscenje simbolicke konstante f na liniji 7
+INFO  21:35:41,255 - Deklarisana konstantna promenljiva c na liniji 7
+INFO  21:35:41,255 - Koriscenje simbolicke konstante 4 na liniji 7
+ERROR 21:35:41,255 - Greska na liniji 7 : nekompatibilni tipovi u dodeli vrednosti! 
+INFO  21:35:41,255 - Deklarisana konstantna promenljiva d na liniji 7
+INFO  21:35:41,255 - Koriscenje simbolicke konstante 4 na liniji 7
+INFO  21:35:41,255 - Deklarisana konstantna promenljiva g na liniji 7
+INFO  21:35:41,255 - Obradjuje se funkcija main na liniji 12
+INFO  21:35:41,256 - Print calls = 0
+INFO  21:35:41,256 - ===================================
+ERROR 21:35:41,256 - Parsiranje NIJE uspesno zavrseno!

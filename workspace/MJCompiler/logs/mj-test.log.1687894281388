@@ -1,0 +1,65 @@
+INFO  21:29:08,775 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test11.mj
+INFO  21:29:08,798 - #2 program
+INFO  21:29:08,798 - #17 test1
+INFO  21:29:08,798 - #3 {
+INFO  21:29:08,799 - #13 void
+INFO  21:29:08,800 - #17 main
+INFO  21:29:08,800 - #6 (
+INFO  21:29:08,800 - #7 )
+INFO  21:29:08,800 - #3 {
+INFO  21:29:08,801 - #17 a
+INFO  21:29:08,801 - #8 =
+INFO  21:29:08,801 - #14 23
+INFO  21:29:08,801 - #5 ;
+INFO  21:29:08,802 - #4 }
+INFO  21:29:08,802 - #4 }
+INFO  21:29:08,803 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        DesignatorStmt(
+          DesAsignment1(
+            DesAsignment(
+              DesignatorName(
+               a
+              ) [DesignatorName]
+              TermExpr(
+                FactorTerm(
+                  Const(
+                   23
+                  ) [Const]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [DesAsignment]
+          ) [DesAsignment1]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:29:08,804 - ===================================
+INFO  21:29:08,807 - ===================================
+INFO  21:29:08,811 - Obradjuje se funkcija main na liniji 8
+ERROR 21:29:08,811 - Greska na liniji 11 : ime a nije deklarisano! 
+INFO  21:29:08,811 - Lokalna promenljiva a na liniji 11
+INFO  21:29:08,811 - Koriscenje simbolicke konstante 23 na liniji 11
+ERROR 21:29:08,812 - Greska na liniji 11 : nekompatibilni tipovi u dodeli vrednosti! 
+INFO  21:29:08,812 - Print calls = 0
+INFO  21:29:08,812 - ===================================
+ERROR 21:29:08,812 - Parsiranje NIJE uspesno zavrseno!

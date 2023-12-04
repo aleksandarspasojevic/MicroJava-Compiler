@@ -1,0 +1,94 @@
+INFO  21:35:26,557 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test15.mj
+INFO  21:35:26,579 - #2 program
+INFO  21:35:26,579 - #17 test1
+INFO  21:35:26,579 - #18 const
+INFO  21:35:26,580 - #17 int
+INFO  21:35:26,580 - #17 a
+INFO  21:35:26,580 - #8 =
+INFO  21:35:26,580 - #14 5
+INFO  21:35:26,580 - #11 ,
+INFO  21:35:26,581 - #17 b
+INFO  21:35:26,581 - #8 =
+INFO  21:35:26,581 - #14 6
+INFO  21:35:26,581 - #5 ;
+INFO  21:35:26,581 - #18 const
+INFO  21:35:26,581 - #17 char
+INFO  21:35:26,581 - #17 c
+INFO  21:35:26,581 - #8 =
+INFO  21:35:26,581 - #15 f
+INFO  21:35:26,582 - #5 ;
+INFO  21:35:26,582 - #3 {
+INFO  21:35:26,582 - #13 void
+INFO  21:35:26,582 - #17 main
+INFO  21:35:26,582 - #6 (
+INFO  21:35:26,582 - #7 )
+INFO  21:35:26,583 - #3 {
+INFO  21:35:26,583 - #4 }
+INFO  21:35:26,583 - #4 }
+INFO  21:35:26,585 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  ConstVarDeclarations(
+    ConstVarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      ConstVarDecl(
+        CostVarInitializations(
+          CostVarInitialization(
+            Type(
+             int
+            ) [Type]
+           a
+            ConstNum(
+             5
+            ) [ConstNum]
+          ) [CostVarInitialization]
+         b
+          ConstNum(
+           6
+          ) [ConstNum]
+        ) [CostVarInitializations]
+      ) [ConstVarDecl]
+    ) [ConstVarDeclarations]
+    ConstVarDecl(
+      CostVarInitialization(
+        Type(
+         char
+        ) [Type]
+       c
+        CharConst(
+         f
+        ) [CharConst]
+      ) [CostVarInitialization]
+    ) [ConstVarDecl]
+  ) [ConstVarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:35:26,585 - ===================================
+INFO  21:35:26,588 - ===================================
+INFO  21:35:26,591 - Koriscenje simbolicke konstante 5 na liniji 5
+INFO  21:35:26,591 - Deklarisana konstantna promenljiva a na liniji 5
+INFO  21:35:26,591 - Koriscenje simbolicke konstante 6 na liniji 5
+INFO  21:35:26,591 - Deklarisana konstantna promenljiva b na liniji 5
+INFO  21:35:26,591 - Koriscenje simbolicke konstante f na liniji 7
+INFO  21:35:26,591 - Deklarisana konstantna promenljiva c na liniji 7
+INFO  21:35:26,591 - Obradjuje se funkcija main na liniji 12
+INFO  21:35:26,591 - Print calls = 0
+INFO  21:35:26,592 - ===================================
+INFO  21:35:26,592 - Generating bytecode file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\program.obj
+INFO  21:35:26,595 - Parsiranje uspesno zavrseno!

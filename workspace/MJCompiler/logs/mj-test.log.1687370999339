@@ -1,0 +1,63 @@
+INFO  19:52:30,278 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\PP4\workspace\MJCompiler\test\program.mj
+INFO  19:52:30,296 - #2 program
+INFO  19:52:30,296 - #19 MJProgram
+INFO  19:52:30,296 - #19 int
+INFO  19:52:30,297 - #19 x
+INFO  19:52:30,298 - #5 ;
+INFO  19:52:30,298 - #19 int
+INFO  19:52:30,299 - #19 y
+INFO  19:52:30,299 - #5 ;
+INFO  19:52:30,299 - #3 {
+INFO  19:52:30,299 - #19 int
+INFO  19:52:30,300 - #19 k
+INFO  19:52:30,301 - #6 (
+INFO  19:52:30,301 - #7 )
+INFO  19:52:30,302 - #3 {
+INFO  19:52:30,302 - #9 return
+INFO  19:52:30,303 - #16 3
+INFO  19:52:30,304 - #5 ;
+INFO  19:52:30,304 - #4 }
+INFO  19:52:30,304 - #19 int
+INFO  19:52:30,305 - #19 main
+INFO  19:52:30,305 - #6 (
+INFO  19:52:30,305 - #7 )
+INFO  19:52:30,305 - #3 {
+INFO  19:52:30,305 - #19 y
+INFO  19:52:30,306 - #8 =
+INFO  19:52:30,306 - #16 2
+INFO  19:52:30,306 - #5 ;
+INFO  19:52:30,306 - #19 x
+INFO  19:52:30,306 - #8 =
+INFO  19:52:30,306 - #19 y
+INFO  19:52:30,306 - #10 +
+INFO  19:52:30,306 - #16 2
+INFO  19:52:30,307 - #5 ;
+INFO  19:52:30,307 - #19 y
+INFO  19:52:30,307 - #8 =
+INFO  19:52:30,307 - #19 k
+INFO  19:52:30,307 - #6 (
+INFO  19:52:30,307 - #7 )
+INFO  19:52:30,308 - #10 +
+INFO  19:52:30,308 - #16 3
+INFO  19:52:30,308 - #5 ;
+INFO  19:52:30,308 - #13 print
+INFO  19:52:30,308 - #6 (
+INFO  19:52:30,308 - #19 y
+INFO  19:52:30,308 - #7 )
+INFO  19:52:30,308 - #5 ;
+INFO  19:52:30,308 - #9 return
+INFO  19:52:30,308 - #16 0
+INFO  19:52:30,308 - #5 ;
+INFO  19:52:30,308 - #4 }
+INFO  19:52:30,309 - #4 }
+INFO  19:52:30,314 - Deklarisana promenljiva x na liniji 2
+INFO  19:52:30,315 - Deklarisana promenljiva y na liniji 2
+INFO  19:52:30,315 - Obradjuje se funkcija k na liniji 5
+ERROR 19:52:30,315 - Greska: Ime int ne predstavlja tip  na liniji 10
+INFO  19:52:30,315 - Obradjuje se funkcija main na liniji 10
+ERROR 19:52:30,315 - Greska na liniji 13 : ime k nije deklarisano! 
+ERROR 19:52:30,315 - Greska na liniji 13 : ime noObj nije funkcija!
+ERROR 19:52:30,315 - Greska na liniji 13 : nekompatibilni tipovi u izrazu za sabiranje.
+ERROR 19:52:30,315 - Greska na liniji 13 :  nekompatibilni tipovi u dodeli vrednosti 
+INFO  19:52:30,316 - Print calls = 0
+ERROR 19:52:30,316 - Parsiranje NIJE uspesno zavrseno!

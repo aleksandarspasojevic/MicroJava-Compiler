@@ -1,0 +1,80 @@
+INFO  14:07:22,399 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\Projekat3\workspace\MJCompiler\test\program.mj
+INFO  14:07:22,419 - #2 program
+INFO  14:07:22,420 - #20 test301
+INFO  14:07:22,420 - #20 int
+INFO  14:07:22,420 - #20 pet
+INFO  14:07:22,421 - #5 ;
+INFO  14:07:22,421 - #20 int
+INFO  14:07:22,422 - #20 sest
+INFO  14:07:22,422 - #5 ;
+INFO  14:07:22,422 - #3 {
+INFO  14:07:22,422 - #20 int
+INFO  14:07:22,424 - #20 main
+INFO  14:07:22,425 - #6 (
+INFO  14:07:22,426 - #7 )
+INFO  14:07:22,426 - #3 {
+INFO  14:07:22,426 - #9 return
+INFO  14:07:22,426 - #17 0
+INFO  14:07:22,426 - #5 ;
+INFO  14:07:22,427 - #4 }
+INFO  14:07:22,427 - #4 }
+INFO  14:07:22,429 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       pet
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     sest
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeName(
+        MethType(
+          Type(
+           int
+          ) [Type]
+        ) [MethType]
+       main
+      ) [MethodTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        ReturnExpr(
+          TermExpr(
+            FactorTerm(
+              ConstNum(
+               0
+              ) [ConstNum]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  14:07:22,429 - ===================================
+INFO  14:07:22,434 - Deklarisana promenljiva pet na liniji 5
+INFO  14:07:22,434 - Deklarisana promenljiva sest na liniji 6
+INFO  14:07:22,434 - rs.etf.pp1.symboltable.concepts.Obj@588df31b
+INFO  14:07:22,434 - Obradjuje se funkcija main na liniji 9
+INFO  14:07:22,435 - Parsiranje uspesno zavrseno

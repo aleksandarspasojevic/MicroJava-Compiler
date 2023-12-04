@@ -1,0 +1,28 @@
+// test18 --  DesignatorStatement = Designator ("++" | "--") ";".
+//• Designator mora označavati promenljivu, element niza ili polje objekta unutrašnje klase.
+//• Designator mora biti tipa int
+
+program test1	
+
+	int a, b, c;
+	
+	char d;
+
+{
+	
+	int fun(){
+		
+		return 2;
+	}
+	
+	void main(){
+		
+		d++;
+		
+	}
+	
+	
+	
+}
+
+

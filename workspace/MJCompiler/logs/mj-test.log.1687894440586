@@ -1,0 +1,45 @@
+INFO  21:33:13,771 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test14.mj
+INFO  21:33:13,792 - #2 program
+INFO  21:33:13,792 - #17 test1
+INFO  21:33:13,792 - #3 {
+INFO  21:33:13,794 - #17 int
+INFO  21:33:13,794 - #17 main
+INFO  21:33:13,795 - #6 (
+INFO  21:33:13,795 - #7 )
+INFO  21:33:13,796 - #3 {
+INFO  21:33:13,796 - #4 }
+INFO  21:33:13,796 - #4 }
+INFO  21:33:13,798 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      RetType(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [RetType]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:33:13,806 - ===================================
+INFO  21:33:13,808 - ===================================
+INFO  21:33:13,811 - Obradjuje se funkcija main na liniji 9
+ERROR 21:33:13,811 - Semanticka greska na liniji 9: funkcija main mora biti tipa void!
+ERROR 21:33:13,811 - Semanticka greska na liniji 9: funkcija main nema return iskaz!
+ERROR 21:33:13,811 - Program MORA imati funkciju main! 
+INFO  21:33:13,811 - Print calls = 0
+INFO  21:33:13,811 - ===================================
+ERROR 21:33:13,811 - Parsiranje NIJE uspesno zavrseno!

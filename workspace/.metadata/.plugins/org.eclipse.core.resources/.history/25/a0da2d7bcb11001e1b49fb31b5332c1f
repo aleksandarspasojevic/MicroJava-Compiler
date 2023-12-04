@@ -1,0 +1,13 @@
+package rs.ac.bg.etf.pp1;
+
+import rs.etf.pp1.symboltable.Tab;
+import rs.etf.pp1.symboltable.concepts.Struct;
+
+public class MyTab extends Tab {
+
+	//added standard type bool
+	public static final Struct boolType = new MyStruct(MyStruct.Bool);
+	
+	public static void init() {}
+	
+}

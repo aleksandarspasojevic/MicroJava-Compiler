@@ -1,0 +1,100 @@
+INFO  16:12:09,450 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\PP1 projekat\PP1_2\workspace\MJCompiler\test\program.mj
+INFO  16:12:09,466 - #2 program
+INFO  16:12:09,466 - #15 MJProgram
+INFO  16:12:09,466 - #15 int
+INFO  16:12:09,467 - #15 x
+INFO  16:12:09,468 - #5 ;
+INFO  16:12:09,469 - #15 int
+INFO  16:12:09,469 - #15 y
+INFO  16:12:09,469 - #5 ;
+INFO  16:12:09,469 - #16 const
+INFO  16:12:09,469 - #15 int
+INFO  16:12:09,469 - #15 f
+INFO  16:12:09,469 - #8 =
+INFO  16:12:09,469 - #28 true
+INFO  16:12:09,469 - #11 ,
+INFO  16:12:09,470 - #15 g
+INFO  16:12:09,470 - #8 =
+INFO  16:12:09,470 - #14 5
+INFO  16:12:09,470 - #5 ;
+INFO  16:12:09,471 - #15 int
+INFO  16:12:09,472 - #15 matrica
+INFO  16:12:09,472 - #17 [
+INFO  16:12:09,472 - #24 ]
+INFO  16:12:09,472 - #17 [
+INFO  16:12:09,472 - #24 ]
+INFO  16:12:09,472 - #11 ,
+INFO  16:12:09,473 - #15 niz
+INFO  16:12:09,473 - #17 [
+INFO  16:12:09,473 - #24 ]
+INFO  16:12:09,473 - #11 ,
+INFO  16:12:09,473 - #15 promenljiva
+INFO  16:12:09,473 - #5 ;
+INFO  16:12:09,473 - #3 {
+INFO  16:12:09,473 - #15 int
+INFO  16:12:09,474 - #15 k
+INFO  16:12:09,474 - #6 (
+INFO  16:12:09,474 - #7 )
+INFO  16:12:09,475 - #15 int
+INFO  16:12:09,475 - #15 c
+INFO  16:12:09,475 - #5 ;
+INFO  16:12:09,475 - #3 {
+INFO  16:12:09,475 - #15 c
+INFO  16:12:09,475 - #8 =
+INFO  16:12:09,476 - #14 2
+INFO  16:12:09,476 - #5 ;
+INFO  16:12:09,476 - #9 return
+INFO  16:12:09,477 - #15 c
+INFO  16:12:09,477 - #10 +
+INFO  16:12:09,477 - #14 2
+INFO  16:12:09,477 - #5 ;
+INFO  16:12:09,477 - #4 }
+INFO  16:12:09,477 - #15 int
+INFO  16:12:09,478 - #15 main
+INFO  16:12:09,478 - #6 (
+INFO  16:12:09,478 - #7 )
+INFO  16:12:09,479 - #3 {
+INFO  16:12:09,479 - #12 print
+INFO  16:12:09,479 - #6 (
+INFO  16:12:09,479 - #14 1
+INFO  16:12:09,479 - #7 )
+INFO  16:12:09,479 - #5 ;
+INFO  16:12:09,479 - #15 x
+INFO  16:12:09,479 - #8 =
+INFO  16:12:09,479 - #15 y
+INFO  16:12:09,479 - #10 +
+INFO  16:12:09,479 - #14 5
+INFO  16:12:09,479 - #10 +
+INFO  16:12:09,479 - #14 3
+INFO  16:12:09,479 - #5 ;
+INFO  16:12:09,479 - #15 x
+INFO  16:12:09,479 - #10 +
+ERROR 16:12:09,479 - 
+Sintaksna greska na liniji 21
+INFO  16:12:09,480 - #14 1
+INFO  16:12:09,480 - #5 ;
+INFO  16:12:09,480 - #12 print
+INFO  16:12:09,480 - #6 (
+INFO  16:12:09,480 - #14 2
+ERROR 16:12:09,481 - Izvrsen oporavak do ; u liniji 21
+INFO  16:12:09,481 - #7 )
+INFO  16:12:09,481 - #5 ;
+INFO  16:12:09,481 - #15 k
+INFO  16:12:09,481 - #6 (
+INFO  16:12:09,481 - #7 )
+INFO  16:12:09,482 - #5 ;
+INFO  16:12:09,482 - #9 return
+INFO  16:12:09,482 - #14 1
+INFO  16:12:09,482 - #5 ;
+INFO  16:12:09,482 - #4 }
+INFO  16:12:09,482 - #4 }
+INFO  16:12:09,486 - ===================================
+INFO  16:12:09,488 - Deklarisana promenljiva x na liniji 2
+INFO  16:12:09,488 - Deklarisana promenljiva y na liniji 2
+INFO  16:12:09,488 - Deklarisana promenljiva matrica na liniji 5
+INFO  16:12:09,488 - Obradjuje se funkcija k na liniji 10
+INFO  16:12:09,488 - Deklarisana promenljiva c na liniji 10
+INFO  16:12:09,488 - Obradjuje se funkcija main na liniji 15
+INFO  16:12:09,488 - Print calls = 2
+INFO  16:12:09,488 - ===================================
+ERROR 16:12:09,488 - Parsiranje NIJE uspesno zavrseno!

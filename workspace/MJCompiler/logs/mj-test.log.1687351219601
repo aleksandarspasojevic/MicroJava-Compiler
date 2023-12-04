@@ -1,0 +1,80 @@
+INFO  14:39:31,934 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\Projekat3\workspace\MJCompiler\test\program.mj
+INFO  14:39:31,954 - #2 program
+INFO  14:39:31,954 - #19 test301
+INFO  14:39:31,954 - #19 int
+INFO  14:39:31,955 - #19 pet
+INFO  14:39:31,956 - #5 ;
+INFO  14:39:31,956 - #19 int
+INFO  14:39:31,957 - #19 sest
+INFO  14:39:31,957 - #5 ;
+INFO  14:39:31,957 - #3 {
+INFO  14:39:31,957 - #19 int
+INFO  14:39:31,958 - #19 main
+INFO  14:39:31,958 - #6 (
+INFO  14:39:31,959 - #7 )
+INFO  14:39:31,960 - #3 {
+INFO  14:39:31,960 - #9 return
+INFO  14:39:31,961 - #16 0
+INFO  14:39:31,961 - #5 ;
+INFO  14:39:31,961 - #4 }
+INFO  14:39:31,962 - #4 }
+INFO  14:39:31,963 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       pet
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     sest
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeName(
+        MethType(
+          Type(
+           int
+          ) [Type]
+        ) [MethType]
+       main
+      ) [MethodTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        ReturnExpr(
+          TermExpr(
+            FactorTerm(
+              ConstNum(
+               0
+              ) [ConstNum]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  14:39:31,964 - ===================================
+INFO  14:39:31,968 - Deklarisana promenljiva pet na liniji 5
+INFO  14:39:31,969 - Deklarisana promenljiva sest na liniji 6
+INFO  14:39:31,969 - PROSO
+INFO  14:39:31,969 - Obradjuje se funkcija main na liniji 9
+INFO  14:39:31,969 - Parsiranje uspesno zavrseno

@@ -1,0 +1,84 @@
+INFO  01:59:32,733 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\PP1 projekat\PP1_15\workspace\MJCompiler\test\program.mj
+INFO  01:59:33,609 - #2 program
+INFO  01:59:33,610 - #17 MJProgram
+INFO  01:59:33,610 - #3 {
+INFO  01:59:33,635 - #13 void
+INFO  01:59:33,646 - #17 main
+INFO  01:59:33,647 - #6 (
+INFO  01:59:33,647 - #7 )
+INFO  01:59:33,659 - #17 int
+INFO  01:59:33,660 - #17 readVal
+INFO  01:59:33,672 - #5 ;
+INFO  01:59:33,686 - #17 int
+INFO  01:59:33,686 - #17 x
+INFO  01:59:33,687 - #5 ;
+INFO  01:59:33,687 - #3 {
+INFO  01:59:33,687 - #20 read
+INFO  01:59:33,697 - #6 (
+INFO  01:59:33,697 - #17 readVal
+INFO  01:59:33,697 - #7 )
+INFO  01:59:33,697 - #5 ;
+INFO  01:59:33,697 - #4 }
+INFO  01:59:33,698 - #4 }
+INFO  01:59:33,735 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl1(
+            VarDeclaration1(
+              VarDeclaration(
+                Type(
+                 int
+                ) [Type]
+               readVal
+              ) [VarDeclaration]
+            ) [VarDeclaration1]
+          ) [VarDecl1]
+        ) [VarDeclarations]
+        VarDecl1(
+          VarDeclaration1(
+            VarDeclaration(
+              Type(
+               int
+              ) [Type]
+             x
+            ) [VarDeclaration]
+          ) [VarDeclaration1]
+        ) [VarDecl1]
+      ) [VarDeclarations]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        ReadStmt(
+          DesignatorName(
+           readVal
+          ) [DesignatorName]
+        ) [ReadStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:59:33,736 - ===================================
+INFO  01:59:33,762 - ===================================
+INFO  01:59:33,808 - Obradjuje se funkcija main na liniji 3
+INFO  01:59:33,808 - Deklarisana promenljiva readVal na liniji 3
+INFO  01:59:33,808 - Deklarisana promenljiva x na liniji 3
+INFO  01:59:33,809 - Print calls = 0
+INFO  01:59:33,809 - ===================================
+INFO  01:59:33,810 - Generating bytecode file: C:\Users\aleks\OneDrive\Desktop\PP1 projekat\PP1_15\workspace\MJCompiler\test\program.obj
+INFO  01:59:33,859 - Parsiranje uspesno zavrseno!

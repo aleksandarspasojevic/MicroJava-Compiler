@@ -1,0 +1,77 @@
+INFO  19:46:23,754 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\PP4\workspace\MJCompiler\test\program.mj
+INFO  19:46:23,772 - #2 program
+INFO  19:46:23,772 - #19 MJProgram
+INFO  19:46:23,772 - #19 int
+INFO  19:46:23,773 - #19 x
+INFO  19:46:23,774 - #5 ;
+INFO  19:46:23,774 - #19 int
+INFO  19:46:23,775 - #19 y
+INFO  19:46:23,775 - #5 ;
+INFO  19:46:23,775 - #3 {
+INFO  19:46:23,775 - #19 int
+INFO  19:46:23,776 - #19 k
+INFO  19:46:23,776 - #6 (
+INFO  19:46:23,778 - #7 )
+INFO  19:46:23,779 - #19 int
+INFO  19:46:23,779 - #19 c
+INFO  19:46:23,779 - #5 ;
+INFO  19:46:23,779 - #3 {
+INFO  19:46:23,780 - #19 c
+INFO  19:46:23,780 - #8 =
+INFO  19:46:23,780 - #16 1
+INFO  19:46:23,780 - #5 ;
+INFO  19:46:23,781 - #9 return
+INFO  19:46:23,782 - #19 c
+INFO  19:46:23,782 - #10 +
+INFO  19:46:23,782 - #16 2
+INFO  19:46:23,782 - #5 ;
+INFO  19:46:23,783 - #4 }
+INFO  19:46:23,783 - #19 int
+INFO  19:46:23,783 - #19 main
+INFO  19:46:23,783 - #6 (
+INFO  19:46:23,783 - #7 )
+INFO  19:46:23,783 - #3 {
+INFO  19:46:23,784 - #19 y
+INFO  19:46:23,784 - #8 =
+INFO  19:46:23,784 - #16 2
+INFO  19:46:23,784 - #5 ;
+INFO  19:46:23,784 - #19 x
+INFO  19:46:23,784 - #8 =
+INFO  19:46:23,784 - #19 y
+INFO  19:46:23,784 - #10 +
+INFO  19:46:23,784 - #16 2
+INFO  19:46:23,784 - #5 ;
+INFO  19:46:23,784 - #19 y
+INFO  19:46:23,784 - #8 =
+INFO  19:46:23,785 - #19 k
+INFO  19:46:23,785 - #6 (
+INFO  19:46:23,785 - #7 )
+INFO  19:46:23,785 - #10 +
+INFO  19:46:23,785 - #16 3
+INFO  19:46:23,786 - #5 ;
+INFO  19:46:23,786 - #13 print
+INFO  19:46:23,786 - #6 (
+INFO  19:46:23,786 - #19 y
+INFO  19:46:23,786 - #7 )
+INFO  19:46:23,786 - #5 ;
+INFO  19:46:23,786 - #9 return
+INFO  19:46:23,786 - #16 0
+INFO  19:46:23,786 - #5 ;
+INFO  19:46:23,786 - #4 }
+INFO  19:46:23,786 - #4 }
+INFO  19:46:23,793 - Deklarisana promenljiva x na liniji 2
+INFO  19:46:23,793 - Deklarisana promenljiva y na liniji 2
+INFO  19:46:23,793 - Obradjuje se funkcija k na liniji 5
+ERROR 19:46:23,793 - Greska: Ime int ne predstavlja tip 3 2 na liniji 5
+INFO  19:46:23,793 - Deklarisana promenljiva c na liniji 5
+ERROR 19:46:23,794 - Greska na liniji 6 :  nekompatibilni tipovi u dodeli vrednosti 
+ERROR 19:46:23,794 - Greska na liniji 7 : nekompatibilni tipovi u izrazu za sabiranje.
+ERROR 19:46:23,794 - Greska na liniji 7 : tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije int
+ERROR 19:46:23,794 - Greska: Ime int ne predstavlja tip 3 2 na liniji 10
+INFO  19:46:23,794 - Obradjuje se funkcija main na liniji 10
+ERROR 19:46:23,794 - Greska na liniji 13 : ime k nije deklarisano! 
+ERROR 19:46:23,794 - Greska na liniji 13 : ime noObj nije funkcija!
+ERROR 19:46:23,794 - Greska na liniji 13 : nekompatibilni tipovi u izrazu za sabiranje.
+ERROR 19:46:23,794 - Greska na liniji 13 :  nekompatibilni tipovi u dodeli vrednosti 
+INFO  19:46:23,794 - Print calls = 0
+ERROR 19:46:23,794 - Parsiranje NIJE uspesno zavrseno!

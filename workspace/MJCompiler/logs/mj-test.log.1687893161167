@@ -1,0 +1,127 @@
+INFO  21:10:25,765 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test2.mj
+INFO  21:10:25,787 - #2 program
+INFO  21:10:25,787 - #17 test1
+INFO  21:10:25,787 - #17 int
+INFO  21:10:25,788 - #17 var1
+INFO  21:10:25,788 - #11 ,
+INFO  21:10:25,789 - #17 var2
+INFO  21:10:25,789 - #5 ;
+INFO  21:10:25,789 - #3 {
+INFO  21:10:25,790 - #13 void
+INFO  21:10:25,790 - #17 main
+INFO  21:10:25,790 - #6 (
+INFO  21:10:25,790 - #7 )
+INFO  21:10:25,791 - #17 int
+INFO  21:10:25,791 - #17 var3
+INFO  21:10:25,791 - #5 ;
+INFO  21:10:25,791 - #17 int
+INFO  21:10:25,791 - #17 var4
+INFO  21:10:25,791 - #5 ;
+INFO  21:10:25,791 - #17 int
+INFO  21:10:25,791 - #17 result
+INFO  21:10:25,791 - #5 ;
+INFO  21:10:25,800 - #3 {
+INFO  21:10:25,800 - #17 result
+INFO  21:10:25,800 - #8 =
+INFO  21:10:25,800 - #17 var1
+INFO  21:10:25,800 - #10 +
+INFO  21:10:25,801 - #17 var2
+INFO  21:10:25,801 - #10 +
+INFO  21:10:25,801 - #17 var3
+INFO  21:10:25,802 - #10 +
+INFO  21:10:25,802 - #5 ;
+ERROR 21:10:25,802 - 
+Sintaksna greska na liniji 14
+INFO  21:10:25,802 - #4 }
+INFO  21:10:25,802 - #4 }
+ERROR 21:10:25,803 - Izvrsen oporavak do ; u liniji 14
+INFO  21:10:25,805 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl1(
+      MultipleVarDeclaration(
+        VarDeclaration1(
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+           var1
+          ) [VarDeclaration]
+        ) [VarDeclaration1]
+        MultVarDecl(
+         var2
+        ) [MultVarDecl]
+      ) [MultipleVarDeclaration]
+    ) [VarDecl1]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        VarDeclarations(
+          VarDeclarations(
+            NoVarDecl(
+            ) [NoVarDecl]
+            VarDecl1(
+              VarDeclaration1(
+                VarDeclaration(
+                  Type(
+                   int
+                  ) [Type]
+                 var3
+                ) [VarDeclaration]
+              ) [VarDeclaration1]
+            ) [VarDecl1]
+          ) [VarDeclarations]
+          VarDecl1(
+            VarDeclaration1(
+              VarDeclaration(
+                Type(
+                 int
+                ) [Type]
+               var4
+              ) [VarDeclaration]
+            ) [VarDeclaration1]
+          ) [VarDecl1]
+        ) [VarDeclarations]
+        VarDecl1(
+          VarDeclaration1(
+            VarDeclaration(
+              Type(
+               int
+              ) [Type]
+             result
+            ) [VarDeclaration]
+          ) [VarDeclaration1]
+        ) [VarDecl1]
+      ) [VarDeclarations]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        ErrorStmt(
+        ) [ErrorStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:10:25,805 - ===================================
+INFO  21:10:25,809 - ===================================
+INFO  21:10:25,812 - Deklarisana promenljiva var1 na liniji 5
+INFO  21:10:25,812 - Deklarisana promenljiva var2 na liniji 5
+INFO  21:10:25,812 - Obradjuje se funkcija main na liniji 8
+INFO  21:10:25,812 - Deklarisana promenljiva var3 na liniji 9
+INFO  21:10:25,812 - Deklarisana promenljiva var4 na liniji 10
+INFO  21:10:25,813 - Deklarisana promenljiva result na liniji 11
+INFO  21:10:25,813 - Print calls = 0
+INFO  21:10:25,813 - ===================================
+ERROR 21:10:25,813 - Parsiranje NIJE uspesno zavrseno!

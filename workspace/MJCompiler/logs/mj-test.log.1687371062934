@@ -1,0 +1,51 @@
+INFO  20:10:44,967 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\PP4\workspace\MJCompiler\test\program.mj
+INFO  20:10:44,985 - #2 program
+INFO  20:10:44,985 - #19 MJProgram
+INFO  20:10:44,985 - #19 int
+INFO  20:10:44,986 - #19 x
+INFO  20:10:44,986 - #5 ;
+INFO  20:10:44,986 - #19 int
+INFO  20:10:44,987 - #19 y
+INFO  20:10:44,987 - #5 ;
+INFO  20:10:44,987 - #3 {
+INFO  20:10:44,987 - #19 int
+INFO  20:10:44,988 - #19 k
+INFO  20:10:44,988 - #6 (
+INFO  20:10:44,989 - #7 )
+INFO  20:10:44,989 - #3 {
+INFO  20:10:44,989 - #9 return
+INFO  20:10:44,990 - #16 0
+INFO  20:10:44,990 - #5 ;
+INFO  20:10:44,990 - #4 }
+INFO  20:10:44,991 - #19 int
+INFO  20:10:44,991 - #19 main
+INFO  20:10:44,991 - #6 (
+INFO  20:10:44,991 - #7 )
+INFO  20:10:44,999 - #3 {
+INFO  20:10:44,999 - #19 y
+INFO  20:10:44,999 - #8 =
+INFO  20:10:45,000 - #16 2
+INFO  20:10:45,001 - #5 ;
+INFO  20:10:45,001 - #19 x
+INFO  20:10:45,002 - #8 =
+INFO  20:10:45,002 - #19 y
+INFO  20:10:45,002 - #10 +
+INFO  20:10:45,003 - #16 2
+INFO  20:10:45,004 - #5 ;
+INFO  20:10:45,004 - #13 print
+INFO  20:10:45,004 - #6 (
+INFO  20:10:45,004 - #19 y
+INFO  20:10:45,004 - #7 )
+INFO  20:10:45,005 - #5 ;
+INFO  20:10:45,005 - #9 return
+INFO  20:10:45,005 - #16 0
+INFO  20:10:45,005 - #5 ;
+INFO  20:10:45,006 - #4 }
+INFO  20:10:45,006 - #4 }
+INFO  20:10:45,015 - Deklarisana promenljiva x na liniji 2
+INFO  20:10:45,015 - Deklarisana promenljiva y na liniji 2
+INFO  20:10:45,015 - Obradjuje se funkcija k na liniji 5
+ERROR 20:10:45,016 - Greska: Ime int ne predstavlja tip  na liniji 7
+INFO  20:10:45,016 - Obradjuje se funkcija main na liniji 7
+INFO  20:10:45,016 - Print calls = 0
+ERROR 20:10:45,016 - Parsiranje NIJE uspesno zavrseno!

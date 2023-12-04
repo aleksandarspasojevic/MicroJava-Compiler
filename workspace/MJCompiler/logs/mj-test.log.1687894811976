@@ -1,0 +1,125 @@
+INFO  21:40:02,682 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test18.mj
+INFO  21:40:02,704 - #2 program
+INFO  21:40:02,704 - #17 test1
+INFO  21:40:02,704 - #17 int
+INFO  21:40:02,706 - #17 a
+INFO  21:40:02,707 - #11 ,
+INFO  21:40:02,708 - #17 b
+INFO  21:40:02,708 - #11 ,
+INFO  21:40:02,708 - #17 c
+INFO  21:40:02,708 - #5 ;
+INFO  21:40:02,709 - #3 {
+INFO  21:40:02,709 - #17 int
+INFO  21:40:02,709 - #17 fun
+INFO  21:40:02,709 - #6 (
+INFO  21:40:02,710 - #7 )
+INFO  21:40:02,710 - #3 {
+INFO  21:40:02,710 - #9 return
+INFO  21:40:02,710 - #14 2
+INFO  21:40:02,711 - #5 ;
+INFO  21:40:02,711 - #4 }
+INFO  21:40:02,711 - #13 void
+INFO  21:40:02,712 - #17 main
+INFO  21:40:02,712 - #6 (
+INFO  21:40:02,720 - #7 )
+INFO  21:40:02,720 - #3 {
+INFO  21:40:02,720 - #17 a
+INFO  21:40:02,720 - #27 ++
+INFO  21:40:02,720 - #5 ;
+INFO  21:40:02,721 - #4 }
+INFO  21:40:02,721 - #4 }
+INFO  21:40:02,722 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl1(
+      MultipleVarDeclaration(
+        MultipleVarDeclaration(
+          VarDeclaration1(
+            VarDeclaration(
+              Type(
+               int
+              ) [Type]
+             a
+            ) [VarDeclaration]
+          ) [VarDeclaration1]
+          MultVarDecl(
+           b
+          ) [MultVarDecl]
+        ) [MultipleVarDeclaration]
+        MultVarDecl(
+         c
+        ) [MultVarDecl]
+      ) [MultipleVarDeclaration]
+    ) [VarDecl1]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDecl(
+      ) [NoMethodDecl]
+      MethodDecl(
+        RetType(
+          Type(
+           int
+          ) [Type]
+         fun
+        ) [RetType]
+        NoFormParam(
+        ) [NoFormParam]
+        NoVarDecl(
+        ) [NoVarDecl]
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          ReturnExpr(
+            TermExpr(
+              FactorTerm(
+                Const(
+                 2
+                ) [Const]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [ReturnExpr]
+        ) [Statements]
+      ) [MethodDecl]
+    ) [MethodDeclarations]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        DesignatorStmt(
+          DesIncrement1(
+            DesignatorIncrement(
+              DesignatorName(
+               a
+              ) [DesignatorName]
+            ) [DesignatorIncrement]
+          ) [DesIncrement1]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:40:02,722 - ===================================
+INFO  21:40:02,726 - ===================================
+INFO  21:40:02,730 - Deklarisana promenljiva a na liniji 7
+INFO  21:40:02,730 - Deklarisana promenljiva b na liniji 7
+INFO  21:40:02,730 - Deklarisana promenljiva c na liniji 7
+INFO  21:40:02,730 - Obradjuje se funkcija fun na liniji 11
+INFO  21:40:02,730 - Koriscenje simbolicke konstante 2 na liniji 13
+INFO  21:40:02,730 - Obradjuje se funkcija main na liniji 16
+INFO  21:40:02,730 - Globalna promenljiva a na liniji 18
+INFO  21:40:02,730 - Print calls = 0
+INFO  21:40:02,730 - ===================================
+INFO  21:40:02,731 - Generating bytecode file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\program.obj
+INFO  21:40:02,734 - Parsiranje uspesno zavrseno!

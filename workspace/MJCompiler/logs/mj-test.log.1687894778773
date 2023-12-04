@@ -1,0 +1,121 @@
+INFO  21:39:19,385 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test18.mj
+INFO  21:39:19,412 - #2 program
+INFO  21:39:19,413 - #17 test1
+INFO  21:39:19,413 - #17 int
+INFO  21:39:19,413 - #17 a
+INFO  21:39:19,414 - #11 ,
+INFO  21:39:19,414 - #17 b
+INFO  21:39:19,415 - #11 ,
+INFO  21:39:19,415 - #17 c
+INFO  21:39:19,415 - #5 ;
+INFO  21:39:19,415 - #3 {
+INFO  21:39:19,415 - #17 int
+INFO  21:39:19,416 - #17 fun
+INFO  21:39:19,416 - #6 (
+INFO  21:39:19,416 - #7 )
+INFO  21:39:19,416 - #3 {
+INFO  21:39:19,416 - #9 return
+INFO  21:39:19,417 - #14 2
+INFO  21:39:19,417 - #5 ;
+INFO  21:39:19,417 - #4 }
+INFO  21:39:19,417 - #13 void
+INFO  21:39:19,417 - #17 main
+INFO  21:39:19,418 - #6 (
+INFO  21:39:19,418 - #7 )
+INFO  21:39:19,418 - #3 {
+INFO  21:39:19,418 - #17 a
+INFO  21:39:19,418 - #8 =
+INFO  21:39:19,418 - #17 a
+INFO  21:39:19,418 - #27 ++
+ERROR 21:39:19,418 - 
+Sintaksna greska na liniji 18
+INFO  21:39:19,418 - #5 ;
+INFO  21:39:19,418 - #4 }
+INFO  21:39:19,418 - #4 }
+ERROR 21:39:19,419 - Izvrsen oporavak do ; u liniji 18
+INFO  21:39:19,420 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl1(
+      MultipleVarDeclaration(
+        MultipleVarDeclaration(
+          VarDeclaration1(
+            VarDeclaration(
+              Type(
+               int
+              ) [Type]
+             a
+            ) [VarDeclaration]
+          ) [VarDeclaration1]
+          MultVarDecl(
+           b
+          ) [MultVarDecl]
+        ) [MultipleVarDeclaration]
+        MultVarDecl(
+         c
+        ) [MultVarDecl]
+      ) [MultipleVarDeclaration]
+    ) [VarDecl1]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDecl(
+      ) [NoMethodDecl]
+      MethodDecl(
+        RetType(
+          Type(
+           int
+          ) [Type]
+         fun
+        ) [RetType]
+        NoFormParam(
+        ) [NoFormParam]
+        NoVarDecl(
+        ) [NoVarDecl]
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          ReturnExpr(
+            TermExpr(
+              FactorTerm(
+                Const(
+                 2
+                ) [Const]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [ReturnExpr]
+        ) [Statements]
+      ) [MethodDecl]
+    ) [MethodDeclarations]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        ErrorStmt(
+        ) [ErrorStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:39:19,420 - ===================================
+INFO  21:39:19,424 - ===================================
+INFO  21:39:19,428 - Deklarisana promenljiva a na liniji 7
+INFO  21:39:19,428 - Deklarisana promenljiva b na liniji 7
+INFO  21:39:19,428 - Deklarisana promenljiva c na liniji 7
+INFO  21:39:19,428 - Obradjuje se funkcija fun na liniji 11
+INFO  21:39:19,428 - Koriscenje simbolicke konstante 2 na liniji 13
+INFO  21:39:19,428 - Obradjuje se funkcija main na liniji 16
+INFO  21:39:19,428 - Print calls = 0
+INFO  21:39:19,428 - ===================================
+ERROR 21:39:19,428 - Parsiranje NIJE uspesno zavrseno!

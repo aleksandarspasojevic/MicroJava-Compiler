@@ -1,0 +1,80 @@
+INFO  15:42:08,084 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\Projekat3\workspace\MJCompiler\test\program.mj
+INFO  15:42:08,101 - #2 program
+INFO  15:42:08,101 - #19 test301
+INFO  15:42:08,102 - #19 int
+INFO  15:42:08,103 - #19 pet
+INFO  15:42:08,103 - #5 ;
+INFO  15:42:08,103 - #19 int
+INFO  15:42:08,105 - #19 sest
+INFO  15:42:08,105 - #5 ;
+INFO  15:42:08,105 - #3 {
+INFO  15:42:08,105 - #19 int
+INFO  15:42:08,106 - #19 main
+INFO  15:42:08,106 - #6 (
+INFO  15:42:08,107 - #7 )
+INFO  15:42:08,108 - #3 {
+INFO  15:42:08,108 - #9 return
+INFO  15:42:08,109 - #16 0
+INFO  15:42:08,109 - #5 ;
+INFO  15:42:08,109 - #4 }
+INFO  15:42:08,109 - #4 }
+INFO  15:42:08,111 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       pet
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     sest
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeName(
+        MethType(
+          Type(
+           int
+          ) [Type]
+        ) [MethType]
+       main
+      ) [MethodTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        ReturnExpr(
+          TermExpr(
+            FactorTerm(
+              ConstNum(
+               0
+              ) [ConstNum]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  15:42:08,111 - ===================================
+INFO  15:42:08,116 - Deklarisana promenljiva pet na liniji 5
+INFO  15:42:08,116 - Deklarisana promenljiva sest na liniji 6
+INFO  15:42:08,116 - PROSO meth
+INFO  15:42:08,116 - Obradjuje se funkcija main na liniji 9
+INFO  15:42:08,116 - Parsiranje uspesno zavrseno

@@ -1,0 +1,40 @@
+INFO  21:06:00,087 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test1.mj
+INFO  21:06:00,121 - #2 program
+INFO  21:06:00,121 - #17 test1
+INFO  21:06:00,121 - #3 {
+INFO  21:06:00,122 - #13 void
+INFO  21:06:00,122 - #17 main
+INFO  21:06:00,122 - #6 (
+INFO  21:06:00,122 - #7 )
+INFO  21:06:00,123 - #3 {
+INFO  21:06:00,123 - #4 }
+INFO  21:06:00,123 - #4 }
+INFO  21:06:00,124 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:06:00,124 - ===================================
+INFO  21:06:00,128 - ===================================
+INFO  21:06:00,131 - Obradjuje se funkcija main na liniji 8
+INFO  21:06:00,131 - Print calls = 0
+INFO  21:06:00,131 - ===================================
+INFO  21:06:00,131 - Generating bytecode file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\program.obj
+INFO  21:06:00,135 - Parsiranje uspesno zavrseno!

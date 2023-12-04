@@ -1,0 +1,70 @@
+INFO  01:04:04,541 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\Projekat2\workspace\MJCompiler\test\program.mj
+INFO  01:04:04,559 - #2 program
+INFO  01:04:04,559 - #20 test301
+INFO  01:04:04,560 - #20 int
+INFO  01:04:04,560 - #20 pet
+INFO  01:04:04,561 - #5 ;
+INFO  01:04:04,561 - #3 {
+INFO  01:04:04,561 - #20 int
+INFO  01:04:04,562 - #20 main
+INFO  01:04:04,562 - #6 (
+INFO  01:04:04,562 - #7 )
+INFO  01:04:04,563 - #3 {
+INFO  01:04:04,563 - #9 return
+INFO  01:04:04,563 - #17 0
+INFO  01:04:04,563 - #5 ;
+INFO  01:04:04,564 - #4 }
+INFO  01:04:04,564 - #4 }
+INFO  01:04:04,566 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     pet
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeName(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [MethodTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        ReturnExpr(
+          TermExpr(
+            FactorTerm(
+              ConstNum(
+               0
+              ) [ConstNum]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:04:04,566 - ===================================
+INFO  01:04:04,571 - Deklarisana promenljiva pet na liniji 5
+INFO  01:04:04,571 - Obradjuje se funkcija main na liniji 8
+INFO  01:04:04,571 - rs.etf.pp1.symboltable.concepts.Struct@40f08448 rs.etf.pp1.symboltable.concepts.Struct@40f08448
+ERROR 01:04:04,571 - Greska na liniji 11 : tip izraza u return naredbi se ne slaze sa tipom povratne vrednosti funkcije main
+INFO  01:04:04,572 -  Print count calls = 0
+INFO  01:04:04,572 -  Deklarisanih promenljivih ima = 1
+INFO  01:04:04,572 - ===================================
+ERROR 01:04:04,572 - Parsiranje NIJE uspesno zavrseno

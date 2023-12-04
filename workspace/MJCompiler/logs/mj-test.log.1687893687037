@@ -1,0 +1,125 @@
+INFO  21:21:19,616 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test7.mj
+INFO  21:21:19,638 - #2 program
+INFO  21:21:19,638 - #17 test1
+INFO  21:21:19,638 - #17 int
+INFO  21:21:19,639 - #17 a
+INFO  21:21:19,639 - #5 ;
+INFO  21:21:19,640 - #3 {
+INFO  21:21:19,640 - #13 void
+INFO  21:21:19,640 - #17 fun
+INFO  21:21:19,640 - #6 (
+INFO  21:21:19,641 - #17 int
+INFO  21:21:19,641 - #17 a
+INFO  21:21:19,641 - #11 ,
+INFO  21:21:19,641 - #17 char
+INFO  21:21:19,641 - #17 c
+INFO  21:21:19,641 - #11 ,
+INFO  21:21:19,641 - #17 int
+INFO  21:21:19,641 - #17 matrica
+INFO  21:21:19,641 - #19 [
+INFO  21:21:19,641 - #26 ]
+INFO  21:21:19,641 - #19 [
+INFO  21:21:19,641 - #26 ]
+INFO  21:21:19,650 - #11 ,
+INFO  21:21:19,650 - #17 int
+INFO  21:21:19,650 - #17 niz
+INFO  21:21:19,651 - #19 [
+INFO  21:21:19,651 - #26 ]
+INFO  21:21:19,651 - #7 )
+INFO  21:21:19,652 - #3 {
+INFO  21:21:19,653 - #4 }
+INFO  21:21:19,654 - #13 void
+INFO  21:21:19,655 - #17 main
+INFO  21:21:19,655 - #6 (
+INFO  21:21:19,656 - #7 )
+INFO  21:21:19,656 - #3 {
+INFO  21:21:19,656 - #4 }
+INFO  21:21:19,657 - #4 }
+INFO  21:21:19,659 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl1(
+      VarDeclaration1(
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+         a
+        ) [VarDeclaration]
+      ) [VarDeclaration1]
+    ) [VarDecl1]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDecl(
+      ) [NoMethodDecl]
+      MethodDecl(
+        NoRetType(
+         fun
+        ) [NoRetType]
+        FormParams(
+          FormalParamDecls(
+            FormalParamDecls(
+              FormalParamDecls(
+                SingleFormalParamDecl(
+                  FormalVarDecl(
+                    Type(
+                     int
+                    ) [Type]
+                   a
+                  ) [FormalVarDecl]
+                ) [SingleFormalParamDecl]
+                FormalVarDecl(
+                  Type(
+                   char
+                  ) [Type]
+                 c
+                ) [FormalVarDecl]
+              ) [FormalParamDecls]
+              FormalMatrixDecl(
+                Type(
+                 int
+                ) [Type]
+               matrica
+              ) [FormalMatrixDecl]
+            ) [FormalParamDecls]
+            FormalArrDecl(
+              Type(
+               int
+              ) [Type]
+             niz
+            ) [FormalArrDecl]
+          ) [FormalParamDecls]
+        ) [FormParams]
+        NoVarDecl(
+        ) [NoVarDecl]
+        NoStmt(
+        ) [NoStmt]
+      ) [MethodDecl]
+    ) [MethodDeclarations]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:21:19,660 - ===================================
+INFO  21:21:19,666 - ===================================
+INFO  21:21:19,672 - Deklarisana promenljiva a na liniji 5
+INFO  21:21:19,672 - Obradjuje se funkcija fun na liniji 9
+INFO  21:21:19,672 - Obradjuje se funkcija main na liniji 11
+INFO  21:21:19,672 - Print calls = 0
+INFO  21:21:19,672 - ===================================
+INFO  21:21:19,672 - Generating bytecode file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\program.obj
+INFO  21:21:19,676 - Parsiranje uspesno zavrseno!

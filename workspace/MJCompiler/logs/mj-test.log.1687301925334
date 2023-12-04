@@ -1,0 +1,55 @@
+INFO  00:55:49,172 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\Projekat2\workspace\MJCompiler\test\program.mj
+INFO  00:55:49,192 - #2 program
+INFO  00:55:49,192 - #20 test301
+INFO  00:55:49,192 - #20 int
+INFO  00:55:49,193 - #20 pet
+INFO  00:55:49,194 - #5 ;
+INFO  00:55:49,194 - #3 {
+INFO  00:55:49,195 - #20 int
+INFO  00:55:49,196 - #20 main
+INFO  00:55:49,196 - #6 (
+INFO  00:55:49,197 - #7 )
+INFO  00:55:49,198 - #3 {
+INFO  00:55:49,198 - #4 }
+INFO  00:55:49,199 - #4 }
+INFO  00:55:49,201 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     pet
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeName(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [MethodTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  00:55:49,202 - ===================================
+INFO  00:55:49,207 - Deklarisana promenljiva pet
+INFO  00:55:49,207 - Obradjuje se funkcija main
+ERROR 00:55:49,207 - Semanticka greska na liniji 8 : funkcija main nema return iskaz! na liniji 0
+INFO  00:55:49,207 -  Print count calls = 0
+INFO  00:55:49,207 -  Deklarisanih promenljivih ima = 1
+INFO  00:55:49,207 - ===================================
+ERROR 00:55:49,208 - Parsiranje NIJE uspesno zavrseno

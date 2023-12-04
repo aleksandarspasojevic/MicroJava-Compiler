@@ -1,0 +1,25 @@
+// test17 --   Tip neterminala Expr mora biti kompatibilan pri dodeli sa tipom neterminala Designator. 
+
+
+program test1	
+
+	int a, b, c;
+
+{
+	
+	int fun(){
+		
+		return 2;
+	}
+	
+	void main(){
+		
+		a = 't';
+		
+	}
+	
+	
+	
+}
+
+

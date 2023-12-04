@@ -1,0 +1,665 @@
+package rs.ac.bg.etf.pp1;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import org.apache.log4j.Logger;
+
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.symboltable.*;
+import rs.etf.pp1.symboltable.concepts.*;
+
+public class SemanticAnalyzer extends VisitorAdaptor {
+
+	int printCallCount = 0;
+	int varDeclCount = 0;
+
+	Type varDeclType = null;
+	String constVarInitType = "";
+
+	Obj currentMethod = null;
+	boolean returnFound = false;
+	boolean errorDetected = false;
+	boolean hasMainMethod = false;
+	int constBool;
+	int constInt;
+	char constChar;
+	HashMap<String, HashMap<Integer, ArrayList<Struct>>> funcMap = new HashMap<>();
+	ArrayList<Struct> formalParams = new ArrayList<Struct>();
+	ArrayList<Struct> actualParams = new ArrayList<Struct>();
+	int nVars;
+
+	Logger log = Logger.getLogger(getClass());
+
+	public void report_error(String message, SyntaxNode info) {
+		errorDetected = true;
+		StringBuilder msg = new StringBuilder(message);
+		int line = (info == null) ? 0 : info.getLine();
+		if (line != 0)
+			msg.append(" na liniji ").append(line);
+		log.error(msg.toString());
+	}
+
+	public void report_info(String message, SyntaxNode info) {
+		StringBuilder msg = new StringBuilder(message);
+		int line = (info == null) ? 0 : info.getLine();
+		if (line != 0)
+			msg.append(" na liniji ").append(line);
+		log.info(msg.toString());
+	}
+
+	// fist declared variable in comma separated sequence
+	public void visit(VarDeclaration varDecl) {
+		varDeclCount++;
+
+		// Pokusaj detektovanja da li je promenljiva vec deklarisana
+		Obj obj = Tab.find(varDecl.getVarName());
+		if (obj != Tab.noObj) {
+			if (Tab.currentScope.findSymbol(varDecl.getVarName()) != null) {
+				report_error("Greska na liniji " + varDecl.getLine() + " : ime " + varDecl.getVarName()
+						+ " je vec deklarisano! ", null);
+				return;
+			}
+
+		}
+
+		report_info("Deklarisana promenljiva " + varDecl.getVarName(), varDecl);
+		Obj varNode = Tab.insert(Obj.Var, varDecl.getVarName(), varDecl.getType().struct);
+		varDeclType = varDecl.getType();
+	}
+
+	public void visit(VarArrayDeclaration varDecl) {
+		varDeclCount++;
+
+		// Pokusaj detektovanja da li je promenljiva vec deklarisana
+		Obj obj = Tab.find(varDecl.getVarName());
+		if (obj != Tab.noObj) {
+			if (Tab.currentScope.findSymbol(varDecl.getVarName()) != null) {
+				report_error("Greska na liniji " + varDecl.getLine() + " : ime " + varDecl.getVarName()
+						+ " je vec deklarisano! ", null);
+				return;
+			}
+
+		}
+
+		report_info("Deklarisan niz " + varDecl.getVarName(), varDecl);
+		// type of array elements
+		Struct struct = new Struct(Struct.Array, varDecl.getType().struct);
+		Obj varNode = Tab.insert(Obj.Var, varDecl.getVarName(), struct);
+		varDeclType = varDecl.getType();
+	}
+
+	public void visit(VarMatrixDeclaration varDecl) {
+		varDeclCount++;
+
+		// Pokusaj detektovanja da li je promenljiva vec deklarisana
+		Obj obj = Tab.find(varDecl.getVarName());
+		if (obj != Tab.noObj) {
+			if (Tab.currentScope.findSymbol(varDecl.getVarName()) != null) {
+				report_error("Greska na liniji " + varDecl.getLine() + " : ime " + varDecl.getVarName()
+						+ " je vec deklarisano! ", null);
+				return;
+			}
+
+		}
+
+		report_info("Deklarisana matrica " + varDecl.getVarName(), varDecl);
+		// type of matrix elements
+		Struct struct = new Struct(Struct.Array, new Struct(Struct.Array, varDecl.getType().struct));
+		Obj varNode = Tab.insert(Obj.Var, varDecl.getVarName(), struct);
+		varDeclType = varDecl.getType();
+	}
+
+	// others declared variables in comma separated sequence
+	public void visit(MultVarDecl varDecl) {
+		varDeclCount++;
+
+		// Pokusaj detektovanja da li je promenljiva vec deklarisana
+		Obj obj = Tab.find(varDecl.getVarName());
+		if (obj != Tab.noObj) {
+			if (Tab.currentScope.findSymbol(varDecl.getVarName()) != null) {
+				report_error("Greska na liniji " + varDecl.getLine() + " : ime " + varDecl.getVarName()
+						+ " je vec deklarisano! ", null);
+				return;
+			}
+
+		}
+
+		report_info("Deklarisana promenljiva " + varDecl.getVarName(), varDecl);
+		Obj varNode = Tab.insert(Obj.Var, varDecl.getVarName(), varDeclType.struct);
+	}
+
+	public void visit(MultArrDecl varDecl) {
+		varDeclCount++;
+		report_info("Deklarisan niz " + varDecl.getVarName(), varDecl);
+
+		// Pokusaj detektovanja da li je promenljiva vec deklarisana
+		Obj obj = Tab.find(varDecl.getVarName());
+		if (obj != Tab.noObj) {
+			if (Tab.currentScope.findSymbol(varDecl.getVarName()) != null) {
+				report_error("Greska na liniji " + varDecl.getLine() + " : ime " + varDecl.getVarName()
+						+ " je vec deklarisano! ", null);
+				return;
+			}
+
+		}
+
+		// type of array elements
+		Struct struct = new Struct(Struct.Array, varDeclType.struct);
+		Obj varNode = Tab.insert(Obj.Var, varDecl.getVarName(), struct);
+	}
+
+	public void visit(MultMatrixDecl varDecl) {
+		varDeclCount++;
+		report_info("Deklarisana matrica " + varDecl.getVarName(), varDecl);
+
+		// Pokusaj detektovanja da li je promenljiva vec deklarisana
+		Obj obj = Tab.find(varDecl.getVarName());
+		if (obj != Tab.noObj) {
+			if (Tab.currentScope.findSymbol(varDecl.getVarName()) != null) {
+				report_error("Greska na liniji " + varDecl.getLine() + " : ime " + varDecl.getVarName()
+						+ " je vec deklarisano! ", null);
+				return;
+			}
+
+		}
+
+		// type of matrix elements
+		Struct struct = new Struct(Struct.Array, new Struct(Struct.Array, varDeclType.struct));
+		Obj varNode = Tab.insert(Obj.Var, varDecl.getVarName(), struct);
+	}
+
+	public void visit(ConstNum constNum) {
+		report_info("Koriscenje simbolicke konstante " + constNum.getN1() + " na liniji " + constNum.getLine(), null);
+		
+		constInt = constNum.getN1();
+		constVarInitType = "int";
+	}
+
+	public void visit(CharConst charConst) {
+		report_info("Koriscenje simbolicke konstante " + charConst.getC1() + " na liniji " + charConst.getLine(), null);
+		
+		constChar = charConst.getC1();
+		constVarInitType = "char";
+	}
+
+	public void visit(ConstBool constB) {
+		report_info("Koriscenje simbolicke konstante " + constB.getB1() + " na liniji " + constB.getLine(), null);
+		
+		constBool = constB.getB1();
+		constVarInitType = "bool";
+	}
+
+	public void visit(CostVarInitialization varDecl) {
+		varDeclCount++;
+		varDeclType = varDecl.getType();
+
+		// Pokusaj detektovanja da li je promenljiva vec deklarisana
+		Obj obj = Tab.find(varDecl.getConstVarName());
+		if (obj != Tab.noObj) {
+			if (Tab.currentScope.findSymbol(varDecl.getConstVarName()) != null) {
+				report_error("Greska na liniji " + varDecl.getLine() + " : ime " + varDecl.getConstVarName()
+						+ " je vec deklarisano! ", null);
+				return;
+			}
+
+		}
+
+		if (!varDeclType.getTypeName().equals(constVarInitType)) {
+			report_error("Greska na liniji " + varDecl.getLine() + " : " + "nekompatibilni tipovi u dodeli vrednosti! ",
+					null);
+		}
+
+		report_info("Deklarisana konstantna promenljiva " + varDecl.getConstVarName(), varDecl);
+		Obj constNode = Tab.insert(Obj.Con, varDecl.getConstVarName(), varDeclType.struct);
+		if (varDeclType.struct == Tab.intType) {
+			constNode.setAdr(constInt);
+		} else if (varDeclType.struct == Tab.charType) {
+			constNode.setAdr(constChar);
+		} else {
+			constNode.setAdr(constBool);
+		}
+	}
+
+	public void visit(CostVarInitializations varDecl) {
+		varDeclCount++;
+
+		// Pokusaj detektovanja da li je promenljiva vec deklarisana
+		Obj obj = Tab.find(varDecl.getConstVarName());
+		if (obj != Tab.noObj) {
+			if (Tab.currentScope.findSymbol(varDecl.getConstVarName()) != null) {
+				report_error("Greska na liniji " + varDecl.getLine() + " : ime " + varDecl.getConstVarName()
+						+ " je vec deklarisano! ", null);
+				return;
+			}
+
+		}
+
+		if (!varDeclType.getTypeName().equals(constVarInitType)) {
+			report_error("Greska na liniji " + varDecl.getLine() + " : " + "nekompatibilni tipovi u dodeli vrednosti! ",
+					null);
+		}
+
+		report_info("Deklarisana konstantna promenljiva " + varDecl.getConstVarName(), varDecl);
+		Obj constNode = Tab.insert(Obj.Con, varDecl.getConstVarName(), varDeclType.struct);
+		if (varDeclType.struct == Tab.intType) {
+			constNode.setAdr(constInt);
+		} else if (varDeclType.struct == Tab.charType) {
+			constNode.setAdr(constChar);
+		} else {
+			constNode.setAdr(constBool);
+		}
+	}
+
+	// Called at the end of var(s) declaration
+	public void visit(VarDecl1 varDecl) {
+		varDeclType = null;
+	}
+
+	public void visit(ProgName progName) {
+		progName.obj = Tab.insert(Obj.Prog, progName.getProgName(), Tab.noType);
+		Tab.openScope();
+	}
+
+	public void visit(Type type) {
+		Obj typeNode = Tab.find(type.getTypeName());
+		if (typeNode == Tab.noObj) {
+			report_error("Nije pronadjen tip " + type.getTypeName() + " u tabeli simbola! ", null);
+			type.struct = Tab.noType;
+		} else {
+			if (Obj.Type == typeNode.getKind()) {
+				type.struct = typeNode.getType();
+			} else {
+				report_error("Greska: Ime " + type.getTypeName() + " ne predstavlja tip!", type);
+				type.struct = Tab.noType;
+			}
+		}
+	}
+
+	public void visit(RetType methodTypeName) {
+		
+		currentMethod = Tab.insert(Obj.Meth, methodTypeName.getMethName(), methodTypeName.getType().struct);
+		methodTypeName.obj = currentMethod;
+		Tab.openScope();
+		report_info("Obradjuje se funkcija " + methodTypeName.getMethName(), methodTypeName);
+
+		if (methodTypeName.getMethName().equals("main"))
+			report_error("Semanticka greska na liniji " + methodTypeName.getLine() + ": funkcija "
+					+ currentMethod.getName() + " mora biti tipa void!", null);
+
+	}
+
+	public void visit(NoRetType methodTypeName) {
+		
+		currentMethod = Tab.insert(Obj.Meth, methodTypeName.getMethName(), Tab.noType);
+		methodTypeName.obj = currentMethod;
+		Tab.openScope();
+		report_info("Obradjuje se funkcija " + methodTypeName.getMethName(), methodTypeName);
+
+		if (methodTypeName.getMethName().equals("main"))
+			hasMainMethod = true;
+
+	}
+
+	public void visit(MethodDecl methodDecl) {
+
+		if (!returnFound && currentMethod.getType() != Tab.noType) {
+			report_error("Semanticka greska na liniji " + methodDecl.getLine() + ": funkcija " + currentMethod.getName()
+					+ " nema return iskaz!", null);
+		}
+		Tab.chainLocalSymbols(currentMethod);
+		Tab.closeScope();
+
+		returnFound = false;
+		currentMethod = null;
+	}
+
+	public void visit(DesignatorName designator) {
+		report_info("Koriscenje simbolicke konstante " + designator.getName() + " na liniji " + designator.getLine(), null);
+		
+		Obj obj = Tab.find(designator.getName());
+		if (obj == Tab.noObj) {
+			report_error("Greska na liniji " + designator.getLine() + " : ime " + designator.getName()
+					+ " nije deklarisano! ", null);
+		}
+		designator.obj = obj;
+	}
+
+	public void visit(DesignatorExpr designatorExpr) {
+		Struct t = designatorExpr.getExpr().struct;
+
+		if (t != Tab.intType) {
+			report_error("Greska na liniji " + designatorExpr.getLine() + " : index mora biti celobrojna vrednost!",
+					null);
+			designatorExpr.obj = Tab.noObj;
+
+		}
+
+		Obj obj = designatorExpr.getDesignator1().getDesignator().obj;
+		if (obj.getType().getKind() != Struct.Array) {
+			report_error("Greska na liniji " + designatorExpr.getLine() + " : ime " + designatorExpr.getDesignator1().getDesignator().obj.getName()
+					+ " nije niz! ", null);
+			designatorExpr.obj = Tab.noObj;
+		}
+
+		designatorExpr.obj = new Obj(Obj.Elem, designatorExpr.getDesignator1().getDesignator().obj.getName(), obj.getType().getElemType());
+//		log.info(designatorExpr.obj.getType().getKind());
+	}
+
+	public void visit(FactorTerm term) {
+		term.struct = term.getFactor().struct;
+	}
+
+	public void visit(TermExpr termExpr) {
+		termExpr.struct = termExpr.getTerm().struct;
+	}
+
+	public void visit(AddExpr addExpr) {
+		Struct te = addExpr.getExpr().struct;
+		Struct t = addExpr.getTerm().struct;
+		if (te.compatibleWith(t) && te == Tab.intType && t == Tab.intType) {
+			addExpr.struct = te;
+		} else {
+			report_error("Greska na liniji " + addExpr.getLine()
+					+ " : nekompatibilni tipovi u izrazu aritmeticke operacije!", null);
+			addExpr.struct = Tab.noType;
+		}
+	}
+
+	public void visit(MulTerm mulTerm) {
+		Struct te = mulTerm.getTerm().struct;
+		Struct t = mulTerm.getFactor().struct;
+
+		if (te.equals(t) && te == Tab.intType) {
+			mulTerm.struct = te;
+		} else {
+			report_error("Greska na liniji " + mulTerm.getLine()
+					+ " : nekompatibilni tipovi u izrazu aritmeticke operacije!", null);
+			mulTerm.struct = Tab.noType;
+		}
+	}
+
+	public void visit(NewExprSingle newExpr) {
+		Struct t = newExpr.getExpr().struct;
+
+		// type of array elements
+		Struct struct = new Struct(Struct.Array, newExpr.getType().struct);
+		newExpr.struct = struct;
+
+		if (t != Tab.intType) {
+			report_error("Greska na liniji " + newExpr.getLine() + " : index mora biti celobrojna vrednost!", null);
+			newExpr.struct = Tab.noType;
+		}
+
+	}
+
+	public void visit(NewExprMult newExpr) {
+		Struct t = newExpr.getExpr().struct;
+		Struct t1 = newExpr.getExpr1().struct;
+
+		// type of array elements
+		Struct struct = new Struct(Struct.Array, new Struct(Struct.Array, newExpr.getType().struct));
+		newExpr.struct = struct;
+
+		if (t != Tab.intType) {
+			report_error("Greska na liniji " + newExpr.getLine() + " : prvi index mora biti celobrojna vrednost!",
+					null);
+			newExpr.struct = Tab.noType;
+		}
+		if (t1 != Tab.intType) {
+			report_error("Greska na liniji " + newExpr.getLine() + " : drugi index mora biti celobrojna vrednost!",
+					null);
+			newExpr.struct = Tab.noType;
+		}
+
+	}
+
+	public void visit(Const cnst) {
+		report_info("Koriscenje simbolicke konstante " + cnst.getN1() + " na liniji " + cnst.getLine(), null);
+		cnst.struct = Tab.intType;
+	}
+
+	public void visit(CharConstF cnst) {
+		report_info("Koriscenje simbolicke konstante " + cnst.getC1() + " na liniji " + cnst.getLine(), null);
+		cnst.struct = Tab.charType;
+	}
+
+	// uses type from inherited class MyTab
+	public void visit(BoolConstF cnst) {
+		report_info("Koriscenje simbolicke konstante " + cnst.getB1() + " na liniji " + cnst.getLine(), null);
+		cnst.struct = MyTab.boolType;
+	}
+
+	public void visit(Var var) {
+		var.struct = var.getDesignator().obj.getType();
+	}
+
+	public void visit(ExprParen exprParen) {
+		exprParen.struct = exprParen.getExpr().struct;
+	}
+
+	public void visit(ReturnExpr returnExpr) {
+		returnFound = true;
+
+		Struct currMethType = currentMethod.getType();
+		if (!currMethType.compatibleWith(returnExpr.getExpr().struct)) {
+			report_error("Greska na liniji " + returnExpr.getLine() + " : "
+					+ "tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije "
+					+ currentMethod.getName(), null);
+		}
+	}
+
+	public void visit(DesAsignment assignment) {
+
+		if (!(assignment.getDesignator().obj.getKind() == Obj.Var
+				|| assignment.getDesignator().obj.getKind() == Obj.Elem)) {
+			report_error("Greska na liniji " + assignment.getLine() + " : " + "vrednost se ne moze dodeliti datom tipu",
+					null);
+			return;
+		}
+
+		if (!assignment.getExpr().struct.assignableTo(assignment.getDesignator().obj.getType())) {
+			report_error(
+					"Greska na liniji " + assignment.getLine() + " : " + "nekompatibilni tipovi u dodeli vrednosti! ",
+					null);
+//			log.info("levo " + assignment.getDesignator().obj.getType().getKind() + "  desno "+ assignment.getExpr().struct.getKind());
+		}
+	}
+
+	public void visit(DesignatorIncrement desIncr) {
+
+		if (!(desIncr.getDesignator().obj.getKind() == Obj.Var || desIncr.getDesignator().obj.getKind() == Obj.Elem)) {
+			report_error("Greska na liniji " + desIncr.getLine() + " : "
+					+ "leva strana mora biti promenljiva ili polje niza!", null);
+			return;
+		}
+
+		if (desIncr.getDesignator().obj.getType() != Tab.intType)
+			report_error("Greska na liniji " + desIncr.getLine() + " : " + "promenljiva NIJE tipa int!", null);
+
+	}
+
+	public void visit(DesignatorDecrement desDecr) {
+
+		if (!(desDecr.getDesignator().obj.getKind() == Obj.Var || desDecr.getDesignator().obj.getKind() == Obj.Elem)) {
+			report_error("Greska na liniji " + desDecr.getLine() + " : "
+					+ "leva strana mora biti promenljiva ili polje niza!", null);
+			return;
+		}
+
+		if (desDecr.getDesignator().obj.getType() != Tab.intType)
+			report_error("Greska na liniji " + desDecr.getLine() + " : " + "promenljiva NIJE tipa int!", null);
+
+	}
+
+	// formalParams arraylist stores formal parameters structs from method
+	// declaration
+	public void visit(FormalVarDecl varDecl) {
+		formalParams.add(varDecl.getType().struct);
+		
+		Tab.insert(Obj.Var, varDecl.getParam(), varDecl.getType().struct);
+	    
+	}
+
+	public void visit(FormalArrDecl varDecl) {
+
+		// type of array elements
+		int elemType = varDecl.getType().struct.getKind();
+		Struct struct = new Struct(Struct.Array, new Struct(elemType));
+
+		formalParams.add(struct);
+		
+		Struct paramStruct = new Struct(Struct.Array, varDecl.getType().struct);
+		Tab.insert(Obj.Var, varDecl.getParam(), paramStruct);
+
+	}
+
+	public void visit(FormalMatrixDecl varDecl) {
+
+		// type of matrix elements
+		int elemType = varDecl.getType().struct.getKind();
+		Struct struct = new Struct(Struct.Array, new Struct(Struct.Array, new Struct(elemType)));
+
+		formalParams.add(struct);
+		
+		Struct paramStruct = new Struct(Struct.Array, new Struct(Struct.Array, varDecl.getType().struct));
+		Tab.insert(Obj.Var, varDecl.getParam(), paramStruct);
+	}
+
+	public void visit(FormParams formParams) {
+		if (currentMethod.getName().equals("main")) {
+			report_error("Semanticka greska na liniji " + formParams.getLine() + ": funkcija " + currentMethod.getName()
+					+ " ne sme imati parametre!", null);
+		}
+
+		// stores pairs of (num_formal_args) and list of arg structs
+		HashMap<Integer, ArrayList<Struct>> argMap = new HashMap<>();
+		int numParams = formalParams.size();
+		argMap.put(numParams, formalParams);
+		funcMap.put(currentMethod.getName(), argMap);
+
+//		if (!assignment.getExpr().struct.assignableTo(assignment.getDesignator().obj.getType()))
+//			report_error(
+//					"Greska na liniji " + assignment.getLine() + " : " + "nekompatibilni tipovi u dodeli vrednosti! ",
+//					null);
+
+//		log.info(formalParams.toString());
+
+		formalParams = new ArrayList<Struct>();
+	}
+
+	public void visit(ActualParam actualParam) {
+		actualParams.add(actualParam.getExpr().struct);
+	}
+
+	public void visit(ActualParams actualParam) {
+		actualParams.add(actualParam.getExpr().struct);
+	}
+
+	public void visit(ProcCall procCall) {
+		String calledFuncName = procCall.getDesignator().obj.getName();
+		HashMap<Integer, ArrayList<Struct>> foundData = funcMap.get(calledFuncName);
+
+		if (foundData == null) {
+			report_error("Greska na liniji " + procCall.getLine() + " : ime " + procCall.getDesignator().obj.getName()
+					+ " nije funkcija!", null);
+			return;
+		}
+
+		int actualParamLength = actualParams.size();
+
+		ArrayList<Struct> formalParams = foundData.get(actualParamLength);
+
+		if (formalParams == null) {
+			report_error("Greska na liniji " + procCall.getLine() + " : funkcija "
+					+ procCall.getDesignator().obj.getName() + " ne ocekuje prosledjeni broj argumenata!", null);
+			return;
+		}
+
+		int index = 1;
+		for (Struct s : formalParams) {
+			Struct aParam = actualParams.remove(0);
+			if (!aParam.assignableTo(s))
+				report_error("Greska na liniji " + procCall.getLine() + " : parametar broj " + index
+						+ " se ne poklapa po tipu!", null);
+			index++;
+		}
+		actualParams.clear();
+	}
+
+	public void visit(FuncCall funcCall) {
+		Obj func = funcCall.getDesignator().obj;
+		if (Obj.Meth == func.getKind()) {
+			report_info("Pronadjen poziv funkcije " + func.getName() + " na liniji " + funcCall.getLine(), null);
+			funcCall.struct = func.getType();
+		} else {
+			report_error("Greska na liniji " + funcCall.getLine() + " : ime " + func.getName() + " nije funkcija!",
+					null);
+			funcCall.struct = Tab.noType;
+		}
+
+		actualParams.clear();
+	}
+
+	// Check again
+	public void visit(ReadStmt readStmt) {
+		
+		if (!(readStmt.getDesignator().obj.getKind() == Obj.Var
+				|| readStmt.getDesignator().obj.getKind() == Obj.Elem)) {
+			report_error("Greska na liniji " + readStmt.getLine() + " : " + "parametar mora biti promenljiva ili element niza",
+					null);
+			return;
+		}
+
+		Struct s = readStmt.getDesignator().obj.getType();
+		if (!(s.getKind() == Struct.Int || s.getKind() == Struct.Char || s.getKind() == MyStruct.Bool)) {
+			report_error(
+					"Greska na liniji " + readStmt.getLine() + " : " + "read funkcija ne podrzava prosledjeni tip!",
+					null);
+		}
+	}
+
+	public void visit(PrintStmt print) {
+		printCallCount++;
+
+		Struct s = print.getExpr().struct;
+		if (!(s.getKind() == Struct.Int || s.getKind() == Struct.Char || s.getKind() == MyStruct.Bool)) {
+			report_error("Greska na liniji " + print.getLine() + " : " + "print funkcija ne podrzava prosledjeni tip!",
+					null);
+			
+		}
+	}
+	
+	public void visit(PrintStmtParam print) {
+		printCallCount++;
+
+		Struct s = print.getExpr().struct;
+		if (!(s.getKind() == Struct.Int || s.getKind() == Struct.Char || s.getKind() == MyStruct.Bool)) {
+			report_error("Greska na liniji " + print.getLine() + " : " + "print funkcija ne podrzava prosledjeni tip!",
+					null);
+		}
+	}
+
+	public void visit(MinusTermExpr minusExpr) {
+		if (minusExpr.getTerm().struct != Tab.intType) {
+			report_error("Greska na liniji " + minusExpr.getLine() + " : " + "tip mora biti celobrojan!", null);
+			minusExpr.struct = Tab.noType;
+		}
+		minusExpr.struct = Tab.intType;
+	}
+
+	public void visit(Program program) {
+		nVars = Tab.currentScope.getnVars();
+		Tab.chainLocalSymbols(program.getProgName().obj);
+		Tab.closeScope();
+
+		if (!hasMainMethod)
+			report_error("Program MORA imati funkciju main! ", null);
+
+	}
+
+	public boolean passed() {
+		return !errorDetected;
+	}
+
+}

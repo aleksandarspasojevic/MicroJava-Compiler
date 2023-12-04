@@ -1,0 +1,91 @@
+INFO  17:09:00,697 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\Projekat2\workspace\MJCompiler\test\program.mj
+INFO  17:09:00,716 - #2 program
+INFO  17:09:00,716 - #20 test301
+INFO  17:09:00,716 - #20 int
+INFO  17:09:00,717 - #20 pet
+INFO  17:09:00,717 - #5 ;
+INFO  17:09:00,717 - #20 int
+INFO  17:09:00,718 - #20 sest
+INFO  17:09:00,718 - #5 ;
+INFO  17:09:00,718 - #3 {
+INFO  17:09:00,718 - #20 int
+INFO  17:09:00,719 - #20 main
+INFO  17:09:00,719 - #6 (
+INFO  17:09:00,719 - #7 )
+INFO  17:09:00,720 - #3 {
+INFO  17:09:00,720 - #13 print
+INFO  17:09:00,721 - #6 (
+INFO  17:09:00,721 - #20 pet
+INFO  17:09:00,721 - #7 )
+INFO  17:09:00,721 - #5 ;
+INFO  17:09:00,721 - #13 print
+INFO  17:09:00,721 - #6 (
+INFO  17:09:00,722 - #17 2
+INFO  17:09:00,722 - #7 )
+INFO  17:09:00,722 - #5 ;
+INFO  17:09:00,722 - #4 }
+INFO  17:09:00,722 - #4 }
+INFO  17:09:00,723 - Program(
+ test301
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       pet
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     sest
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          PrintStmtNoNumConst(
+            TermExpr(
+              FactorTerm(
+                Var(
+                  DesignatorName(
+                   pet
+                  ) [DesignatorName]
+                ) [Var]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [PrintStmtNoNumConst]
+        ) [Statements]
+        PrintStmtNoNumConst(
+          TermExpr(
+            FactorTerm(
+              ConstNum(
+               2
+              ) [ConstNum]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [PrintStmtNoNumConst]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  17:09:00,723 - ===================================
+INFO  17:09:00,725 -  Print count calls = 2
+INFO  17:09:00,725 -  Deklarisanih promenljivih ima = 2

@@ -1,0 +1,68 @@
+INFO  01:07:08,940 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\Projekat2\workspace\MJCompiler\test\program.mj
+INFO  01:07:08,957 - #2 program
+INFO  01:07:08,957 - #20 test301
+INFO  01:07:08,957 - #20 int
+INFO  01:07:08,958 - #20 pet
+INFO  01:07:08,959 - #5 ;
+INFO  01:07:08,959 - #3 {
+INFO  01:07:08,960 - #20 int
+INFO  01:07:08,960 - #20 main
+INFO  01:07:08,960 - #6 (
+INFO  01:07:08,961 - #7 )
+INFO  01:07:08,962 - #3 {
+INFO  01:07:08,962 - #9 return
+INFO  01:07:08,963 - #17 0
+INFO  01:07:08,963 - #5 ;
+INFO  01:07:08,964 - #4 }
+INFO  01:07:08,964 - #4 }
+INFO  01:07:08,966 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     pet
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeName(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [MethodTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        ReturnExpr(
+          TermExpr(
+            FactorTerm(
+              ConstNum(
+               0
+              ) [ConstNum]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:07:08,966 - ===================================
+INFO  01:07:08,970 - Deklarisana promenljiva pet na liniji 5
+INFO  01:07:08,970 - Obradjuje se funkcija main na liniji 8
+INFO  01:07:08,970 -  Print count calls = 0
+INFO  01:07:08,970 -  Deklarisanih promenljivih ima = 1
+INFO  01:07:08,970 - ===================================
+INFO  01:07:08,971 - Parsiranje uspesno zavrseno

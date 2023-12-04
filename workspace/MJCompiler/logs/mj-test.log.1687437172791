@@ -1,0 +1,80 @@
+INFO  14:32:41,869 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\PP1 projekat\PP1_1\workspace\MJCompiler\test\program.mj
+INFO  14:32:41,883 - #2 program
+INFO  14:32:41,883 - #15 MJProgram
+INFO  14:32:41,883 - #15 int
+INFO  14:32:41,884 - #15 x
+INFO  14:32:41,885 - #5 ;
+INFO  14:32:41,885 - #15 int
+INFO  14:32:41,886 - #15 y
+INFO  14:32:41,886 - #5 ;
+INFO  14:32:41,886 - #16 const
+INFO  14:32:41,886 - #15 int
+INFO  14:32:41,886 - #15 f
+INFO  14:32:41,886 - #8 =
+INFO  14:32:41,886 - #28 true
+INFO  14:32:41,886 - #11 ,
+INFO  14:32:41,887 - #15 g
+INFO  14:32:41,887 - #8 =
+INFO  14:32:41,887 - #14 5
+INFO  14:32:41,887 - #5 ;
+INFO  14:32:41,887 - #3 {
+INFO  14:32:41,888 - #15 int
+INFO  14:32:41,888 - #15 k
+INFO  14:32:41,888 - #6 (
+INFO  14:32:41,889 - #7 )
+INFO  14:32:41,890 - #15 int
+INFO  14:32:41,890 - #15 c
+INFO  14:32:41,890 - #5 ;
+INFO  14:32:41,890 - #3 {
+INFO  14:32:41,890 - #15 c
+INFO  14:32:41,890 - #8 =
+INFO  14:32:41,891 - #14 2
+INFO  14:32:41,891 - #5 ;
+INFO  14:32:41,893 - #9 return
+INFO  14:32:41,894 - #15 c
+INFO  14:32:41,894 - #10 +
+INFO  14:32:41,894 - #14 2
+INFO  14:32:41,894 - #5 ;
+INFO  14:32:41,894 - #4 }
+INFO  14:32:41,895 - #15 int
+INFO  14:32:41,895 - #15 main
+INFO  14:32:41,896 - #6 (
+INFO  14:32:41,896 - #7 )
+INFO  14:32:41,896 - #3 {
+INFO  14:32:41,896 - #12 print
+INFO  14:32:41,896 - #6 (
+INFO  14:32:41,896 - #14 1
+INFO  14:32:41,896 - #7 )
+INFO  14:32:41,896 - #5 ;
+INFO  14:32:41,896 - #15 x
+INFO  14:32:41,896 - #8 =
+INFO  14:32:41,896 - #15 y
+INFO  14:32:41,896 - #10 +
+INFO  14:32:41,896 - #14 5
+INFO  14:32:41,896 - #10 +
+INFO  14:32:41,896 - #14 3
+INFO  14:32:41,897 - #5 ;
+INFO  14:32:41,897 - #12 print
+INFO  14:32:41,897 - #6 (
+INFO  14:32:41,897 - #14 2
+INFO  14:32:41,897 - #7 )
+INFO  14:32:41,897 - #5 ;
+INFO  14:32:41,897 - #15 k
+INFO  14:32:41,897 - #6 (
+INFO  14:32:41,897 - #7 )
+INFO  14:32:41,898 - #5 ;
+INFO  14:32:41,898 - #9 return
+INFO  14:32:41,898 - #14 1
+INFO  14:32:41,898 - #5 ;
+INFO  14:32:41,898 - #4 }
+INFO  14:32:41,898 - #4 }
+INFO  14:32:41,903 - ===================================
+INFO  14:32:41,905 - Deklarisana promenljiva x na liniji 2
+INFO  14:32:41,905 - Deklarisana promenljiva y na liniji 2
+INFO  14:32:41,905 - Obradjuje se funkcija k na liniji 6
+INFO  14:32:41,905 - Deklarisana promenljiva c na liniji 6
+INFO  14:32:41,905 - Obradjuje se funkcija main na liniji 11
+INFO  14:32:41,905 - Print calls = 2
+INFO  14:32:41,905 - ===================================
+INFO  14:32:41,906 - Generating bytecode file: C:\Users\aleks\OneDrive\Desktop\PP1 projekat\PP1_1\workspace\MJCompiler\test\program.obj
+INFO  14:32:41,906 - Parsiranje uspesno zavrseno!

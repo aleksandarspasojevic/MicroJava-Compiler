@@ -1,0 +1,76 @@
+INFO  11:49:46,881 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\Projekat3\workspace\MJCompiler\test\program.mj
+INFO  11:49:46,912 - #2 program
+INFO  11:49:46,912 - #20 test301
+INFO  11:49:46,912 - #20 int
+INFO  11:49:46,914 - #20 pet
+INFO  11:49:46,914 - #5 ;
+INFO  11:49:46,915 - #3 {
+INFO  11:49:46,915 - #20 int
+INFO  11:49:46,916 - #20 main
+INFO  11:49:46,916 - #6 (
+INFO  11:49:46,917 - #7 )
+INFO  11:49:46,918 - #3 {
+INFO  11:49:46,918 - #20 pet
+INFO  11:49:46,919 - #10 +
+ERROR 11:49:46,921 - 
+Sintaksna greska na liniji 10
+INFO  11:49:46,921 - #10 +
+INFO  11:49:46,921 - #5 ;
+INFO  11:49:46,921 - #9 return
+INFO  11:49:46,922 - #17 0
+INFO  11:49:46,922 - #5 ;
+ERROR 11:49:46,922 - Izvrsen oporavak do ; u liniji 10
+INFO  11:49:46,932 - #4 }
+INFO  11:49:46,932 - #4 }
+INFO  11:49:46,934 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     pet
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeName(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [MethodTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          ErrorStmt(
+          ) [ErrorStmt]
+        ) [Statements]
+        ReturnExpr(
+          TermExpr(
+            FactorTerm(
+              ConstNum(
+               0
+              ) [ConstNum]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  11:49:46,934 - ===================================
+INFO  11:49:46,942 - Deklarisana promenljiva pet na liniji 5
+INFO  11:49:46,942 - Obradjuje se funkcija main na liniji 8
+ERROR 11:49:46,943 - Parsiranje NIJE uspesno zavrseno

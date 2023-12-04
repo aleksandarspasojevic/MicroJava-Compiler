@@ -1,0 +1,76 @@
+INFO  14:31:36,228 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\Projekat3\workspace\MJCompiler\test\program.mj
+INFO  14:31:36,247 - #2 program
+INFO  14:31:36,247 - #19 test301
+INFO  14:31:36,247 - #19 int
+INFO  14:31:36,248 - #19 pet
+INFO  14:31:36,248 - #5 ;
+INFO  14:31:36,248 - #19 int
+INFO  14:31:36,249 - #19 sest
+INFO  14:31:36,249 - #5 ;
+INFO  14:31:36,249 - #3 {
+INFO  14:31:36,249 - #28 void
+INFO  14:31:36,249 - #19 main
+INFO  14:31:36,250 - #6 (
+INFO  14:31:36,250 - #7 )
+INFO  14:31:36,251 - #3 {
+INFO  14:31:36,251 - #9 return
+INFO  14:31:36,251 - #16 0
+INFO  14:31:36,251 - #5 ;
+INFO  14:31:36,252 - #4 }
+INFO  14:31:36,252 - #4 }
+INFO  14:31:36,254 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       pet
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     sest
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeName(
+        MethodTypeDerived1(
+        ) [MethodTypeDerived1]
+       main
+      ) [MethodTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        ReturnExpr(
+          TermExpr(
+            FactorTerm(
+              ConstNum(
+               0
+              ) [ConstNum]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  14:31:36,254 - ===================================
+INFO  14:31:36,262 - Deklarisana promenljiva pet na liniji 5
+INFO  14:31:36,262 - Deklarisana promenljiva sest na liniji 6
+INFO  14:31:36,262 - Obradjuje se funkcija main na liniji 9
+INFO  14:31:36,262 - Parsiranje uspesno zavrseno

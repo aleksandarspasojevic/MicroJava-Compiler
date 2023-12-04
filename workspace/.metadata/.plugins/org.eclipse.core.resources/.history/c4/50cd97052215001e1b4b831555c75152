@@ -1,0 +1,25 @@
+// test16 --  Ako metoda nije tipa void, mora imati iskaz return unutar svog tela (uslov treba da se proverava u 
+vreme izvršavanja programa)
+
+
+program test1	
+
+	const int a = 5, b = 6;
+	
+	const char c = 'f', d = 4, g = '4';
+
+{
+	
+	int fun(){
+		
+	}
+	
+	void main(){
+	
+	}
+	
+	
+	
+}
+
+

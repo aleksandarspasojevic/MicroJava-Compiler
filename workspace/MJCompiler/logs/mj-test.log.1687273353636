@@ -1,0 +1,78 @@
+INFO  17:02:17,448 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\test\workspace\MJCompiler\test\program.mj
+INFO  17:02:17,465 - #2 program
+INFO  17:02:17,465 - #20 test301
+INFO  17:02:17,465 - #20 int
+INFO  17:02:17,465 - #20 pet
+INFO  17:02:17,466 - #5 ;
+INFO  17:02:17,466 - #3 {
+INFO  17:02:17,467 - #20 int
+INFO  17:02:17,467 - #20 main
+INFO  17:02:17,467 - #6 (
+INFO  17:02:17,467 - #7 )
+INFO  17:02:17,468 - #3 {
+INFO  17:02:17,468 - #20 int
+INFO  17:02:17,468 - #20 a
+ERROR 17:02:17,468 - 
+Sintaksna greska na liniji 10
+INFO  17:02:17,469 - #5 ;
+INFO  17:02:17,469 - #20 a
+INFO  17:02:17,469 - #8 =
+INFO  17:02:17,470 - #17 5
+ERROR 17:02:17,470 - Izvrsen oporavak do ; u liniji 10
+INFO  17:02:17,471 - #5 ;
+INFO  17:02:17,471 - #4 }
+INFO  17:02:17,471 - #4 }
+INFO  17:02:17,472 - Program(
+ test301
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     pet
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          ErrorStmt(
+          ) [ErrorStmt]
+        ) [Statements]
+        DesignatorStmt(
+          DesignatorAssignment1(
+            DesignatorAssignment(
+              DesignatorName(
+               a
+              ) [DesignatorName]
+              TermExpr(
+                FactorTerm(
+                  ConstNum(
+                   5
+                  ) [ConstNum]
+                ) [FactorTerm]
+              ) [TermExpr]
+            ) [DesignatorAssignment]
+          ) [DesignatorAssignment1]
+        ) [DesignatorStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  17:02:17,473 - ===================================
+INFO  17:02:17,474 -  Print count calls = 0
+INFO  17:02:17,474 -  Deklarisanih promenljivih ima = 1

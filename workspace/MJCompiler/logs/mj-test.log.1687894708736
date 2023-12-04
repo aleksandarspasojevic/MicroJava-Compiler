@@ -1,0 +1,142 @@
+INFO  21:37:19,558 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test16.mj
+INFO  21:37:19,586 - #2 program
+INFO  21:37:19,586 - #17 test1
+INFO  21:37:19,586 - #18 const
+INFO  21:37:19,587 - #17 int
+INFO  21:37:19,587 - #17 a
+INFO  21:37:19,588 - #8 =
+INFO  21:37:19,588 - #14 5
+INFO  21:37:19,588 - #11 ,
+INFO  21:37:19,589 - #17 b
+INFO  21:37:19,589 - #8 =
+INFO  21:37:19,589 - #14 6
+INFO  21:37:19,589 - #5 ;
+INFO  21:37:19,589 - #18 const
+INFO  21:37:19,590 - #17 char
+INFO  21:37:19,590 - #17 c
+INFO  21:37:19,590 - #8 =
+INFO  21:37:19,590 - #15 f
+INFO  21:37:19,590 - #11 ,
+INFO  21:37:19,591 - #17 d
+INFO  21:37:19,591 - #8 =
+INFO  21:37:19,591 - #14 4
+INFO  21:37:19,591 - #11 ,
+INFO  21:37:19,591 - #17 g
+INFO  21:37:19,591 - #8 =
+INFO  21:37:19,591 - #15 4
+INFO  21:37:19,591 - #5 ;
+INFO  21:37:19,591 - #3 {
+INFO  21:37:19,591 - #17 int
+INFO  21:37:19,592 - #17 fun
+INFO  21:37:19,592 - #6 (
+INFO  21:37:19,592 - #7 )
+INFO  21:37:19,592 - #3 {
+INFO  21:37:19,592 - #4 }
+INFO  21:37:19,593 - #13 void
+INFO  21:37:19,593 - #17 main
+INFO  21:37:19,593 - #6 (
+INFO  21:37:19,593 - #7 )
+INFO  21:37:19,593 - #3 {
+INFO  21:37:19,593 - #4 }
+INFO  21:37:19,594 - #4 }
+INFO  21:37:19,594 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  ConstVarDeclarations(
+    ConstVarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      ConstVarDecl(
+        CostVarInitializations(
+          CostVarInitialization(
+            Type(
+             int
+            ) [Type]
+           a
+            ConstNum(
+             5
+            ) [ConstNum]
+          ) [CostVarInitialization]
+         b
+          ConstNum(
+           6
+          ) [ConstNum]
+        ) [CostVarInitializations]
+      ) [ConstVarDecl]
+    ) [ConstVarDeclarations]
+    ConstVarDecl(
+      CostVarInitializations(
+        CostVarInitializations(
+          CostVarInitialization(
+            Type(
+             char
+            ) [Type]
+           c
+            CharConst(
+             f
+            ) [CharConst]
+          ) [CostVarInitialization]
+         d
+          ConstNum(
+           4
+          ) [ConstNum]
+        ) [CostVarInitializations]
+       g
+        CharConst(
+         4
+        ) [CharConst]
+      ) [CostVarInitializations]
+    ) [ConstVarDecl]
+  ) [ConstVarDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDecl(
+      ) [NoMethodDecl]
+      MethodDecl(
+        RetType(
+          Type(
+           int
+          ) [Type]
+         fun
+        ) [RetType]
+        NoFormParam(
+        ) [NoFormParam]
+        NoVarDecl(
+        ) [NoVarDecl]
+        NoStmt(
+        ) [NoStmt]
+      ) [MethodDecl]
+    ) [MethodDeclarations]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:37:19,595 - ===================================
+INFO  21:37:19,599 - ===================================
+INFO  21:37:19,601 - Koriscenje simbolicke konstante 5 na liniji 7
+INFO  21:37:19,601 - Deklarisana konstantna promenljiva a na liniji 7
+INFO  21:37:19,601 - Koriscenje simbolicke konstante 6 na liniji 7
+INFO  21:37:19,601 - Deklarisana konstantna promenljiva b na liniji 7
+INFO  21:37:19,601 - Koriscenje simbolicke konstante f na liniji 9
+INFO  21:37:19,601 - Deklarisana konstantna promenljiva c na liniji 9
+INFO  21:37:19,602 - Koriscenje simbolicke konstante 4 na liniji 9
+ERROR 21:37:19,602 - Greska na liniji 9 : nekompatibilni tipovi u dodeli vrednosti! 
+INFO  21:37:19,602 - Deklarisana konstantna promenljiva d na liniji 9
+INFO  21:37:19,602 - Koriscenje simbolicke konstante 4 na liniji 9
+INFO  21:37:19,602 - Deklarisana konstantna promenljiva g na liniji 9
+INFO  21:37:19,602 - Obradjuje se funkcija fun na liniji 13
+ERROR 21:37:19,602 - Semanticka greska na liniji 13: funkcija fun nema return iskaz!
+INFO  21:37:19,602 - Obradjuje se funkcija main na liniji 17
+INFO  21:37:19,602 - Print calls = 0
+INFO  21:37:19,602 - ===================================
+ERROR 21:37:19,603 - Parsiranje NIJE uspesno zavrseno!

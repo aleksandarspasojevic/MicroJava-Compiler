@@ -1,0 +1,195 @@
+INFO  01:41:40,023 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\PP1 projekat\PP1_8\workspace\MJCompiler\test\program.mj
+INFO  01:41:40,045 - #2 program
+INFO  01:41:40,045 - #17 MJProgram
+INFO  01:41:40,045 - #17 int
+INFO  01:41:40,046 - #17 x
+INFO  01:41:40,046 - #5 ;
+INFO  01:41:40,047 - #17 int
+INFO  01:41:40,048 - #17 y
+INFO  01:41:40,048 - #5 ;
+INFO  01:41:40,048 - #18 const
+INFO  01:41:40,048 - #17 char
+INFO  01:41:40,048 - #17 f
+INFO  01:41:40,048 - #8 =
+INFO  01:41:40,048 - #15 a
+INFO  01:41:40,048 - #11 ,
+INFO  01:41:40,048 - #17 g
+INFO  01:41:40,048 - #8 =
+INFO  01:41:40,048 - #15 h
+INFO  01:41:40,048 - #5 ;
+INFO  01:41:40,049 - #17 bool
+INFO  01:41:40,049 - #17 b
+INFO  01:41:40,049 - #5 ;
+INFO  01:41:40,057 - #17 int
+INFO  01:41:40,057 - #17 matrica
+INFO  01:41:40,057 - #19 [
+INFO  01:41:40,057 - #26 ]
+INFO  01:41:40,057 - #19 [
+INFO  01:41:40,057 - #26 ]
+INFO  01:41:40,057 - #11 ,
+INFO  01:41:40,058 - #17 niz
+INFO  01:41:40,058 - #19 [
+INFO  01:41:40,058 - #26 ]
+INFO  01:41:40,058 - #11 ,
+INFO  01:41:40,058 - #17 promenljiva
+INFO  01:41:40,058 - #5 ;
+INFO  01:41:40,059 - #17 char
+INFO  01:41:40,059 - #17 a
+INFO  01:41:40,059 - #5 ;
+INFO  01:41:40,059 - #3 {
+INFO  01:41:40,059 - #13 void
+INFO  01:41:40,060 - #17 main
+INFO  01:41:40,060 - #6 (
+INFO  01:41:40,060 - #7 )
+INFO  01:41:40,060 - #3 {
+INFO  01:41:40,060 - #12 print
+INFO  01:41:40,061 - #6 (
+INFO  01:41:40,061 - #14 3
+INFO  01:41:40,061 - #7 )
+INFO  01:41:40,061 - #5 ;
+INFO  01:41:40,062 - #9 return
+INFO  01:41:40,062 - #5 ;
+INFO  01:41:40,062 - #4 }
+INFO  01:41:40,062 - #4 }
+INFO  01:41:40,064 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      VarDeclarations(
+        ConstVarDeclarations(
+          VarDeclarations(
+            VarDeclarations(
+              NoVarDecl(
+              ) [NoVarDecl]
+              VarDecl1(
+                VarDeclaration1(
+                  VarDeclaration(
+                    Type(
+                     int
+                    ) [Type]
+                   x
+                  ) [VarDeclaration]
+                ) [VarDeclaration1]
+              ) [VarDecl1]
+            ) [VarDeclarations]
+            VarDecl1(
+              VarDeclaration1(
+                VarDeclaration(
+                  Type(
+                   int
+                  ) [Type]
+                 y
+                ) [VarDeclaration]
+              ) [VarDeclaration1]
+            ) [VarDecl1]
+          ) [VarDeclarations]
+          ConstVarDecl(
+            CostVarInitializations(
+              CostVarInitialization(
+                Type(
+                 char
+                ) [Type]
+               f
+                CharConst(
+                 a
+                ) [CharConst]
+              ) [CostVarInitialization]
+             g
+              CharConst(
+               h
+              ) [CharConst]
+            ) [CostVarInitializations]
+          ) [ConstVarDecl]
+        ) [ConstVarDeclarations]
+        VarDecl1(
+          VarDeclaration1(
+            VarDeclaration(
+              Type(
+               bool
+              ) [Type]
+             b
+            ) [VarDeclaration]
+          ) [VarDeclaration1]
+        ) [VarDecl1]
+      ) [VarDeclarations]
+      VarDecl1(
+        MultipleVarDeclaration(
+          MultipleArrDeclaration(
+            VarMatrixDeclaration1(
+              VarMatrixDeclaration(
+                Type(
+                 int
+                ) [Type]
+               matrica
+              ) [VarMatrixDeclaration]
+            ) [VarMatrixDeclaration1]
+            MultArrDecl(
+             niz
+            ) [MultArrDecl]
+          ) [MultipleArrDeclaration]
+          MultVarDecl(
+           promenljiva
+          ) [MultVarDecl]
+        ) [MultipleVarDeclaration]
+      ) [VarDecl1]
+    ) [VarDeclarations]
+    VarDecl1(
+      VarDeclaration1(
+        VarDeclaration(
+          Type(
+           char
+          ) [Type]
+         a
+        ) [VarDeclaration]
+      ) [VarDeclaration1]
+    ) [VarDecl1]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          PrintStmt(
+            TermExpr(
+              FactorTerm(
+                Const(
+                 3
+                ) [Const]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [PrintStmt]
+        ) [Statements]
+        ReturnNoExpr(
+        ) [ReturnNoExpr]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:41:40,064 - ===================================
+INFO  01:41:40,068 - ===================================
+INFO  01:41:40,070 - Deklarisana promenljiva x na liniji 2
+INFO  01:41:40,070 - Deklarisana promenljiva y na liniji 2
+INFO  01:41:40,070 - Deklarisana konstantna promenljiva f na liniji 3
+INFO  01:41:40,070 - Deklarisana konstantna promenljiva g na liniji 3
+INFO  01:41:40,070 - Deklarisana promenljiva b na liniji 5
+INFO  01:41:40,070 - Deklarisana matrica matrica na liniji 7
+INFO  01:41:40,070 - Deklarisan niz niz na liniji 7
+INFO  01:41:40,070 - Deklarisana promenljiva promenljiva na liniji 7
+INFO  01:41:40,070 - Deklarisana promenljiva a na liniji 9
+INFO  01:41:40,071 - Obradjuje se funkcija main na liniji 16
+INFO  01:41:40,071 - Print calls = 1
+INFO  01:41:40,071 - ===================================
+INFO  01:41:40,071 - Generating bytecode file: C:\Users\aleks\OneDrive\Desktop\PP1 projekat\PP1_8\workspace\MJCompiler\test\program.obj
+INFO  01:41:40,073 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,26 @@
+// test22 -- Expr = "-" Term.
+// Term mora biti tipa int.
+	
+
+
+{
+	
+	
+	void main()
+		int a;
+		char c;
+	{
+	
+		c = '1';
+		
+		a = -a;
+		
+		c = -c;
+		
+	}
+	
+	
+	
+}
+
+

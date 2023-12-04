@@ -1,0 +1,952 @@
+INFO  16:10:34,711 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\PP1 projekat\PP1_17\workspace\MJCompiler\test\program.mj
+INFO  16:10:34,732 - #2 program
+INFO  16:10:34,733 - #17 test301
+INFO  16:10:34,733 - #18 const
+INFO  16:10:34,733 - #17 int
+INFO  16:10:34,733 - #17 nula
+INFO  16:10:34,734 - #8 =
+INFO  16:10:34,734 - #14 0
+INFO  16:10:34,734 - #5 ;
+INFO  16:10:34,734 - #18 const
+INFO  16:10:34,734 - #17 int
+INFO  16:10:34,734 - #17 jedan
+INFO  16:10:34,734 - #8 =
+INFO  16:10:34,734 - #14 1
+INFO  16:10:34,734 - #5 ;
+INFO  16:10:34,734 - #18 const
+INFO  16:10:34,734 - #17 int
+INFO  16:10:34,734 - #17 pet
+INFO  16:10:34,734 - #8 =
+INFO  16:10:34,734 - #14 5
+INFO  16:10:34,734 - #5 ;
+INFO  16:10:34,734 - #17 int
+INFO  16:10:34,735 - #17 niz
+INFO  16:10:34,735 - #19 [
+INFO  16:10:34,735 - #26 ]
+INFO  16:10:34,735 - #11 ,
+INFO  16:10:34,735 - #17 niz2
+INFO  16:10:34,735 - #19 [
+INFO  16:10:34,736 - #26 ]
+INFO  16:10:34,736 - #11 ,
+INFO  16:10:34,736 - #17 a
+INFO  16:10:34,736 - #11 ,
+INFO  16:10:34,736 - #17 b
+INFO  16:10:34,736 - #5 ;
+INFO  16:10:34,736 - #17 char
+INFO  16:10:34,737 - #17 nizch
+INFO  16:10:34,737 - #19 [
+INFO  16:10:34,737 - #26 ]
+INFO  16:10:34,737 - #5 ;
+INFO  16:10:34,737 - #17 int
+INFO  16:10:34,737 - #17 mat
+INFO  16:10:34,737 - #19 [
+INFO  16:10:34,737 - #26 ]
+INFO  16:10:34,737 - #19 [
+INFO  16:10:34,737 - #26 ]
+INFO  16:10:34,737 - #5 ;
+INFO  16:10:34,738 - #3 {
+INFO  16:10:34,738 - #13 void
+INFO  16:10:34,738 - #17 main
+INFO  16:10:34,738 - #6 (
+INFO  16:10:34,738 - #7 )
+INFO  16:10:34,739 - #17 int
+INFO  16:10:34,739 - #17 bodovi
+INFO  16:10:34,739 - #5 ;
+INFO  16:10:34,739 - #17 bool
+INFO  16:10:34,740 - #17 bt
+INFO  16:10:34,740 - #5 ;
+INFO  16:10:34,740 - #3 {
+INFO  16:10:34,740 - #17 bodovi
+INFO  16:10:34,740 - #8 =
+INFO  16:10:34,740 - #14 0
+INFO  16:10:34,740 - #5 ;
+INFO  16:10:34,741 - #17 bodovi
+INFO  16:10:34,741 - #27 ++
+INFO  16:10:34,741 - #5 ;
+INFO  16:10:34,741 - #17 bodovi
+INFO  16:10:34,742 - #8 =
+INFO  16:10:34,742 - #17 bodovi
+INFO  16:10:34,742 - #10 +
+INFO  16:10:34,742 - #17 jedan
+INFO  16:10:34,743 - #5 ;
+INFO  16:10:34,743 - #17 bodovi
+INFO  16:10:34,743 - #8 =
+INFO  16:10:34,743 - #17 bodovi
+INFO  16:10:34,743 - #22 *
+INFO  16:10:34,743 - #17 pet
+INFO  16:10:34,744 - #5 ;
+INFO  16:10:34,744 - #17 bodovi
+INFO  16:10:34,744 - #28 --
+INFO  16:10:34,744 - #5 ;
+INFO  16:10:34,744 - #12 print
+INFO  16:10:34,744 - #6 (
+INFO  16:10:34,744 - #17 bodovi
+INFO  16:10:34,744 - #7 )
+INFO  16:10:34,744 - #5 ;
+INFO  16:10:34,745 - #17 niz
+INFO  16:10:34,745 - #8 =
+INFO  16:10:34,745 - #21 new
+INFO  16:10:34,745 - #17 int
+INFO  16:10:34,745 - #19 [
+INFO  16:10:34,745 - #14 3
+INFO  16:10:34,745 - #26 ]
+INFO  16:10:34,745 - #5 ;
+INFO  16:10:34,745 - #17 niz
+INFO  16:10:34,745 - #19 [
+INFO  16:10:34,745 - #17 nula
+INFO  16:10:34,746 - #26 ]
+INFO  16:10:34,746 - #8 =
+INFO  16:10:34,746 - #17 jedan
+INFO  16:10:34,746 - #5 ;
+INFO  16:10:34,746 - #17 niz
+INFO  16:10:34,746 - #19 [
+INFO  16:10:34,746 - #14 1
+INFO  16:10:34,746 - #26 ]
+INFO  16:10:34,746 - #8 =
+INFO  16:10:34,746 - #14 2
+INFO  16:10:34,746 - #5 ;
+INFO  16:10:34,746 - #17 niz
+INFO  16:10:34,746 - #19 [
+INFO  16:10:34,746 - #17 niz
+INFO  16:10:34,746 - #19 [
+INFO  16:10:34,747 - #17 jedan
+INFO  16:10:34,747 - #26 ]
+INFO  16:10:34,747 - #26 ]
+INFO  16:10:34,747 - #8 =
+INFO  16:10:34,747 - #17 niz
+INFO  16:10:34,747 - #19 [
+INFO  16:10:34,747 - #17 niz
+INFO  16:10:34,747 - #19 [
+INFO  16:10:34,747 - #14 0
+INFO  16:10:34,747 - #26 ]
+INFO  16:10:34,747 - #26 ]
+INFO  16:10:34,747 - #22 *
+INFO  16:10:34,747 - #14 3
+INFO  16:10:34,747 - #5 ;
+INFO  16:10:34,747 - #17 bodovi
+INFO  16:10:34,747 - #8 =
+INFO  16:10:34,747 - #17 niz
+INFO  16:10:34,747 - #19 [
+INFO  16:10:34,747 - #14 2
+INFO  16:10:34,747 - #26 ]
+INFO  16:10:34,747 - #23 /
+INFO  16:10:34,747 - #17 niz
+INFO  16:10:34,748 - #19 [
+INFO  16:10:34,748 - #14 0
+INFO  16:10:34,748 - #26 ]
+INFO  16:10:34,748 - #5 ;
+INFO  16:10:34,748 - #12 print
+INFO  16:10:34,748 - #6 (
+INFO  16:10:34,748 - #17 bodovi
+INFO  16:10:34,748 - #7 )
+INFO  16:10:34,748 - #5 ;
+INFO  16:10:34,748 - #12 print
+INFO  16:10:34,748 - #6 (
+INFO  16:10:34,748 - #17 niz
+INFO  16:10:34,748 - #19 [
+INFO  16:10:34,748 - #14 2
+INFO  16:10:34,748 - #26 ]
+INFO  16:10:34,749 - #7 )
+INFO  16:10:34,749 - #5 ;
+INFO  16:10:34,749 - #17 mat
+INFO  16:10:34,749 - #8 =
+INFO  16:10:34,749 - #21 new
+INFO  16:10:34,749 - #17 int
+INFO  16:10:34,749 - #19 [
+INFO  16:10:34,749 - #14 2
+INFO  16:10:34,749 - #26 ]
+INFO  16:10:34,749 - #19 [
+INFO  16:10:34,749 - #14 2
+INFO  16:10:34,749 - #26 ]
+INFO  16:10:34,749 - #5 ;
+INFO  16:10:34,749 - #17 nizch
+INFO  16:10:34,749 - #8 =
+INFO  16:10:34,749 - #21 new
+INFO  16:10:34,749 - #17 char
+INFO  16:10:34,749 - #19 [
+INFO  16:10:34,749 - #14 3
+INFO  16:10:34,749 - #26 ]
+INFO  16:10:34,749 - #5 ;
+INFO  16:10:34,749 - #17 nizch
+INFO  16:10:34,749 - #19 [
+INFO  16:10:34,750 - #14 0
+INFO  16:10:34,750 - #26 ]
+INFO  16:10:34,750 - #8 =
+INFO  16:10:34,750 - #15 a
+INFO  16:10:34,750 - #5 ;
+INFO  16:10:34,750 - #17 nizch
+INFO  16:10:34,750 - #19 [
+INFO  16:10:34,750 - #17 jedan
+INFO  16:10:34,750 - #26 ]
+INFO  16:10:34,750 - #8 =
+INFO  16:10:34,750 - #15 b
+INFO  16:10:34,750 - #5 ;
+INFO  16:10:34,750 - #17 nizch
+INFO  16:10:34,750 - #19 [
+INFO  16:10:34,750 - #17 pet
+INFO  16:10:34,750 - #24 -
+INFO  16:10:34,750 - #14 3
+INFO  16:10:34,751 - #26 ]
+INFO  16:10:34,751 - #8 =
+INFO  16:10:34,751 - #15 c
+INFO  16:10:34,751 - #5 ;
+INFO  16:10:34,751 - #12 print
+INFO  16:10:34,751 - #6 (
+INFO  16:10:34,751 - #17 nizch
+INFO  16:10:34,751 - #19 [
+INFO  16:10:34,751 - #14 1
+INFO  16:10:34,751 - #26 ]
+INFO  16:10:34,751 - #7 )
+INFO  16:10:34,751 - #5 ;
+INFO  16:10:34,751 - #12 print
+INFO  16:10:34,752 - #6 (
+INFO  16:10:34,752 - #17 nizch
+INFO  16:10:34,752 - #19 [
+INFO  16:10:34,752 - #17 jedan
+INFO  16:10:34,752 - #22 *
+INFO  16:10:34,752 - #14 2
+INFO  16:10:34,752 - #26 ]
+INFO  16:10:34,752 - #7 )
+INFO  16:10:34,752 - #5 ;
+INFO  16:10:34,752 - #4 }
+INFO  16:10:34,752 - #4 }
+INFO  16:10:34,755 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      VarDeclarations(
+        ConstVarDeclarations(
+          ConstVarDeclarations(
+            ConstVarDeclarations(
+              NoVarDecl(
+              ) [NoVarDecl]
+              ConstVarDecl(
+                CostVarInitialization(
+                  Type(
+                   int
+                  ) [Type]
+                 nula
+                  ConstNum(
+                   0
+                  ) [ConstNum]
+                ) [CostVarInitialization]
+              ) [ConstVarDecl]
+            ) [ConstVarDeclarations]
+            ConstVarDecl(
+              CostVarInitialization(
+                Type(
+                 int
+                ) [Type]
+               jedan
+                ConstNum(
+                 1
+                ) [ConstNum]
+              ) [CostVarInitialization]
+            ) [ConstVarDecl]
+          ) [ConstVarDeclarations]
+          ConstVarDecl(
+            CostVarInitialization(
+              Type(
+               int
+              ) [Type]
+             pet
+              ConstNum(
+               5
+              ) [ConstNum]
+            ) [CostVarInitialization]
+          ) [ConstVarDecl]
+        ) [ConstVarDeclarations]
+        VarDecl1(
+          MultipleVarDeclaration(
+            MultipleVarDeclaration(
+              MultipleArrDeclaration(
+                VarArrayDeclaration1(
+                  VarArrayDeclaration(
+                    Type(
+                     int
+                    ) [Type]
+                   niz
+                  ) [VarArrayDeclaration]
+                ) [VarArrayDeclaration1]
+                MultArrDecl(
+                 niz2
+                ) [MultArrDecl]
+              ) [MultipleArrDeclaration]
+              MultVarDecl(
+               a
+              ) [MultVarDecl]
+            ) [MultipleVarDeclaration]
+            MultVarDecl(
+             b
+            ) [MultVarDecl]
+          ) [MultipleVarDeclaration]
+        ) [VarDecl1]
+      ) [VarDeclarations]
+      VarDecl1(
+        VarArrayDeclaration1(
+          VarArrayDeclaration(
+            Type(
+             char
+            ) [Type]
+           nizch
+          ) [VarArrayDeclaration]
+        ) [VarArrayDeclaration1]
+      ) [VarDecl1]
+    ) [VarDeclarations]
+    VarDecl1(
+      VarMatrixDeclaration1(
+        VarMatrixDeclaration(
+          Type(
+           int
+          ) [Type]
+         mat
+        ) [VarMatrixDeclaration]
+      ) [VarMatrixDeclaration1]
+    ) [VarDecl1]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl1(
+            VarDeclaration1(
+              VarDeclaration(
+                Type(
+                 int
+                ) [Type]
+               bodovi
+              ) [VarDeclaration]
+            ) [VarDeclaration1]
+          ) [VarDecl1]
+        ) [VarDeclarations]
+        VarDecl1(
+          VarDeclaration1(
+            VarDeclaration(
+              Type(
+               bool
+              ) [Type]
+             bt
+            ) [VarDeclaration]
+          ) [VarDeclaration1]
+        ) [VarDecl1]
+      ) [VarDeclarations]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    Statements(
+                      Statements(
+                        Statements(
+                          Statements(
+                            Statements(
+                              Statements(
+                                Statements(
+                                  Statements(
+                                    Statements(
+                                      Statements(
+                                        Statements(
+                                          Statements(
+                                            Statements(
+                                              NoStmt(
+                                              ) [NoStmt]
+                                              DesignatorStmt(
+                                                DesAsignment1(
+                                                  DesAsignment(
+                                                    DesignatorName(
+                                                     bodovi
+                                                    ) [DesignatorName]
+                                                    TermExpr(
+                                                      FactorTerm(
+                                                        Const(
+                                                         0
+                                                        ) [Const]
+                                                      ) [FactorTerm]
+                                                    ) [TermExpr]
+                                                  ) [DesAsignment]
+                                                ) [DesAsignment1]
+                                              ) [DesignatorStmt]
+                                            ) [Statements]
+                                            DesignatorStmt(
+                                              DesIncrement1(
+                                                DesignatorIncrement(
+                                                  DesignatorName(
+                                                   bodovi
+                                                  ) [DesignatorName]
+                                                ) [DesignatorIncrement]
+                                              ) [DesIncrement1]
+                                            ) [DesignatorStmt]
+                                          ) [Statements]
+                                          DesignatorStmt(
+                                            DesAsignment1(
+                                              DesAsignment(
+                                                DesignatorName(
+                                                 bodovi
+                                                ) [DesignatorName]
+                                                AddExpr(
+                                                  TermExpr(
+                                                    FactorTerm(
+                                                      Var(
+                                                        DesignatorName(
+                                                         bodovi
+                                                        ) [DesignatorName]
+                                                      ) [Var]
+                                                    ) [FactorTerm]
+                                                  ) [TermExpr]
+                                                  Addop1(
+                                                  ) [Addop1]
+                                                  FactorTerm(
+                                                    Var(
+                                                      DesignatorName(
+                                                       jedan
+                                                      ) [DesignatorName]
+                                                    ) [Var]
+                                                  ) [FactorTerm]
+                                                ) [AddExpr]
+                                              ) [DesAsignment]
+                                            ) [DesAsignment1]
+                                          ) [DesignatorStmt]
+                                        ) [Statements]
+                                        DesignatorStmt(
+                                          DesAsignment1(
+                                            DesAsignment(
+                                              DesignatorName(
+                                               bodovi
+                                              ) [DesignatorName]
+                                              TermExpr(
+                                                MulTerm(
+                                                  FactorTerm(
+                                                    Var(
+                                                      DesignatorName(
+                                                       bodovi
+                                                      ) [DesignatorName]
+                                                    ) [Var]
+                                                  ) [FactorTerm]
+                                                  Mulop1(
+                                                  ) [Mulop1]
+                                                  Var(
+                                                    DesignatorName(
+                                                     pet
+                                                    ) [DesignatorName]
+                                                  ) [Var]
+                                                ) [MulTerm]
+                                              ) [TermExpr]
+                                            ) [DesAsignment]
+                                          ) [DesAsignment1]
+                                        ) [DesignatorStmt]
+                                      ) [Statements]
+                                      DesignatorStmt(
+                                        DesDecrement1(
+                                          DesignatorDecrement(
+                                            DesignatorName(
+                                             bodovi
+                                            ) [DesignatorName]
+                                          ) [DesignatorDecrement]
+                                        ) [DesDecrement1]
+                                      ) [DesignatorStmt]
+                                    ) [Statements]
+                                    PrintStmt(
+                                      TermExpr(
+                                        FactorTerm(
+                                          Var(
+                                            DesignatorName(
+                                             bodovi
+                                            ) [DesignatorName]
+                                          ) [Var]
+                                        ) [FactorTerm]
+                                      ) [TermExpr]
+                                    ) [PrintStmt]
+                                  ) [Statements]
+                                  DesignatorStmt(
+                                    DesAsignment1(
+                                      DesAsignment(
+                                        DesignatorName(
+                                         niz
+                                        ) [DesignatorName]
+                                        TermExpr(
+                                          FactorTerm(
+                                            NewExprSingle(
+                                              Type(
+                                               int
+                                              ) [Type]
+                                              TermExpr(
+                                                FactorTerm(
+                                                  Const(
+                                                   3
+                                                  ) [Const]
+                                                ) [FactorTerm]
+                                              ) [TermExpr]
+                                            ) [NewExprSingle]
+                                          ) [FactorTerm]
+                                        ) [TermExpr]
+                                      ) [DesAsignment]
+                                    ) [DesAsignment1]
+                                  ) [DesignatorStmt]
+                                ) [Statements]
+                                DesignatorStmt(
+                                  DesAsignment1(
+                                    DesAsignment(
+                                      DesignatorExpr(
+                                        Designator1(
+                                          DesignatorName(
+                                           niz
+                                          ) [DesignatorName]
+                                        ) [Designator1]
+                                        TermExpr(
+                                          FactorTerm(
+                                            Var(
+                                              DesignatorName(
+                                               nula
+                                              ) [DesignatorName]
+                                            ) [Var]
+                                          ) [FactorTerm]
+                                        ) [TermExpr]
+                                      ) [DesignatorExpr]
+                                      TermExpr(
+                                        FactorTerm(
+                                          Var(
+                                            DesignatorName(
+                                             jedan
+                                            ) [DesignatorName]
+                                          ) [Var]
+                                        ) [FactorTerm]
+                                      ) [TermExpr]
+                                    ) [DesAsignment]
+                                  ) [DesAsignment1]
+                                ) [DesignatorStmt]
+                              ) [Statements]
+                              DesignatorStmt(
+                                DesAsignment1(
+                                  DesAsignment(
+                                    DesignatorExpr(
+                                      Designator1(
+                                        DesignatorName(
+                                         niz
+                                        ) [DesignatorName]
+                                      ) [Designator1]
+                                      TermExpr(
+                                        FactorTerm(
+                                          Const(
+                                           1
+                                          ) [Const]
+                                        ) [FactorTerm]
+                                      ) [TermExpr]
+                                    ) [DesignatorExpr]
+                                    TermExpr(
+                                      FactorTerm(
+                                        Const(
+                                         2
+                                        ) [Const]
+                                      ) [FactorTerm]
+                                    ) [TermExpr]
+                                  ) [DesAsignment]
+                                ) [DesAsignment1]
+                              ) [DesignatorStmt]
+                            ) [Statements]
+                            DesignatorStmt(
+                              DesAsignment1(
+                                DesAsignment(
+                                  DesignatorExpr(
+                                    Designator1(
+                                      DesignatorName(
+                                       niz
+                                      ) [DesignatorName]
+                                    ) [Designator1]
+                                    TermExpr(
+                                      FactorTerm(
+                                        Var(
+                                          DesignatorExpr(
+                                            Designator1(
+                                              DesignatorName(
+                                               niz
+                                              ) [DesignatorName]
+                                            ) [Designator1]
+                                            TermExpr(
+                                              FactorTerm(
+                                                Var(
+                                                  DesignatorName(
+                                                   jedan
+                                                  ) [DesignatorName]
+                                                ) [Var]
+                                              ) [FactorTerm]
+                                            ) [TermExpr]
+                                          ) [DesignatorExpr]
+                                        ) [Var]
+                                      ) [FactorTerm]
+                                    ) [TermExpr]
+                                  ) [DesignatorExpr]
+                                  TermExpr(
+                                    MulTerm(
+                                      FactorTerm(
+                                        Var(
+                                          DesignatorExpr(
+                                            Designator1(
+                                              DesignatorName(
+                                               niz
+                                              ) [DesignatorName]
+                                            ) [Designator1]
+                                            TermExpr(
+                                              FactorTerm(
+                                                Var(
+                                                  DesignatorExpr(
+                                                    Designator1(
+                                                      DesignatorName(
+                                                       niz
+                                                      ) [DesignatorName]
+                                                    ) [Designator1]
+                                                    TermExpr(
+                                                      FactorTerm(
+                                                        Const(
+                                                         0
+                                                        ) [Const]
+                                                      ) [FactorTerm]
+                                                    ) [TermExpr]
+                                                  ) [DesignatorExpr]
+                                                ) [Var]
+                                              ) [FactorTerm]
+                                            ) [TermExpr]
+                                          ) [DesignatorExpr]
+                                        ) [Var]
+                                      ) [FactorTerm]
+                                      Mulop1(
+                                      ) [Mulop1]
+                                      Const(
+                                       3
+                                      ) [Const]
+                                    ) [MulTerm]
+                                  ) [TermExpr]
+                                ) [DesAsignment]
+                              ) [DesAsignment1]
+                            ) [DesignatorStmt]
+                          ) [Statements]
+                          DesignatorStmt(
+                            DesAsignment1(
+                              DesAsignment(
+                                DesignatorName(
+                                 bodovi
+                                ) [DesignatorName]
+                                TermExpr(
+                                  MulTerm(
+                                    FactorTerm(
+                                      Var(
+                                        DesignatorExpr(
+                                          Designator1(
+                                            DesignatorName(
+                                             niz
+                                            ) [DesignatorName]
+                                          ) [Designator1]
+                                          TermExpr(
+                                            FactorTerm(
+                                              Const(
+                                               2
+                                              ) [Const]
+                                            ) [FactorTerm]
+                                          ) [TermExpr]
+                                        ) [DesignatorExpr]
+                                      ) [Var]
+                                    ) [FactorTerm]
+                                    Divop(
+                                    ) [Divop]
+                                    Var(
+                                      DesignatorExpr(
+                                        Designator1(
+                                          DesignatorName(
+                                           niz
+                                          ) [DesignatorName]
+                                        ) [Designator1]
+                                        TermExpr(
+                                          FactorTerm(
+                                            Const(
+                                             0
+                                            ) [Const]
+                                          ) [FactorTerm]
+                                        ) [TermExpr]
+                                      ) [DesignatorExpr]
+                                    ) [Var]
+                                  ) [MulTerm]
+                                ) [TermExpr]
+                              ) [DesAsignment]
+                            ) [DesAsignment1]
+                          ) [DesignatorStmt]
+                        ) [Statements]
+                        PrintStmt(
+                          TermExpr(
+                            FactorTerm(
+                              Var(
+                                DesignatorName(
+                                 bodovi
+                                ) [DesignatorName]
+                              ) [Var]
+                            ) [FactorTerm]
+                          ) [TermExpr]
+                        ) [PrintStmt]
+                      ) [Statements]
+                      PrintStmt(
+                        TermExpr(
+                          FactorTerm(
+                            Var(
+                              DesignatorExpr(
+                                Designator1(
+                                  DesignatorName(
+                                   niz
+                                  ) [DesignatorName]
+                                ) [Designator1]
+                                TermExpr(
+                                  FactorTerm(
+                                    Const(
+                                     2
+                                    ) [Const]
+                                  ) [FactorTerm]
+                                ) [TermExpr]
+                              ) [DesignatorExpr]
+                            ) [Var]
+                          ) [FactorTerm]
+                        ) [TermExpr]
+                      ) [PrintStmt]
+                    ) [Statements]
+                    DesignatorStmt(
+                      DesAsignment1(
+                        DesAsignment(
+                          DesignatorName(
+                           mat
+                          ) [DesignatorName]
+                          TermExpr(
+                            FactorTerm(
+                              NewExprMult(
+                                Type(
+                                 int
+                                ) [Type]
+                                TermExpr(
+                                  FactorTerm(
+                                    Const(
+                                     2
+                                    ) [Const]
+                                  ) [FactorTerm]
+                                ) [TermExpr]
+                                TermExpr(
+                                  FactorTerm(
+                                    Const(
+                                     2
+                                    ) [Const]
+                                  ) [FactorTerm]
+                                ) [TermExpr]
+                              ) [NewExprMult]
+                            ) [FactorTerm]
+                          ) [TermExpr]
+                        ) [DesAsignment]
+                      ) [DesAsignment1]
+                    ) [DesignatorStmt]
+                  ) [Statements]
+                  DesignatorStmt(
+                    DesAsignment1(
+                      DesAsignment(
+                        DesignatorName(
+                         nizch
+                        ) [DesignatorName]
+                        TermExpr(
+                          FactorTerm(
+                            NewExprSingle(
+                              Type(
+                               char
+                              ) [Type]
+                              TermExpr(
+                                FactorTerm(
+                                  Const(
+                                   3
+                                  ) [Const]
+                                ) [FactorTerm]
+                              ) [TermExpr]
+                            ) [NewExprSingle]
+                          ) [FactorTerm]
+                        ) [TermExpr]
+                      ) [DesAsignment]
+                    ) [DesAsignment1]
+                  ) [DesignatorStmt]
+                ) [Statements]
+                DesignatorStmt(
+                  DesAsignment1(
+                    DesAsignment(
+                      DesignatorExpr(
+                        Designator1(
+                          DesignatorName(
+                           nizch
+                          ) [DesignatorName]
+                        ) [Designator1]
+                        TermExpr(
+                          FactorTerm(
+                            Const(
+                             0
+                            ) [Const]
+                          ) [FactorTerm]
+                        ) [TermExpr]
+                      ) [DesignatorExpr]
+                      TermExpr(
+                        FactorTerm(
+                          CharConstF(
+                           a
+                          ) [CharConstF]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                    ) [DesAsignment]
+                  ) [DesAsignment1]
+                ) [DesignatorStmt]
+              ) [Statements]
+              DesignatorStmt(
+                DesAsignment1(
+                  DesAsignment(
+                    DesignatorExpr(
+                      Designator1(
+                        DesignatorName(
+                         nizch
+                        ) [DesignatorName]
+                      ) [Designator1]
+                      TermExpr(
+                        FactorTerm(
+                          Var(
+                            DesignatorName(
+                             jedan
+                            ) [DesignatorName]
+                          ) [Var]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                    ) [DesignatorExpr]
+                    TermExpr(
+                      FactorTerm(
+                        CharConstF(
+                         b
+                        ) [CharConstF]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                  ) [DesAsignment]
+                ) [DesAsignment1]
+              ) [DesignatorStmt]
+            ) [Statements]
+            DesignatorStmt(
+              DesAsignment1(
+                DesAsignment(
+                  DesignatorExpr(
+                    Designator1(
+                      DesignatorName(
+                       nizch
+                      ) [DesignatorName]
+                    ) [Designator1]
+                    AddExpr(
+                      TermExpr(
+                        FactorTerm(
+                          Var(
+                            DesignatorName(
+                             pet
+                            ) [DesignatorName]
+                          ) [Var]
+                        ) [FactorTerm]
+                      ) [TermExpr]
+                      MinusOp(
+                      ) [MinusOp]
+                      FactorTerm(
+                        Const(
+                         3
+                        ) [Const]
+                      ) [FactorTerm]
+                    ) [AddExpr]
+                  ) [DesignatorExpr]
+                  TermExpr(
+                    FactorTerm(
+                      CharConstF(
+                       c
+                      ) [CharConstF]
+                    ) [FactorTerm]
+                  ) [TermExpr]
+                ) [DesAsignment]
+              ) [DesAsignment1]
+            ) [DesignatorStmt]
+          ) [Statements]
+          PrintStmt(
+            TermExpr(
+              FactorTerm(
+                Var(
+                  DesignatorExpr(
+                    Designator1(
+                      DesignatorName(
+                       nizch
+                      ) [DesignatorName]
+                    ) [Designator1]
+                    TermExpr(
+                      FactorTerm(
+                        Const(
+                         1
+                        ) [Const]
+                      ) [FactorTerm]
+                    ) [TermExpr]
+                  ) [DesignatorExpr]
+                ) [Var]
+              ) [FactorTerm]
+            ) [TermExpr]
+          ) [PrintStmt]
+        ) [Statements]
+        PrintStmt(
+          TermExpr(
+            FactorTerm(
+              Var(
+                DesignatorExpr(
+                  Designator1(
+                    DesignatorName(
+                     nizch
+                    ) [DesignatorName]
+                  ) [Designator1]
+                  TermExpr(
+                    MulTerm(
+                      FactorTerm(
+                        Var(
+                          DesignatorName(
+                           jedan
+                          ) [DesignatorName]
+                        ) [Var]
+                      ) [FactorTerm]
+                      Mulop1(
+                      ) [Mulop1]
+                      Const(
+                       2
+                      ) [Const]
+                    ) [MulTerm]
+                  ) [TermExpr]
+                ) [DesignatorExpr]
+              ) [Var]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [PrintStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:10:34,756 - ===================================
+INFO  16:10:34,760 - ===================================
+INFO  16:10:34,762 - Deklarisana konstantna promenljiva nula na liniji 5
+INFO  16:10:34,762 - Deklarisana konstantna promenljiva jedan na liniji 6
+INFO  16:10:34,762 - Deklarisana konstantna promenljiva pet na liniji 7
+INFO  16:10:34,762 - Deklarisan niz niz na liniji 9
+INFO  16:10:34,763 - Deklarisan niz niz2 na liniji 9
+INFO  16:10:34,763 - Deklarisana promenljiva a na liniji 9
+INFO  16:10:34,763 - Deklarisana promenljiva b na liniji 9
+INFO  16:10:34,763 - Deklarisan niz nizch na liniji 10
+INFO  16:10:34,763 - Deklarisana matrica mat na liniji 11
+INFO  16:10:34,763 - Obradjuje se funkcija main na liniji 14
+INFO  16:10:34,763 - Deklarisana promenljiva bodovi na liniji 15
+INFO  16:10:34,763 - Deklarisana promenljiva bt na liniji 16
+INFO  16:10:34,763 - Print calls = 5
+INFO  16:10:34,763 - ===================================
+INFO  16:10:34,764 - Generating bytecode file: C:\Users\aleks\OneDrive\Desktop\PP1 projekat\PP1_17\workspace\MJCompiler\test\program.obj
+INFO  16:10:34,766 - 0
+INFO  16:10:34,767 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,53 @@
+INFO  23:52:28,906 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\Projekat2\workspace\MJCompiler\test\program.mj
+INFO  23:52:28,925 - #2 program
+INFO  23:52:28,925 - #20 test301
+INFO  23:52:28,925 - #20 int
+INFO  23:52:28,926 - #20 pet
+INFO  23:52:28,926 - #5 ;
+INFO  23:52:28,927 - #3 {
+INFO  23:52:28,928 - #20 int
+INFO  23:52:28,928 - #20 main
+INFO  23:52:28,928 - #6 (
+INFO  23:52:28,929 - #7 )
+INFO  23:52:28,930 - #3 {
+INFO  23:52:28,930 - #4 }
+INFO  23:52:28,930 - #4 }
+INFO  23:52:28,932 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     pet
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeName(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [MethodTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  23:52:28,939 - ===================================
+INFO  23:52:28,944 - Deklarisana promenljiva pet
+INFO  23:52:28,944 - Obradjuje se funkcija main
+INFO  23:52:28,944 -  Print count calls = 0
+INFO  23:52:28,944 -  Deklarisanih promenljivih ima = 1
+INFO  23:52:28,944 - ===================================

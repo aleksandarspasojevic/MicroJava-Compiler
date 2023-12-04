@@ -1,0 +1,79 @@
+INFO  12:44:16,539 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\Projekat3\workspace\MJCompiler\test\program.mj
+INFO  12:44:16,571 - #2 program
+INFO  12:44:16,573 - #20 test301
+INFO  12:44:16,573 - #20 int
+INFO  12:44:16,574 - #20 pet
+INFO  12:44:16,574 - #5 ;
+INFO  12:44:16,575 - #20 int
+INFO  12:44:16,577 - #20 sest
+INFO  12:44:16,577 - #5 ;
+INFO  12:44:16,577 - #3 {
+INFO  12:44:16,577 - #20 voids
+INFO  12:44:16,578 - #20 main
+INFO  12:44:16,578 - #6 (
+INFO  12:44:16,579 - #7 )
+INFO  12:44:16,581 - #3 {
+INFO  12:44:16,581 - #9 return
+INFO  12:44:16,581 - #17 0
+INFO  12:44:16,581 - #5 ;
+INFO  12:44:16,582 - #4 }
+INFO  12:44:16,582 - #4 }
+INFO  12:44:16,584 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       pet
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     sest
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeName(
+        Type(
+         voids
+        ) [Type]
+       main
+      ) [MethodTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        ReturnExpr(
+          TermExpr(
+            FactorTerm(
+              ConstNum(
+               0
+              ) [ConstNum]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  12:44:16,585 - ===================================
+INFO  12:44:16,593 - Deklarisana promenljiva pet na liniji 5
+INFO  12:44:16,594 - Deklarisana promenljiva sest na liniji 6
+ERROR 12:44:16,594 - Nije pronadjen tip voids u tabeli simbola!
+INFO  12:44:16,594 - Obradjuje se funkcija main na liniji 9
+ERROR 12:44:16,594 - Greska na liniji 13 : tip izraza u return naredbi se ne slaze sa tipom povratne vrednosti funkcije main
+ERROR 12:44:16,594 - Parsiranje NIJE uspesno zavrseno

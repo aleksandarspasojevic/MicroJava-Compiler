@@ -1,0 +1,96 @@
+INFO  21:09:28,042 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\test2.mj
+INFO  21:09:28,065 - #2 program
+INFO  21:09:28,065 - #17 test1
+INFO  21:09:28,065 - #17 int
+INFO  21:09:28,066 - #17 var1
+INFO  21:09:28,066 - #11 ,
+INFO  21:09:28,067 - #17 var2
+INFO  21:09:28,067 - #5 ;
+INFO  21:09:28,067 - #3 {
+INFO  21:09:28,068 - #13 void
+INFO  21:09:28,068 - #17 main
+INFO  21:09:28,068 - #6 (
+INFO  21:09:28,068 - #7 )
+INFO  21:09:28,069 - #17 int
+INFO  21:09:28,069 - #17 var3
+INFO  21:09:28,069 - #5 ;
+INFO  21:09:28,069 - #17 int
+INFO  21:09:28,069 - #17 var4
+INFO  21:09:28,069 - #5 ;
+INFO  21:09:28,069 - #3 {
+INFO  21:09:28,069 - #4 }
+INFO  21:09:28,069 - #4 }
+INFO  21:09:28,071 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl1(
+      MultipleVarDeclaration(
+        VarDeclaration1(
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+           var1
+          ) [VarDeclaration]
+        ) [VarDeclaration1]
+        MultVarDecl(
+         var2
+        ) [MultVarDecl]
+      ) [MultipleVarDeclaration]
+    ) [VarDecl1]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      NoRetType(
+       main
+      ) [NoRetType]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl1(
+            VarDeclaration1(
+              VarDeclaration(
+                Type(
+                 int
+                ) [Type]
+               var3
+              ) [VarDeclaration]
+            ) [VarDeclaration1]
+          ) [VarDecl1]
+        ) [VarDeclarations]
+        VarDecl1(
+          VarDeclaration1(
+            VarDeclaration(
+              Type(
+               int
+              ) [Type]
+             var4
+            ) [VarDeclaration]
+          ) [VarDeclaration1]
+        ) [VarDecl1]
+      ) [VarDeclarations]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:09:28,071 - ===================================
+INFO  21:09:28,074 - ===================================
+INFO  21:09:28,077 - Deklarisana promenljiva var1 na liniji 5
+INFO  21:09:28,077 - Deklarisana promenljiva var2 na liniji 5
+INFO  21:09:28,077 - Obradjuje se funkcija main na liniji 8
+INFO  21:09:28,077 - Deklarisana promenljiva var3 na liniji 9
+INFO  21:09:28,077 - Deklarisana promenljiva var4 na liniji 10
+INFO  21:09:28,078 - Print calls = 0
+INFO  21:09:28,078 - ===================================
+INFO  21:09:28,078 - Generating bytecode file: C:\Users\aleks\OneDrive\Desktop\sa190236\workspace\MJCompiler\test\program.obj
+INFO  21:09:28,081 - Parsiranje uspesno zavrseno!

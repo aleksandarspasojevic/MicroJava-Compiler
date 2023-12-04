@@ -1,0 +1,117 @@
+INFO  12:30:52,228 - Compiling source file: C:\Users\aleks\OneDrive\Desktop\Projekat3\workspace\MJCompiler\test\program.mj
+INFO  12:30:52,261 - #2 program
+INFO  12:30:52,261 - #20 test301
+INFO  12:30:52,261 - #20 int
+INFO  12:30:52,263 - #20 pet
+INFO  12:30:52,264 - #5 ;
+INFO  12:30:52,264 - #20 int
+INFO  12:30:52,266 - #20 sest
+INFO  12:30:52,266 - #5 ;
+INFO  12:30:52,266 - #3 {
+INFO  12:30:52,266 - #20 df
+INFO  12:30:52,267 - #20 main
+INFO  12:30:52,267 - #6 (
+INFO  12:30:52,268 - #7 )
+INFO  12:30:52,270 - #20 int
+INFO  12:30:52,270 - #20 sedam
+INFO  12:30:52,271 - #5 ;
+INFO  12:30:52,271 - #3 {
+INFO  12:30:52,271 - #20 pet
+INFO  12:30:52,272 - #8 =
+INFO  12:30:52,272 - #20 sest
+INFO  12:30:52,272 - #5 ;
+INFO  12:30:52,281 - #9 return
+INFO  12:30:52,282 - #17 0
+INFO  12:30:52,282 - #5 ;
+INFO  12:30:52,282 - #4 }
+INFO  12:30:52,282 - #4 }
+INFO  12:30:52,285 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       pet
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     sest
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeName(
+        Type(
+         df
+        ) [Type]
+       main
+      ) [MethodTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+         sedam
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          DesignatorStmt(
+            DesignatorAssignment1(
+              DesignatorAssignment(
+                DesignatorName(
+                 pet
+                ) [DesignatorName]
+                TermExpr(
+                  FactorTerm(
+                    Var(
+                      DesignatorName(
+                       sest
+                      ) [DesignatorName]
+                    ) [Var]
+                  ) [FactorTerm]
+                ) [TermExpr]
+              ) [DesignatorAssignment]
+            ) [DesignatorAssignment1]
+          ) [DesignatorStmt]
+        ) [Statements]
+        ReturnExpr(
+          TermExpr(
+            FactorTerm(
+              ConstNum(
+               0
+              ) [ConstNum]
+            ) [FactorTerm]
+          ) [TermExpr]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  12:30:52,285 - ===================================
+INFO  12:30:52,300 - Deklarisana promenljiva pet na liniji 5
+INFO  12:30:52,300 - Deklarisana promenljiva sest na liniji 6
+ERROR 12:30:52,301 - Nije pronadjen tip df u tabeli simbola!
+INFO  12:30:52,301 - Obradjuje se funkcija main na liniji 9
+INFO  12:30:52,301 - Deklarisana promenljiva sedam na liniji 10
+INFO  12:30:52,301 - Koriscenje globalne promenljive pet na liniji 13
+INFO  12:30:52,301 - Koriscenje globalne promenljive sest na liniji 13
+ERROR 12:30:52,302 - Greska na liniji 15 : tip izraza u return naredbi se ne slaze sa tipom povratne vrednosti funkcije main
+ERROR 12:30:52,303 - Parsiranje NIJE uspesno zavrseno
